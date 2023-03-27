@@ -40,13 +40,61 @@
     color: gray;
 }
 
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .escolha-cadastro-botao:nth-child(2){ /*Temporário, para indicar que o selecionado fica laranja*/
     background-color: var(--main);
     color: var(--font-white);
 }
 
-.escolha-cadastro-botao:hover{
+.escolha-cadastro-botao:hover, .continuar button:hover{
     cursor: pointer;
-    filter: brightness(90%);
+    filter: brightness(110%);
     transition: filter .1s ease;
+}
+
+.escolha-cadastro-botao:active, .continuar button:active{
+    cursor: pointer;
+    filter: brightness(120%);
+    box-shadow: none;
+    transition: filter .1s ease, box-shadow .1s ease;
+}
+
+.vector{
+    width: 40%;
+}
+
+.vector img{
+    width: 100%;
+}
+
+.continuar{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.continuar button{
+    color: var(--font-white);
+    background-color: var(--main);
+    border: none;
+    height: 60px;
+    width: 25%;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.continuar a{
+    font-weight: 900;
+    color: var(--main);
+}
+
+.ghost{ /*para separar os dois na div continuar*/
+    width: 100%;
 }
