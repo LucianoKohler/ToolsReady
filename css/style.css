@@ -2,12 +2,15 @@
 :root{
     --main: #FF7A00;
     --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
     font-family: Inter;
     font-weight: 500;
+    color: var(--font-black);
 }
 
 .criarconta{
-    margin: 50px;
+    margin: 50px 50px 30px 50px;
     width: 80%;
     border-bottom: 1px solid rgb(224, 224, 224);
 }
@@ -16,5 +19,34 @@
     color: var(--main);
 }
 
+.escolha-cadastro{
+    margin-left: 50px;
+    width: 35%;
+    text-align: justify;
+    font-weight: 600;
+}
 
+.escolha-cadastro-botao{
+    width: 100%;
+    height: 60px;
+    margin: 20px 0px;
+    border-radius: 15px;
+    border: 2px solid var(--main);
+    font-size: 1.5em;
+    font-weight: 600;
+    box-shadow: 8px 8px 5px rgb(184, 184, 184);
+    padding-left: 40px;
+    text-align: start;
+    color: gray;
+}
 
+.escolha-cadastro-botao:nth-child(2){ /*Temporário, para indicar que o selecionado fica laranja*/
+    background-color: var(--main);
+    color: var(--font-white);
+}
+
+.escolha-cadastro-botao:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+    transition: filter .1s ease;
+}
