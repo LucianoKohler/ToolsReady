@@ -1,0 +1,18 @@
+
+:root{
+    --main: #FF7A00;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+h3{
+    color: var(--main);
+}
+
+h1{
+    color: var(--main);
+}
