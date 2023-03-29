@@ -9,14 +9,19 @@
     color: var(--font-black);
 }
 
+h3{
+    color: var(--main);
+}
+
+h1{
+    color: var(--main);
+}
+
+
 .criarconta{
     margin: 50px 50px 30px 50px;
     width: 80%;
     border-bottom: 1px solid rgb(224, 224, 224);
-}
-
-.criarconta h3{
-    color: var(--main);
 }
 
 .escolha-cadastro{
@@ -68,11 +73,10 @@
 }
 
 .vector img{
-    width: 100%;
+    width: 87%;
 }
 
 .continuar{
-    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -97,4 +101,27 @@
 
 .ghost{ /*para separar os dois na div continuar*/
     width: 100%;
+}
+
+.voceestapronto{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.voceestapronto img{
+    width: 200px;
+}
+
+.voceestapronto p{
+    font-weight: 600;
+}
+
+.voceestapronto-conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
