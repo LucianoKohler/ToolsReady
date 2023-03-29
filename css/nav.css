@@ -45,5 +45,19 @@ nav a:hover{
 }
 
 .texto{
-    margin-left: 10px;
+    margin-left: 10px;  
+}
+
+.navbar{
+    border: 1px solid black;
+}
+
+.navbar input{
+    width: 100%;
+}
+
+nav button{
+    height: 100%;
+    border-radius: 99px;
+    border: none;
 }
