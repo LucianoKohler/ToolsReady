@@ -49,13 +49,15 @@ nav a:hover{
 }
 
 .navbar{
-    border: 1px solid black;
-    height: 20px;
+    height: 25px;
+    z-index: 10;
+    width: 30%;
+    overflow: hidden;
 }
 
 .navbar input{
     height: 20px;
-    width: 40%;
+    width: 35%;
     z-index: -1;
     border: none;
 }
@@ -63,16 +65,15 @@ nav a:hover{
 nav button{
     padding: 0;
     margin: 0;
-    height: 22px;
-    width: 50px;
+    height: 25px;
+    width: 15%;
     border-radius: 0 99px 99px 0;
     border: none;
+    box-shadow: 1px 5px 10px black;
 }
 
 nav button:nth-child(2){
-    z-index: 10;
-    width: 40px;
-    z-index: 2;
+    z-index: 3;
     border-radius: 99px;
     position: relative;
     right: 5%;
@@ -83,14 +84,13 @@ nav button:nth-child(3){
     z-index: 2;
     position: relative;
     right: 9%;
-    
 }
 
 nav button:nth-child(4){
     background-color: grey;
     z-index: 1;
     position: relative;
-    right: 12%;
+    right: 13%;
 }
 
 nav button:nth-child(5){
