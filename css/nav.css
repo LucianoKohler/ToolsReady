@@ -49,52 +49,62 @@ nav a:hover{
 }
 
 .navbar{
-    height: 25px;
-    z-index: 10;
-    width: 30%;
-    overflow: hidden;
+    height: 30px;
+    width: 55%;
+    padding: 10px 0px;
+    position: relative;
+    left: 12%;
 }
 
 .navbar input{
-    height: 20px;
-    width: 35%;
+    height: 25px;
+    width: 60%;
     z-index: -1;
     border: none;
+    border-radius: 99px;
 }
 
 nav button{
     padding: 0;
     margin: 0;
-    height: 25px;
-    width: 15%;
+    height: 30px;
+    width: 7%;
     border-radius: 0 99px 99px 0;
     border: none;
-    box-shadow: 1px 5px 10px black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 nav button:nth-child(2){
-    z-index: 3;
+    background-color: #cccccc;
     border-radius: 99px;
     position: relative;
-    right: 5%;
+    right: 6%;
+    z-index: 3;
 }
 
 nav button:nth-child(3){
-    background-color: rgb(153, 153, 153);
-    z-index: 2;
+    background-color: #bbbbbb;
     position: relative;
-    right: 9%;
+    right: 8.5%;
+    z-index: 2;
 }
 
 nav button:nth-child(4){
-    background-color: grey;
-    z-index: 1;
+    background-color: #aaaaaa;
     position: relative;
-    right: 13%;
+    right: 11.5%;
+    z-index: 1;
 }
 
 nav button:nth-child(5){
-    z-index: 0;
+    background-color: #999999;
     position: relative;
-    right: 17%;
+    right: 14.5%;
+    z-index: 0;
+}
+
+nav button:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: filter .1s ease;
 }
