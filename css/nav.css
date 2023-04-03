@@ -24,6 +24,10 @@ nav{
     font-size: .8em;
 }
 
+#simplenav nav{
+    border-bottom: 8px solid black;
+}
+
 nav a{
     text-decoration: none;
     font-weight: 800;
@@ -127,3 +131,4 @@ nav button:hover{
 .blacknav div:hover{
     cursor: pointer;
 }
+

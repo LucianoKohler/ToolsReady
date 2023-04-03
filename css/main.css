@@ -18,3 +18,14 @@ h1{
     color: var(--main);
 }
 
+.carousel{
+    width: 100%;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.hline{
+    border: 1px solid black;
+}
