@@ -1,5 +1,9 @@
 html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;}
 
+body{
+    overflow-x: hidden;
+}
+
 :root{
     --main: #FF7A00;
     --secon: #A45214;
@@ -11,11 +15,23 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
     color: var(--font-black);
 }
 
-h3{
-    color: var(--main);
+::-webkit-scrollbar { /*Formatações para a barra de navegação*/
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secon);
 }
 
 h1{
+    color: black;
+} 
+
+h3{
     color: var(--main);
 }
 
@@ -25,14 +41,68 @@ h1{
 
 .carousel img{
     width: 100%;
+    float: left;
 }
 
 .hline{
     background-color: var(--secon);
+    height: 40px;
+    display: flex;
+    color: white;
+
 }
 
 .categoryheader{
-    padding: 10px;
+    padding: 15px;
     background-color: var(--main);
     width: auto;
+    position: absolute;
+    left: 5%;
+    align-self: flex-end;
+    font-size: 1.2em;
+    border-radius: 10px 10px 0 0;
+}
+
+.tempo{
+    align-self: center;
+    position: absolute;
+    right: 5%;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.card{
+    height: 320px;
+    width: 24%;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+    background: 
+        linear-gradient(to top, white, white, white, rgba(255,255,255,0.2)),
+        url(../assets/fundo-card-principal.jpg);
+}
+
+.breaker{
+    width: 100%;
+    border: 2px solid black;
+    margin: 20px 0px;
+}
+
+.categorias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title{
+    width: 80%;
+    border-bottom: 1px solid gray;
+
+}
+
+.ghost{
+    width: 100%;
 }
