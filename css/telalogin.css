@@ -17,10 +17,11 @@ h3{
 
 fieldset{
     border-radius: 15px;
-    width: 60%;
+    width: 65%;
     height: 40px;
-    margin: 10px 0 20px;
+    margin: 10px 0 10px;
 }
+
 
 input{
     border: none;
@@ -32,35 +33,103 @@ input{
     bottom: 3px;
 }
 
+.cadastrar {
+    border: solid 1px black;
+    padding-top: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    color: #777777;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrar a{
+    border: solid 1px black;
+    font-family: Inter;
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: var(--main) !important;
+}
+button{
+    width: 25%;
+    height: 45px;
+    border-radius: 9px;
+}
+.linha_1{
+    display: flex;
+    justify-content: center;
+}
+
+.linha_2{
+    display: flex;
+    justify-content: center;
+}
+.facebook{
+    background: #3B5998;
+
+}
+
+.google{
+    background: #DB4437;
+}
+
+.gov_br{
+    background: #48AD45;
+}
+
 .submit{
     color: var(--font-white);
     background-color: var(--main);
     border: none;
     height: 50px;
-    width: 65%;
+    width: 69.5%;
     border-radius: 15px;
     font-size: 1.5em;
     font-weight: 600;
+    margin: 10px 0 10px;
 }
 
 .fazer_login{
     display: flex;
+    justify-content: center;
     justify-content: space-around;
+}
+
+.fazer_login a{
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Inter;
+    text-decoration-line: underline;
+    color: #8d8b8b;
+    display: flex;
+    justify-content: right;
+    padding-right: 15%;
+}
+
+.fazer_login p{
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 20px;
+    color: #777777;
+    display: flex;
     justify-content: center;
 }
 
 .conteudo{
-    display: flex;
-    justify-content: center;
-    width: 40%;
-}
+    width: 45%;
+    border: 1px solid black;
+} 
 
 form{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .img{
-    width: 40%;
+    width: 45%;
+    border: 1px solid black;
 }
 
 .img img{
@@ -68,10 +137,13 @@ form{
 }
 
 .title{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+    border: 1px solid black;
 }
 
 .submit:hover{
@@ -84,3 +156,4 @@ form{
     filter: brightness(120%);
     transition: filter .2s ease;
 }
+
