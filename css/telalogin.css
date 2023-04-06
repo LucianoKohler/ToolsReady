@@ -12,16 +12,18 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 
 h3{
     color: var(--main);
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 fieldset{
     border-radius: 15px;
-    width: 65%;
-    height: 40px;
+    width: 55%;
+    height: 34px;
     margin: 10px 0 10px;
+    font-family: Inter;
+    font-weight: 350;
+    color: black;
 }
-
 
 input{
     border: none;
@@ -30,31 +32,40 @@ input{
     width: 100%;
     height: 100%;
     position: relative;
-    bottom: 3px;
+    bottom: 2px;
+    font-family: Inter;
 }
 
-.cadastrar {
-    border: solid 1px black;
-    padding-top: 20px;
+.cadastrar { 
+    margin: 20px 0px 20px 0px;
     font-family: Inter;
     font-weight: 400;
     color: #777777;
     display: flex;
     justify-content: center;
+    margin: 15px 0px 0px 0px;
 }
 
 .cadastrar a{
-    border: solid 1px black;
     font-family: Inter;
     font-weight: 400;
     text-decoration-line: underline;
+    display: inline;
     color: var(--main) !important;
 }
+
+hr{
+    width: 59%;
+}
+
 button{
     width: 25%;
-    height: 45px;
+    height: 40px;
     border-radius: 9px;
+    margin: 0px;
+    margin: 0px 3% 15px 3%;
 }
+
 .linha_1{
     display: flex;
     justify-content: center;
@@ -64,9 +75,10 @@ button{
     display: flex;
     justify-content: center;
 }
+
 .facebook{
     background: #3B5998;
-
+    border-radius: 9px;
 }
 
 .google{
@@ -81,8 +93,8 @@ button{
     color: var(--font-white);
     background-color: var(--main);
     border: none;
-    height: 50px;
-    width: 69.5%;
+    height: 40.5px;
+    width: 60%;
     border-radius: 15px;
     font-size: 1.5em;
     font-weight: 600;
@@ -92,7 +104,7 @@ button{
 .fazer_login{
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    gap: 20px;
 }
 
 .fazer_login a{
@@ -102,8 +114,13 @@ button{
     text-decoration-line: underline;
     color: #8d8b8b;
     display: flex;
+}
+
+.esqueceu{
+    display: flex;
     justify-content: right;
-    padding-right: 15%;
+    padding-right: 20.5%;
+    margin: 0px 0px 20px 0px;
 }
 
 .fazer_login p{
@@ -113,11 +130,11 @@ button{
     color: #777777;
     display: flex;
     justify-content: center;
+    margin: 15px 0px 15px 0px;
 }
 
 .conteudo{
     width: 45%;
-    border: 1px solid black;
 } 
 
 form{
@@ -128,8 +145,7 @@ form{
 }
 
 .img{
-    width: 45%;
-    border: 1px solid black;
+    width: 46.5%;
 }
 
 .img img{
@@ -141,9 +157,7 @@ form{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    margin-left: 2.5%;
-    margin-bottom: 10px;
-    border: 1px solid black;
+    margin-left: 2.6%;
 }
 
 .submit:hover{
