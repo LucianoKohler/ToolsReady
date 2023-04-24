@@ -37,15 +37,15 @@ body{
     float: left;
 }
 
-.hline{
+.hlineL{
     background-color: var(--secon);
     height: 40px;
     display: flex;
     color: white;
-
+    width: 100%;
 }
 
-.categoryheader{
+.abaheader{
     padding: 15px;
     background-color: var(--main);
     width: auto;
@@ -193,19 +193,9 @@ body{
 .container{
     width: 90%;
     height: 450px;
-    display: flex;
-}
-
-.categoriascol{
-    width: 20%;
-}
-
-.col1{
-    height: 400px;
-}
-
-.col2{
-    height: 196px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;  
 }
 
 .category{
@@ -214,7 +204,6 @@ body{
     display: flex;
     align-items: flex-end;
     transition: transform .1s ease;
-
 }
 
 .category:hover{
@@ -228,46 +217,95 @@ body{
     text-align: center;
 }
 
-.categoriascol:first-child .category{
-    border-radius: 10px 0 0 10px;
-}
-
-.categoriascol:last-child .category{ 
-    border-radius: 0 10px 10px 0;
+.container:nth-child(2){
+    outline: 10px solid white;
 }
 
 .img1{background:
-      linear-gradient(to top, #000000, rgba(0,0,0,0)),
-      url(../assets/categorias/categoria\ \(1\).svg);}
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(1\).svg);
+    background-size: cover;
+    grid-area: 1/1/3/2;
+    border-radius: 10px 0 0 10px;}
 .img2{background:
-      linear-gradient(to top, #000000, rgba(0,0,0,0)),
-      url(../assets/categorias/categoria\ \(2\).svg);}
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(2\).svg);
+    background-size: cover;
+    grid-area: 1/2/1/3;}
 .img3{background:
-      linear-gradient(to top, #000000, rgba(0,0,0,0)),
-      url(../assets/categorias/categoria\ \(3\).svg);}
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(3\).svg);
+    background-size: cover;
+    grid-area: 2/2/3/3;}
 .img4{background:
-      linear-gradient(to top, #000000, rgba(0,0,0,0)),
-      url(../assets/categorias/categoria\ \(4\).svg);}
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(4\).svg);
+    background-size: cover;
+    grid-area: 1/3/3/3;}
 .img5{background:
-      linear-gradient(to top, #000000, rgba(0,0,0,0)),
-      url(../assets/categorias/categoria\ \(5\).svg);}
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(5\).svg);
+    background-size: cover;
+    grid-area: 1/4/1/5;}
 .img6{background:
-      linear-gradient(to top, #000000, rgba(0,0,0,0)),
-      url(../assets/categorias/categoria\ \(6\).svg);}
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(6\).svg);
+    background-size: cover;
+    grid-area: 2/4/2/5;}
 .img7{background:
-      linear-gradient(to top, #000000, rgba(0,0,0,0)),
-      url(../assets/categorias/categoria\ \(7\).svg);}
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(7\).svg);
+    background-size: cover;
+    grid-area: 1/5/3/6;
+    border-radius: 0 10px 10px 0;}
 
 .sale{
     height: 540px;
     background-color: var(--main);
     background: radial-gradient(rgba(255,122,0,0.2), var(--main));
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    border-top: 8px solid var(--secon);
 }
 
 .saleimg{
+    font-size: 16vh;
+    font-weight: 800;
     width: 30%;
-    height: 100%;
-    border: 1px solid black;
-    object-fit: fill;
-    background: url(../assets/sale.png) no-repeat;
+    line-height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.saleimgcontainer{
+    margin-bottom: 10%;
+    position: relative;
+    right: 20%;
+    overflow: hidden;
+}
+
+.saleimgcontainer div:nth-child(1){
+    color: #FFC58F;  
+}
+.saleimgcontainer div:nth-child(2){
+    color: #FFDEBF;
+    text-indent: 3vw;
+}
+.saleimgcontainer div:nth-child(3){
+    color: #FFC58F;
+    text-indent: 6vw;
+}
+.saleimgcontainer div:nth-child(4){
+    color: #FFDEBF;
+    text-indent: 9vw;
+}
+
+.saleconteudo{
+    width: 68%;
+}
+
+.saleconteudo h4{
+    font-size: 30px;
+    color: white;
 }
