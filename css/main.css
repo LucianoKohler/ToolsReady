@@ -62,13 +62,13 @@ body{
     right: 5%;
 }
 
-.cardcontainer{
+.card-natal-container{
     display: flex;
     justify-content: space-between;
     padding: 30px 40px;
 }
 
-.card{
+.card-natal{
     height: 20vw;
     width: 24%;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
@@ -80,7 +80,7 @@ body{
     transition: transform .1s ease;
 }
 
-.card:hover{
+.card-natal:hover{
     transform: scale(1.1);
     transition: transform .1s ease;
     cursor: pointer;
@@ -140,22 +140,22 @@ body{
     height: 150%;
 }
 
-.card h5{
+.card-natal h5{
     color: gray;
     text-decoration: line-through;
 }
 
-.card h3{
+.card-natal h3{
     color: var(--font-red);
 }
 
 
-.card h5, .card h3, .card p{
+.card-natal h5, .card-natal h3, .card-natal p{
     width: 100%;
     margin: 0;
 }
 
-.card h5, .card h3, .card p, .nota{
+.card-natal h5, .card-natal h3, .card-natal p, .nota{
     padding-left: 10px;
     height: fit-content;
 }
@@ -260,13 +260,14 @@ body{
     border-radius: 0 10px 10px 0;}
 
 .sale{
-    height: 540px;
+    height: 480px;
     background-color: var(--main);
     background: radial-gradient(rgba(255,122,0,0.2), var(--main));
     display: flex;
     flex-wrap: wrap; 
     align-items: flex-start;
     border-top: 8px solid var(--secon);
+    overflow: hidden;
 }
 
 .saleimg{
@@ -276,13 +277,13 @@ body{
     line-height: 80%;
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .saleimgcontainer{
     margin-bottom: 10%;
     position: relative;
     right: 20%;
-    overflow: hidden;
 }
 
 .saleimgcontainer div:nth-child(1){
@@ -303,9 +304,39 @@ body{
 
 .saleconteudo{
     width: 68%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .saleconteudo h4{
     font-size: 30px;
     color: white;
+    width: 100%;
+    padding: 0;
+    height: fit-content;
+    border: 1px solid black;
 }
+
+.selector{
+    border: 1px solid black;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.cardcontainer{
+    width: 100%;
+    display: flex;
+}
+
+.card-sale{
+    height: 20vw;
+    width: 30%;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform .1s ease;
+}
+
