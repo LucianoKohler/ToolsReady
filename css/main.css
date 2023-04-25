@@ -314,6 +314,7 @@ body{
     color: white;
     width: 100%;
     padding: 0;
+    margin: 50px 0 0 0;
     height: fit-content;
     border: 1px solid black;
 }
@@ -328,6 +329,7 @@ body{
 .cardcontainer{
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .card-sale{
