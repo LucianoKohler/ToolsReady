@@ -46,7 +46,6 @@ body{
 }
 
 .abaheader{
-    padding: 15px;
     background-color: var(--main);
     width: auto;
     position: absolute;
@@ -68,22 +67,34 @@ body{
     padding: 30px 40px;
 }
 
-.card-natal{
+.card{
     height: 20vw;
-    width: 24%;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
-    background: 
-        linear-gradient(to top, white, white, white, rgba(255,255,255,0.2)),
-        url(../assets/fundo-card-principal.jpg);
     display: flex;
     flex-wrap: wrap;
     transition: transform .1s ease;
+    overflow: hidden;
 }
 
-.card-natal:hover{
+.card p{
+    width: 100%;
+}
+
+.fundo-natal{
+    background: 
+    linear-gradient(to top, white, white, white, rgba(255,255,255,0.2)),
+    url(../assets/fundo-card-principal.jpg);
+    width: 24%;
+}
+
+.card:hover{
     transform: scale(1.1);
     transition: transform .1s ease;
     cursor: pointer;
+}
+
+.info{
+    padding: 10px;
 }
 
 .promocontainer{
@@ -93,7 +104,6 @@ body{
 }
 
 .promo{
-    background-color: #9B2324;
     width: 40px;
     height: 40px;
     position: relative;
@@ -106,15 +116,27 @@ body{
     z-index: 2;
 }
 
+.natal{
+    background-color: #9B2324;
+}
+
+.natal:hover{
+    width: fit-content;
+}
+
 .promotext{
     color: white;
     display: flex;
     align-items: center;
     text-align: center;
-    width: 50%;
     height: 40px;
     font-size: 12px;
+}
+
+.natal .promotext{
     display: none;
+    width: 50%;
+
 }
 
 .promoimg{
@@ -123,10 +145,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.promo:hover{
-    width: fit-content;
 }
 
 .produtoimagem{
@@ -140,23 +158,22 @@ body{
     height: 150%;
 }
 
-.card-natal h5{
+.card h5{
     color: gray;
     text-decoration: line-through;
 }
 
-.card-natal h3{
+.card h3{
     color: var(--font-red);
 }
 
 
-.card-natal h5, .card-natal h3, .card-natal p{
+.card h5, .card h3, .card p{
     width: 100%;
     margin: 0;
 }
 
-.card-natal h5, .card-natal h3, .card-natal p, .nota{
-    padding-left: 10px;
+.card h5, .card h3, .card p, .nota{
     height: fit-content;
 }
 
@@ -259,7 +276,7 @@ body{
     grid-area: 1/5/3/6;
     border-radius: 0 10px 10px 0;}
 
-.sale{
+.sale-aba{
     height: 480px;
     background-color: var(--main);
     background: radial-gradient(rgba(255,122,0,0.2), var(--main));
@@ -316,14 +333,19 @@ body{
     padding: 0;
     margin: 50px 0 0 0;
     height: fit-content;
-    border: 1px solid black;
+}
+
+.saleheader{
+    padding-left: 2.5%;
 }
 
 .selector{
-    border: 1px solid black;
     height: fit-content;
+    font-size: 50px;
+    line-height: 40px;
     margin: 0;
     padding: 0;
+    color: white; /*pode mudar depois para indicar em que aba o carossel está*/ 
 }
 
 .cardcontainer{
@@ -332,13 +354,56 @@ body{
     justify-content: space-evenly;
 }
 
-.card-sale{
-    height: 20vw;
-    width: 30%;
-    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
-    background-color: white;
+.promo{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 10px !important;
+    overflow: hidden;
+    border-radius: 10px 0px 10px 0px;
     display: flex;
-    flex-wrap: wrap;
-    transition: transform .1s ease;
+    float: right;
+    position: relative;
+    z-index: 2;
 }
 
+
+.promotext p{
+    padding-left: 0 !important;
+}
+
+
+.sale{
+    background-color: white;
+    font-size: 14px;
+    width: 30%;
+}
+
+.desconto{
+    background-color: var(--main);
+}
+
+.frete, .frete p{
+    background-color: #000000;
+    font-size: 10px;
+}
+
+.acoes{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    float: right;
+    z-index: 5;
+}
+
+.acoes div{
+    float: right;
+    background-color: var(--main);
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
