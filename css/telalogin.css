@@ -58,14 +58,6 @@ hr{
     width: 59%;
 }
 
-button{
-    width: 25%;
-    height: 40px;
-    border-radius: 9px;
-    margin: 0px;
-    margin: 0px 3.5% 20px 3%;
-}
-
 .linha_1{
     display: flex;
     justify-content: center;
@@ -76,17 +68,54 @@ button{
     justify-content: center;
 }
 
+
+button{
+    width: 25%;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    margin: 0px 3.5% 20px 3%;
+    padding: 0;
+}
+
+.botao:active{
+    transition: transform .07s ease;
+    transform: scale(1.05);
+}
+
+.botao{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
 .facebook{
     background: #3B5998;
-    border-radius: 9px;
+    color: #3B5998;;
 }
 
 .google{
     background: #DB4437;
+    color: #DB4437;
 }
 
 .gov_br{
     background: #48AD45;
+    color: #48AD45;
+}
+
+.interno{
+    background-color: white;
+    height: 30px;
+    border-radius: 8px;
+    margin: 0 2px 7px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_gov{
+    width: 55px;
 }
 
 .submit{
