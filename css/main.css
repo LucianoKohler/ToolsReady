@@ -47,12 +47,16 @@ body{
 
 .abaheader{
     background-color: var(--main);
-    width: auto;
+    width: 150px;
+    height: 50px;
     position: absolute;
     left: 5%;
     align-self: flex-end;
     font-size: 1.2em;
     border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tempo{
@@ -164,7 +168,7 @@ body{
 }
 
 .card h3{
-    color: var(--font-red);
+    color: var(--main);
 }
 
 
@@ -197,6 +201,7 @@ body{
     height: 100px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .title h1{
@@ -284,6 +289,7 @@ body{
     flex-wrap: wrap; 
     align-items: flex-start;
     border-top: 8px solid var(--secon);
+    border-bottom: 4px solid black;
     overflow: hidden;
 }
 
@@ -384,6 +390,10 @@ body{
 }
 
 .frete, .frete p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
     background-color: #000000;
     font-size: 10px;
 }
@@ -406,4 +416,48 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.destaques{
+    height: fit-content;
+    padding-bottom: 30px;
+    background: radial-gradient(rgba(0,0,0,0.25), white);
+}
+
+.horizontal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.horizontal{
+    background-color: white;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-img{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-img img{
+    width: 100%;
+}
+
+.horizontal .frete{
+    position: relative;
+    bottom: 109px;
+    left: 10px;
+}
+
+.horizontal-conteudo{
+    width: 100%;
 }
