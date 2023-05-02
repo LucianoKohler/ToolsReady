@@ -1,8 +1,68 @@
-.finalizarcadastro{
-    
+
+:root{
+    --main: #FF7A00;
+    --green: #30A700;
+    font-family: Inter;
+    font-weight: 500;
 }
 
-.finalizarocadastro{
+
+body{
+    overflow: hidden;
+}
+
+section{
+    height: 700px;
+    display: flex;
     align-items: center;
 
+}
+
+.finalizar{
+    margin-left: 50px;
+    width: 50%;
+    text-align: justify;
+    font-weight: 600;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: middle;
+    color: var(--main);
+}
+#selecione{
+    border-radius: 5px;
+    width: 85%;
+    height: 30px;
+    color: gray;
+}
+.caixa{
+    font-weight: 500;
+    color: black;
+    font-size: 14px;
+}
+.bolinha{
+    list-style: none;
+}
+input{
+    all: unset;
+    border: 1px solid var(--main);
+    width: 18px;
+    height: 18px;
+    color: #FF7A00;
+    display: inline-block;
+}
+input:checked+.notifi>.confere{
+    width: 20px;
+    height: 20px;
+    border-color: 1px solid var(--main);
+    display: block;
+}
+input:checked+.aceitatermos>.confere{
+    width: 20px;
+    height: 20px;
+    border-color: 1px solid var(--main);
+    display: block;
+}
+.confere{
+    display: none;
 }

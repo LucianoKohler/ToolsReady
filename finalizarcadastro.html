@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools Ready</title>
+    <title>ToolsReady!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-</head>
+    <link rel="stylesheet" href="css/finalizarcadastro.css">
 <body>
     <nav>
-        <div class="logo">LOGO AINDA NÃO FEITA</div>
+        <div class="logo">LOGO AINDA NÃ0 FEITA</div>
         <div class="acc">
             <div class="userimg">
                 <img src="assets/user.png" alt="perfil">
@@ -23,7 +23,34 @@
         </div>
     </nav>
     <section>
-        <div>FINALIZAR CADASTRO</div>
+        <div class="finalizar">
+            <h3>FINALIZAR CADASTRO</h3>
+        <label for="campo">
+            <select name="campo" id="selecione">
+                <option disabled selected value="nada">Onde você conheceu a Tools Ready!*</option>
+                <option value="poramigos">Pelos meus amigos</option>
+                <option value="redessociais">Redes sociais</option>
+                <option value="porpropagandas">Por propagandas</option>
+            </select>
+        </label>
+        <label for="checklist">
+            <ul class="bolinha">
+                <li class="caixa">
+                    <input type="checkbox" name="notificacao" id="noti">
+                    Desejo receber novidades e ofertas da ToolsReady via e-mail
+                    <label for="noti" class="notifi"><img src="confere.svg" class="confere"></label>
+                </li>
+                <li class="caixa">
+                    <input type="checkbox" name="termosde" id="termos">
+                    Li e estou de acordo com as <a href="#" style="color:#FF7A00;">políticas da empresa e políticas de privacidade.*</a>
+                    <label for="ter" class="aceitatermos"><img src="confere.svg" class="confere"></label>
+                </li>
+            </ul>
+        </label>
     </section>
+    </div>
+    <div class="imagem">
+
+    </div>
 </body>
 </html>
