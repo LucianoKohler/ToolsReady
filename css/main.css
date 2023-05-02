@@ -47,8 +47,12 @@ body{
 
 .abaheader{
     background-color: var(--main);
-    width: auto;
+    width: 11%;
+    height: 8%;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 5%;
     align-self: flex-end;
     font-size: 1.2em;
@@ -284,6 +288,7 @@ body{
     flex-wrap: wrap; 
     align-items: flex-start;
     border-top: 8px solid var(--secon);
+    border-bottom: 4px solid black;
     overflow: hidden;
 }
 
@@ -406,4 +411,22 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.add-fav{
+    border-radius: 10px 0 0 0;
+}
+
+.destaques{
+    background: radial-gradient(rgba(0,0,0,0.4), white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-horizontal{
+    width: 350px;
+    height: 250px;
+    background-color: white;
 }
