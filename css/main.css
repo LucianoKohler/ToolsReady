@@ -16,18 +16,6 @@ body{
     color: var(--font-black);
 }
 
-::-webkit-scrollbar { /*Formatações para a barra de navegação*/
-    width: 16px;
-}
-
-::-webkit-scrollbar-track {
-  background: white;
-}
-
-::-webkit-scrollbar-thumb {
-  background: black;
-}
-
 .carousel{
     width: 100%;
 }
@@ -505,3 +493,7 @@ h3{
 
 .add-carrinho-horizontal{border-radius:3px 0 0 3px;}
 .add-fav-horizontal     {border-radius:0 3px 3px 0;}
+
+/* ---------------------
+INÍCIO DA ABA FAVORITOS
+----------------------*/

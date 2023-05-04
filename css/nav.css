@@ -137,3 +137,15 @@ nav button:hover{
     font-size: 14px;
     color: rgb(154, 154, 154);
 }
+
+::-webkit-scrollbar { /*Formatações para a barra de navegação*/
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
