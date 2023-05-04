@@ -286,7 +286,7 @@ h3{
     border-radius: 0 10px 10px 0;}
 
 .sale-aba{
-    height: 480px;
+    height: fit-content;
     background-color: var(--main);
     background: radial-gradient(rgba(255,122,0,0.2), var(--main));
     display: flex;
@@ -295,6 +295,7 @@ h3{
     border-top: 8px solid var(--secon);
     border-bottom: 4px solid black;
     overflow: hidden;
+    padding: 20px;
 }
 
 .saleimg{
@@ -347,6 +348,7 @@ h3{
 
 .saleheader{
     padding-left: 2.5%;
+    margin-bottom: 20px;
 }
 
 .selector{
@@ -503,7 +505,3 @@ h3{
 
 .add-carrinho-horizontal{border-radius:3px 0 0 3px;}
 .add-fav-horizontal     {border-radius:0 3px 3px 0;}
-
-/* ---------------------
-INÍCIO DA ABA FAVORITOS
-----------------------*/

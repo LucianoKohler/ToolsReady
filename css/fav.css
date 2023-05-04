@@ -38,7 +38,7 @@ h4{
 }
 
 main{
-    width: 85%;
+    width: 80%;
     border-radius: 20px;
     margin: 20px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
@@ -61,6 +61,7 @@ main{
     border-bottom: 1px solid rgb(187, 187, 187);
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    padding: 10px 0 0 0;
 }
 
 .imagem{
@@ -104,12 +105,24 @@ h3{
     border: none;
 }
 
+.carrinho:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+    transition: filter .2s ease;
+}
+
 .acoes .fa-heart{
     align-self: flex-start;
     justify-self: flex-end;
     position: relative;
     top: 15px;
     right: 10px;
+}
+
+.acoes .fa-heart:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+    transition: filter .2s ease;
 }
 
 h5{
