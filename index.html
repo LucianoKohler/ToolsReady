@@ -18,10 +18,10 @@
         <div class="navbar">
             <div class="navbar-conteudo">
                 <input type="text">
-                <button><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
-                <button>&nbsp;<i class="fa-solid fa-user" style="color: #000000;"></i></button>
-                <button>&nbsp;<i class="fa-regular fa-heart" style="color: #000000;"></i></button>
-                <button>&nbsp;<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                <button onclick="location.href='perfil.html';">&nbsp;<i class="fa-solid fa-user" style="color: #000000;"></i></button>
+                <button onclick="location.href='favoritos.html';">&nbsp;<i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+                <button onclick="location.href='carrinho.html';">&nbsp;<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
                 <!--O &nbsp; significa "non-breaking space", e foi usado para deixar os icons mais à direita-->
             </div>
         </div>
@@ -38,7 +38,7 @@
         <img src="assets/propaganda.png" alt="">
     </div>
     <div style="clear: both;"></div>
-    <!--Para fazer que a hline fique 100%grudada com o anuncio-->
+    <!--Para fazer que a hline fique 100% grudada com o anuncio-->
     <div class="hlineL">
         <span class="abaheader">NATAL READY</span>
         <div class="tempo">Termina em: 24D 10:10:10</div>
@@ -65,6 +65,7 @@
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                    <p class="nota-geral">(4,8)</p>
                 </div>
             </div>
         </div>
@@ -89,6 +90,7 @@
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #cccccc;"></i>
+                    <p class="nota-geral">(3,8)</p>
                 </div>
             </div>
         </div>
@@ -113,6 +115,7 @@
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                    <p class="nota-geral">(4,9)</p>
                 </div>
             </div>
         </div>
@@ -137,6 +140,7 @@
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                    <p class="nota-geral">(4,3)</p>
                 </div>
             </div>
         </div>
@@ -214,6 +218,7 @@
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                            <p class="nota-geral">(4,8)</p>
                         </div>
                     </div>
                     <div class="acoes">
@@ -234,6 +239,7 @@
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #cccccc;"></i>
+                            <p class="nota-geral">(4,6)</p>
                         </div>
                     </div>
                     <div class="acoes">
@@ -249,17 +255,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="produtoimagem"><img src="assets/produtos/serrote.png" alt="canoPVC"></div>
+                    <div class="produtoimagem"><img src="assets/produtos/canoPVC.png" alt="canoPVC"></div>
                     <div class="info">
-                        <h5>R$39,99</h5>
-                        <h3>R$3,99</h3>
-                        <p>Serrote 26 pol. TRAMONTINA</p>
+                        <h5>R$14,99</h5>
+                        <h3>R$9,99</h3>
+                        <p>Joelho de PVC - 100mm. TIGRE</p>
                         <div class="nota">
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                             <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                            <p class="nota-geral">(4,9)</p>
                         </div>
                     </div>
                     <div class="acoes">
@@ -270,11 +277,14 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="destaques">
         <div class="title"><h1>PRODUTOS EM DESTAQUE</h1></div>
         <div class="horizontal-container">
             <div class="horizontal">
-                <div class="horizontal-img"><img src="assets/produtos-horizontal/multimetro.svg" alt=""></div>
+                <div class="horizontal-img"><img src="assets/produtos/multimetro.svg" alt=""></div>
                 <div class="horizontal-conteudo">
                     <p>Multímetro Digital 600v + Amperímetro - OEM</p>
                     <div class="nota">
@@ -283,31 +293,128 @@
                         <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                         <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                         <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <p class="nota-geral">(4,5)</p>
                     </div>
                     <h3>R$38,00</h3>
+                    <div class="acoes-horizontal">
+                        <div class="add-carrinho-horizontal"><i class="fa-solid fa-cart-shopping fa-md" style="color: #ffffff;"></i></div>
+                        <div class="add-fav-horizontal"><i class="fa-regular fa-heart fa-md" style="color: #ffffff;"></i></div>    
+                    </div>
                 </div>
-                <div class="promocontainer"><div class="promo frete"><p>FRETE GRÁTIS</p></div></div>
+                <div class="promocontainer-left">
+                    <div class="promo frete"><p>FRETE GRÁTIS</p></div></div>
             </div>
+
             <div class="horizontal">
-                <div class="horizontal-img"></div>
-                <div class="horizontal-conteudo"></div>
+                <div class="horizontal-img"><img src="assets/produtos/chave_inglesa.svg" alt=""></div>
+                <div class="horizontal-conteudo">
+                    <p>Sparta Chave Inglesa Ajustável 08 Pol.</p>
+                    <div class="nota">
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <p class="nota-geral">(4,9)</p>
+                    </div>
+                    <h3>R$27,76</h3>
+                    <div class="acoes-horizontal">
+                        <div class="add-carrinho-horizontal"><i class="fa-solid fa-cart-shopping fa-md" style="color: #ffffff;"></i></div>
+                        <div class="add-fav-horizontal"><i class="fa-regular fa-heart fa-md" style="color: #ffffff;"></i></div>    
+                    </div>
+                </div>
+                <div class="promocontainer-left">
+                    <div class="promo frete"><p>FRETE GRÁTIS</p></div></div>
             </div>
+            
             <div class="horizontal">
-                <div class="horizontal-img"></div>
-                <div class="horizontal-conteudo"></div>
+                <div class="horizontal-img"><img src="assets/produtos/macaco.svg" alt=""></div>
+                <div class="horizontal-conteudo">
+                    <p>Macaco Hidráulico Sanfona 600kg Universal Carros De Passeio Preto</p>
+                    <div class="nota">
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <p class="nota-geral">(4,6)</p>
+                    </div>
+                    <h3>R$118,96</h3>
+                    <div class="acoes-horizontal">
+                        <div class="add-carrinho-horizontal"><i class="fa-solid fa-cart-shopping fa-md" style="color: #ffffff;"></i></div>
+                        <div class="add-fav-horizontal"><i class="fa-regular fa-heart fa-md" style="color: #ffffff;"></i></div>    
+                    </div>
+                </div>
+                <div class="promocontainer-left">
+                    <div class="promo frete"><p>FRETE GRÁTIS</p></div></div>
             </div>
+
             <div class="horizontal">
-                <div class="horizontal-img"></div>
-                <div class="horizontal-conteudo"></div>
+                <div class="horizontal-img"><img src="assets/produtos/estante.svg" alt=""></div>
+                <div class="horizontal-conteudo">
+                    <p>Estante / Armario De Aço 30cm 5 Bandejas Cinza Suporta 120kg</p>
+                    <div class="nota">
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <p class="nota-geral">(4,8)</p>
+                    </div>
+                    <h3>R$179,88</h3>
+                    <div class="acoes-horizontal">
+                        <div class="add-carrinho-horizontal"><i class="fa-solid fa-cart-shopping fa-md" style="color: #ffffff;"></i></div>
+                        <div class="add-fav-horizontal"><i class="fa-regular fa-heart fa-md" style="color: #ffffff;"></i></div>    
+                    </div>
+                </div>
+                <div class="promocontainer-left">
+                    <div class="promo frete"><p>FRETE GRÁTIS</p></div></div>
             </div>
+
             <div class="horizontal">
-                <div class="horizontal-img"></div>
-                <div class="horizontal-conteudo"></div>
+                <div class="horizontal-img"><img src="assets/produtos/ferramentas.svg" alt=""></div>
+                <div class="horizontal-conteudo">
+                    <p>Gamma Kit De Ferramentas Com 160 Peças</p>
+                    <div class="nota">
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <p class="nota-geral">(5,0)</p>
+                    </div>
+                    <h3>R$222,90</h3>
+                    <div class="acoes-horizontal">
+                        <div class="add-carrinho-horizontal"><i class="fa-solid fa-cart-shopping fa-md" style="color: #ffffff;"></i></div>
+                        <div class="add-fav-horizontal"><i class="fa-regular fa-heart fa-md" style="color: #ffffff;"></i></div>    
+                    </div>
+                </div>
+                <div class="promocontainer-left">
+                    <div class="promo frete"><p>FRETE GRÁTIS</p></div></div>
             </div>
+
             <div class="horizontal">
-                <div class="horizontal-img"></div>
-                <div class="horizontal-conteudo"></div>
+                <div class="horizontal-img"><img src="assets/produtos/estante2.svg" alt=""></div>
+                <div class="horizontal-conteudo">
+                    <p>Carrinho com gavetas para transportar ferramentas preto</p>
+                    <div class="nota">
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <p class="nota-geral">(5,0)</p>
+                    </div>
+                    <h3>R$354,80</h3>
+                    <div class="acoes-horizontal">
+                        <div class="add-carrinho-horizontal"><i class="fa-solid fa-cart-shopping fa-md" style="color: #ffffff;"></i></div>
+                        <div class="add-fav-horizontal"><i class="fa-regular fa-heart fa-md" style="color: #ffffff;"></i></div>    
+                    </div>
+                </div>
+                <div class="promocontainer-left">
+                    <div class="promo frete"><p>FRETE GRÁTIS</p></div></div>
             </div>
+
         </div>
     </div>
 
