@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tools Ready</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/nav.css">
 </head>
 
@@ -33,6 +33,84 @@
         <div>Projetos</div>
         <div>Dicas</div>
         <div>Serviços</div>
+    </div>
+    <div class="container">
+        <div class="perfil"><img src="assets/orochi.jpg" alt="">
+            <div class="perfiltext">
+                <h2>Olá, Orochinho!</h2>
+                <p>nome.user@gmail.com</p>
+            </div>
+        </div>
+        <div class="cupom">
+            <h2>Cupons de desconto</h2>
+            <div class="insertcupom">
+                <input type="text" name="" id="" placeholder="Cupom">
+                <input type="submit" value="RESGATAR CUPOM">
+            </div>
+        </div>
+        <main>
+            <div class="conta">
+                <div class="contaheader">
+                    <i class="fa-solid fa-user fa-2xl" style="color: var(--main);"></i>
+                    <h2>Meus dados</h2>
+                </div>
+                <form action="">
+                    <div class="formrow">
+                        <fieldset><legend>Nome exibido</legend>
+                            <input type="text" placeholder="Orochinho" disabled>
+                        </fieldset>
+                        <fieldset><legend>Email</legend>
+                            <input type="email" placeholder="nome.user@gmail.com" disabled>
+                        </fieldset>
+                    </div>
+                    <div class="formrow">
+                        <fieldset><legend>CPF/CNPJ</legend>
+                            <input type="text" placeholder="975.16.086-19" disabled>
+                        </fieldset>
+                        <fieldset><legend>Telefone celular</legend>
+                            <input type="text" placeholder="(47)96193-0876" disabled>
+                        </fieldset>
+                    </div>
+                    <button class="big">ALTERAR EMAIL</button>
+                    <button class="big">ALTERAR SENHA</button>
+                </form>
+            </div>
+
+            <div class="enderecos">
+                <div class="contaheader">
+                    <i class="fa-solid fa-location-dot fa-2xl" style="color: var(--main);"></i>
+                    <h2>Meus endereços</h2>
+                </div>
+                <div class="endereco escolhido">
+                    <h4>Endereço prinicpal</h4>
+                    <p>RUA ARNALDO PINTO DA ROÇA<br>
+                    número: 6889<br>
+                    CEP 89234-881, CARPAZINHA-RS
+                    </p>
+                    <div class="acoes">
+                        <span>Editar</span>
+                        <span>Excluir</span>
+                    </div>
+                </div>
+                <div class="endereco">
+                    <h4>Endereço secundário</h4>
+                    <p>RUA ARNALDO PINTO DA ROÇA<br>
+                    número: 6889<br>
+                    CEP 89234-881, CARPAZINHA-RS
+                    </p>
+                    <div class="acoes">
+                        <span>Editar</span>
+                        <span>Excluir</span>
+                        <span style="color: var(--main)">Tornar padrão</span>
+                    </div>
+                </div>
+            </div>
+            <div class="acoes-endereco">
+                <button class="big">ADICIONAR ENDEREÇO</button>
+                <button class="big" id="salvar">SALVAR ALTERAÇÕES</button>
+            </div>
+        </main>
+        <div class="pedidos"></div>
     </div>
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
 </body>

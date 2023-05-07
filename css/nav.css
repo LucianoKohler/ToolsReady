@@ -6,10 +6,28 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 }
 
 :root{
+    overflow-x: hidden;
     --main: #FF7A00;
+    --secon: #A45214;
     --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --font-red: #DB4437;
     font-family: Inter;
     font-weight: 500;
+    color: var(--font-black);
+}
+
+::-webkit-scrollbar { /*Formatações para a barra de navegação*/
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
 }
 
 nav{ 
@@ -107,11 +125,18 @@ nav button:nth-child(5){
     z-index: 0;
 }
 
-nav button:hover{
+button:hover, input[type=submit]:hover{ /*formataçõa geral para botões*/
     cursor: pointer;
-    filter: brightness(80%);
+    filter: brightness(110%);
     transition: filter .1s ease;
 }
+
+button:active, input[type=submit]:active{
+    filter: brightness(120%);
+    box-shadow: none;
+    transition: filter .1s ease, box-shadow .1s ease;
+}
+
 
 .blacknav{
     color: white;
@@ -138,14 +163,4 @@ nav button:hover{
     color: rgb(154, 154, 154);
 }
 
-::-webkit-scrollbar { /*Formatações para a barra de navegação*/
-    width: 16px;
-}
 
-::-webkit-scrollbar-track {
-  background: white;
-}
-
-::-webkit-scrollbar-thumb {
-  background: black;
-}
