@@ -1,0 +1,42 @@
+html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;}
+
+:root{
+    --main: #FF7A00;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.titulo{
+    width: 45%;
+    display: flex;
+    margin-top: 10px;
+    margin-left:3.4%;
+    border: solid black 1px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cadastro{
+    width: 45%;
+    border: solid black 1px;
+}
+
+.imagem{
+    width: 45%;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 85%;
+    
+}

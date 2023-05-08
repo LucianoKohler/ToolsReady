@@ -107,7 +107,7 @@ button{
 .interno{
     background-color: white;
     height: 30px;
-    border-radius: 8px;
+    border-radius: 6px;
     margin: 0 2px 7px 2px;
     display: flex;
     align-items: center;
