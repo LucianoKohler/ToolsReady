@@ -222,6 +222,15 @@ fieldset{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+}
+
+.progresso{
+    border-top: 3px solid var(--main);
+}
+
+.progresso p{
+    width: 100%;
 }
 
 .pedidoespecificacoes h4, .pedidoespecificacoes p{
@@ -231,6 +240,8 @@ fieldset{
 }
 
 ul{
+    width: 100%;
     list-style-type: none;
     text-align-last: left;
+    text-align: left;
 }
