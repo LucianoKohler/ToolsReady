@@ -152,9 +152,6 @@
     text-decoration: line-through;
 }
 
-h3{
-    color: var(--main);
-}
 
 
 .card h5, .card h3, .card p{
