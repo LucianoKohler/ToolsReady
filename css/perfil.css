@@ -4,6 +4,7 @@
     --green: #30A700;
     --font-white: #EEEEEE;
     --font-black: #323232;
+    --other-black: #11101D;
     --font-red: #DB4437;
     font-family: Inter;
     font-weight: 500;
@@ -76,7 +77,7 @@ main, .pedidos{
     height: fit-content;
 }
 
-.contaheader{
+header{
     width: 100%;
     display: flex;
     align-items: center;
@@ -84,7 +85,7 @@ main, .pedidos{
     margin-bottom: 40px;
 }
 
-.contaheader h2{
+header h2{
     margin-left: 30px;
 }
 

@@ -1,0 +1,93 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.container{
+    width: 100%;
+    padding: 25px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+header h2{
+    padding: 0 20px;
+}
+
+table{
+    width: 70%;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+table *{
+    margin: 0;
+    padding: 0;
+    border-spacing: none;
+}
+
+th{
+    background-color: var(--other-black);
+    color: white;
+    padding: 10px;
+    outline: 2px solid var(--other-black);
+}
+
+th:nth-child(1), tr:nth-child(1){
+    border-radius: 10px 0 0 0;
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2){
+    width: 60%;
+    padding-left: 15px;
+}
+
+th:nth-child(3), td:nth-child(3){
+    width: 10%;
+    text-align: center;
+}
+
+th:nth-child(4), td:nth-child(4){
+    width: 15%;
+}
+
+th:nth-child(5), td:nth-child(5){
+    border-radius: 0 10px 0 0;
+    width: 5%;
+}
+
+td{
+    align-items: center;
+}
+
+td img{
+    margin: 20px;
+    width: 80%;
+    box-shadow: 5px 6px 23px rgba(0, 0, 0, 0.25);
+}
+
+td h2{
+    cursor: pointer;
+}
+
+td i{
+    cursor: pointer;
+}

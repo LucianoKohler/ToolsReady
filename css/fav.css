@@ -4,6 +4,7 @@
     --green: #30A700;
     --font-white: #EEEEEE;
     --font-black: #323232;
+    --other-black: #11101D;
     --font-red: #DB4437;
     font-family: Inter;
     font-weight: 500;
@@ -17,7 +18,7 @@
     flex-wrap: wrap;
 }
 
-.fav-head{
+.header{
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -63,6 +64,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 .imagem img{
     width: 40%;
     box-shadow: 5px 6px 23px rgba(0, 0, 0, 0.25);
