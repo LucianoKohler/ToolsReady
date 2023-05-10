@@ -222,6 +222,7 @@ fieldset{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -241,7 +242,34 @@ fieldset{
 
 ul{
     width: 100%;
-    list-style-type: none;
+    list-style-type: circle;
     text-align-last: left;
     text-align: left;
+    padding: 0;
+}
+
+.progresso i{
+    background-color: white;
+    border: 10px solid white;
+    transform: translateY(-20%);
+    height: 10px;
+}
+
+.andamento{
+    filter: grayscale(100%);
+}
+
+.status_conc > p{
+    color: #30A700;
+}
+
+.pedidoacoes{
+    border-radius: 10px;
+    border: 3px solid var(--main);
+    padding: 15px 75px;
+    font-weight: 600;
+    font-family: Inter;
+    box-shadow: 3px 4px 21px rgba(0, 0, 0, 0.25);
+    margin: 0 10px;
+    float: right;
 }
