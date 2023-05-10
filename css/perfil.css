@@ -166,11 +166,6 @@ fieldset{
     cursor: pointer;
 }
 
-.acoes-endereco{
-    width: 100%;
-    display: flex;
-}
-
 #salvar{
     margin-left: auto;
 }
