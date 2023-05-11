@@ -19,7 +19,7 @@
 }
 
 main{
-    width: 70%;
+    width: 65%;
 }
 
 header{
@@ -46,15 +46,16 @@ table *{
     border-spacing: none;
 }
 
-th, .cupomheader, .freteheader{
+th, .acaoheader, .asideheader{
     background-color: var(--other-black);
     color: white;
     padding: 10px;
     outline: 2px solid var(--other-black);
 }
 
-.cupomheader, .freteheader{
+.acaoheader, .asideheader{
     border-radius: 10px 10px 0 0;
+    font-weight: 700;
 }
 
 th:nth-child(1), tr:nth-child(1){
@@ -105,8 +106,7 @@ td i{
     justify-content: space-between;
 }
 
-.cupom, .frete{
-    padding: 10px;
+.acao{
     width: 48%;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
 }
@@ -131,8 +131,67 @@ td i{
     padding: 0 0 0 10px;
 }
 
-.frete input, .cupom input{
+.acao input{
     border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.25);
     padding: 10px;
+    font-family: Inter;
+    width: 100%;
+}
+
+.acao button{
+    border: none;
+    background-color: var(--main);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    width: 40%;
+    position: relative;
+    right: 10px;
+}
+
+.acaoconteudo{
+    padding: 10px;
+    display: flex;
+}
+
+.voltar{
+    margin-top: 75px;
+}
+
+.voltar a{
+    
+    color: var(--main);
+    text-decoration: none;
+    border-bottom: 1px solid var(--main);
+}
+
+aside{
+    width: 30%;
+    position: relative;
+    left: 2.5%;
+}
+
+.asideheader{
+    text-align: center;
+}
+
+.aside div{
+    width: 100%;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.total{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    background: rgba(255, 122, 0, 0.5);
 }
