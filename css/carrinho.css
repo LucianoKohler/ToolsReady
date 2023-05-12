@@ -12,9 +12,10 @@
 }
 
 .container{
-    width: 100%;
+    width: 95%;
     padding: 25px 25px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -170,14 +171,12 @@ aside{
     width: 30%;
     position: relative;
     left: 2.5%;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+    height: fit-content;
 }
 
 .asideheader{
     text-align: center;
-}
-
-.aside div{
-    width: 100%;
 }
 
 .subtotal{
@@ -194,4 +193,39 @@ aside{
     font-weight: 600;
     color: black;
     background: rgba(255, 122, 0, 0.5);
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info p, .info h2{
+    width: 100%;
+    text-align: center;
+}
+
+.info p{margin: 20px;}
+.info h2{margin: 20px 0 0 0;}
+
+.minibreaker{
+    border: 5px solid var(--other-black);
+    width: 15%;
+}
+
+aside button{
+    width: 100%;
+    background-color: var(--green);
+    border: none;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside button h1{
+    font-size: 30px;
+    padding-left: 20px;
 }
