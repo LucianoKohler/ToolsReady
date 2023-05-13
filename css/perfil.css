@@ -77,28 +77,6 @@ main, .pedidos{
     height: fit-content;
 }
 
-header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgb(172, 172, 172);
-    margin-bottom: 40px;
-}
-
-header h2{
-    margin-left: 30px;
-}
-
-.contaheader{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.contaheader h2{
-    margin-left: 2cccccccccc0px;
-}
-
 fieldset input, fieldset input:focus{
     width: 100%;
     height: 100%;
