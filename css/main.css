@@ -1,0 +1,492 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.carousel{
+    width: 100%;
+}
+
+.carousel img{
+    width: 100%;
+    float: left;
+}
+
+.hlineL{
+    background-color: var(--secon);
+    height: 40px;
+    display: flex;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+.abaheader{
+    background-color: var(--main);
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 5%;
+    align-self: flex-end;
+    font-size: 1.2em;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempo{
+    align-self: center;
+    position: absolute;
+    right: 5%;
+}
+
+.card-natal-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.card{
+    height: 20vw;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform .1s ease;
+    overflow: hidden;
+}
+
+.card p{
+    width: 100%;
+}
+
+.fundo-natal{
+    background: 
+    linear-gradient(to top, white, white, white, rgba(255,255,255,0.2)),
+    url(../assets/fundo-card-principal.jpg);
+    width: 24%;
+}
+
+.card:hover, .category:hover, .horizontal:hover{
+    transform: scale(1.1);
+    transition: transform .1s ease;
+    cursor: pointer;
+}
+
+.info{
+    padding: 10px;
+}
+
+.promocontainer{
+    width: 100%;
+    float: right;
+    height: 1%;
+}
+
+.promo{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 10px !important;
+    overflow: hidden;
+    border-radius: 10px 0px 10px 0px;
+    display: flex;
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+.natal{
+    background-color: #9B2324;
+}
+
+.natal:hover{
+    width: fit-content;
+}
+
+.promotext{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    font-size: 12px;
+}
+
+.natal .promotext{
+    display: none;
+    width: 50%;
+
+}
+
+.promoimg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtoimagem{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.produtoimagem img{
+    height: 150%;
+}
+
+.card h5{
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+
+.card h5, .card h3, .card p{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card h5, .card h3, .card p, .nota{
+    height: fit-content;
+}
+
+.breaker{
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+.categorias{
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title h1{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-bottom: 1px solid gray;
+
+}
+
+.container{
+    width: 90%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;  
+}
+
+.category{
+    margin: 6px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    transition: transform .1s ease;
+}
+
+.category:hover{
+    transform: scale(1.11);
+    transition: transform .1s ease;
+}
+
+.category p{
+    font-size: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.container:nth-child(2){
+    outline: 10px solid white;
+}
+
+.img1{background:
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(1\).svg);
+    background-size: cover;
+    grid-area: 1/1/3/2;
+    border-radius: 10px 0 0 10px;}
+.img2{background:
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(2\).svg);
+    background-size: cover;
+    grid-area: 1/2/1/3;}
+.img3{background:
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(3\).svg);
+    background-size: cover;
+    grid-area: 2/2/3/3;}
+.img4{background:
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(4\).svg);
+    background-size: cover;
+    grid-area: 1/3/3/3;}
+.img5{background:
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(5\).svg);
+    background-size: cover;
+    grid-area: 1/4/1/5;}
+.img6{background:
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(6\).svg);
+    background-size: cover;
+    grid-area: 2/4/2/5;}
+.img7{background:
+    linear-gradient(to top, #000000, rgba(0,0,0,0)),
+    url(../assets/categorias/categoria\ \(7\).svg);
+    background-size: cover;
+    grid-area: 1/5/3/6;
+    border-radius: 0 10px 10px 0;}
+
+.sale-aba{
+    height: fit-content;
+    background-color: var(--main);
+    background: radial-gradient(rgba(255,122,0,0.2), var(--main));
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    border-top: 8px solid var(--secon);
+    border-bottom: 4px solid black;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.saleimg{
+    font-size: 16vh;
+    font-weight: 800;
+    width: 30%;
+    line-height: 80%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.saleimgcontainer{
+    margin-bottom: 10%;
+    position: relative;
+    right: 20%;
+}
+
+.saleimgcontainer div:nth-child(1){
+    color: #FFC58F;  
+}
+.saleimgcontainer div:nth-child(2){
+    color: #FFDEBF;
+    text-indent: 3vw;
+}
+.saleimgcontainer div:nth-child(3){
+    color: #FFC58F;
+    text-indent: 6vw;
+}
+.saleimgcontainer div:nth-child(4){
+    color: #FFDEBF;
+    text-indent: 9vw;
+}
+
+.saleconteudo{
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.saleconteudo h4{
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 50px 0 0 0;
+    height: fit-content;
+}
+
+.saleheader{
+    padding-left: 2.5%;
+    margin-bottom: 20px;
+}
+
+.selector{
+    height: fit-content;
+    font-size: 50px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    color: white; /*pode mudar depois para indicar em que aba o carossel está*/ 
+}
+
+.cardcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.promo{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 10px !important;
+    overflow: hidden;
+    border-radius: 10px 0px 10px 0px;
+    display: flex;
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+
+.promotext p{
+    padding-left: 0 !important;
+}
+
+
+.sale{
+    background-color: white;
+    font-size: 14px;
+    width: 30%;
+}
+
+.desconto{
+    background-color: var(--main);
+}
+
+.frete, .frete p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    font-size: 10px;
+}
+
+.acoes{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    float: right;
+    z-index: 5;
+}
+
+.acoes div{
+    float: right;
+    background-color: var(--main);
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destaques{
+    height: fit-content;
+    padding-bottom: 30px;
+    background: radial-gradient(rgba(0,0,0,0.25), white);
+}
+
+.horizontal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.horizontal{
+    background-color: white;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    transition: transform .1s ease;
+}
+
+.horizontal-conteudo{
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-img{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 40px;
+}
+
+.horizontal-img img{
+    width: 200%;
+    object-fit: cover;
+}
+
+.horizontal .frete{
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+    margin: 10px;
+}
+
+.horizontal-conteudo{
+    width: 150%;
+}
+
+.promocontainer-horizontal{
+    width: 1px;
+    float: right;
+    height: 1%;
+}
+
+.acoes-horizontal{
+    display: flex;
+}
+
+.horizontal-conteudo h3, .horizontal-conteudo p{
+    margin: 0;
+}
+
+.add-carrinho-horizontal, .add-fav-horizontal{
+    background-color: var(--main);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.add-carrinho-horizontal{border-radius:3px 0 0 3px;}
+.add-fav-horizontal     {border-radius:0 3px 3px 0;}
+
+/* ---------------------
+INÍCIO DA ABA FAVORITOS
+----------------------*/

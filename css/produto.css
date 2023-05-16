@@ -1,0 +1,82 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    padding: 30px 0 0 3%;
+    display: flex;
+}
+
+.produtoimagens{
+    height: 10%;
+    display: flex;
+}
+
+.secundarias{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.secundarias img{
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 20%;
+    border-radius: 15px;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.principal img{
+    height: 310px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.principal i{
+    position: relative;
+    right: 8%;
+    top: 100px;
+}
+
+.produtoinfo{
+    width: 50%;
+    border: 1px solid black;
+    padding-left: 50px;
+}
+
+aside{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 15%;
+    background-color: gray;
+}
+
+aside p{
+    margin-top: 200px;
+    margin-left: 40px;
+    transform: rotate(45deg);
+}

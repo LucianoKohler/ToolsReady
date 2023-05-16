@@ -1,4 +1,4 @@
-html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;}
+html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box; overflow-x: hidden;}
 
 @font-face {
     font-family: Inter;
@@ -7,21 +7,61 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 
 :root{
     --main: #FF7A00;
+    --secon: #A45214;
     --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
     font-family: Inter;
     font-weight: 500;
+    color: var(--font-black);
+}
+
+::-webkit-scrollbar { /*Formatações para a barra de navegação*/
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+header{
+    margin: 0 0 30px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+header h2{
+    padding: 0 20px;
+}
+
+h3{
+    color: var(--main);
+    margin: 0;
 }
 
 nav{ 
     width: 100%;
     height: 12%;
     background-color: var(--main);
-    border-bottom: 8px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     color: white;
     font-size: .8em;
+}
+
+#simplenav nav{
+    border-bottom: 8px solid black;
 }
 
 nav a{
@@ -45,5 +85,100 @@ nav a:hover{
 }
 
 .texto{
-    margin-left: 10px;
+    margin-left: 10px;  
 }
+
+.navbar{
+    height: 30px;
+    width: 55%;
+    padding: 10px 0px;
+    position: relative;
+    left: 12%;
+}
+
+.navbar input{
+    height: 25px;
+    width: 60%;
+    z-index: -1;
+    border: none;
+    border-radius: 99px;
+}
+
+nav button{
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    width: 7%;
+    border-radius: 0 99px 99px 0;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav button:nth-child(2){
+    background-color: #cccccc;
+    border-radius: 99px;
+    position: relative;
+    right: 6%;
+    z-index: 3;
+}
+
+nav button:nth-child(3){
+    background-color: #bbbbbb;
+    position: relative;
+    right: 8.5%;
+    z-index: 2;
+}
+
+nav button:nth-child(4){
+    background-color: #aaaaaa;
+    position: relative;
+    right: 11.5%;
+    z-index: 1;
+}
+
+nav button:nth-child(5){
+    background-color: #999999;
+    position: relative;
+    right: 14.5%;
+    z-index: 0;
+}
+
+button:hover, input[type=submit]:hover{ /*formataçõa geral para botões*/
+    cursor: pointer;
+    filter: brightness(110%);
+    transition: filter .1s ease;
+}
+
+button:active, input[type=submit]:active{
+    filter: brightness(120%);
+    box-shadow: none;
+    transition: filter .1s ease, box-shadow .1s ease;
+}
+
+
+.blacknav{
+    color: white;
+    width: 100%;
+    height: 4%;
+    background: var(--other-black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blacknav div{
+    display: inline;
+    font-size: 1vw;
+}
+
+.blacknav div:hover{
+    cursor: pointer;
+}
+
+.nota-geral{
+    display: inline;
+    font-size: 14px;
+    color: rgb(154, 154, 154);
+}
+
+

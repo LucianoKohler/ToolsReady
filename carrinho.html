@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Ready</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">LOGO AINDA NÃO FEITA</a></div>
+        <div class="space"></div>
+        <!--Usada para dar um espaçamento maior aos itens da navbar-->
+        <div class="navbar">
+            <div class="navbar-conteudo">
+                <input type="text">
+                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                <button onclick="location.href='perfil.html';">&nbsp;<i class="fa-solid fa-user" style="color: #000000;"></i></button>
+                <button onclick="location.href='favoritos.html';">&nbsp;<i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+                <button onclick="location.href='carrinho.html';">&nbsp;<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+                <!--O &nbsp; significa "non-breaking space", e foi usado para deixar os icons mais à direita-->
+            </div>
+        </div>
+    </nav>
+    <div class="blacknav">
+        <div>Departamentos</div>
+        <div>Novidades</div>
+        <div>Ofertas</div>
+        <div>Projetos</div>
+        <div>Dicas</div>
+        <div>Serviços</div>
+    </div>        
+
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: var(--main);"></i>                
+            <h2>Meu Carrinho</h2>
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>PRODUTO</th>
+                    <th>QTD</th>
+                    <th>PREÇO</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><img src="assets/produtos/betoneira.png"></td>
+                    <td><p>Betoneira 400L 2CV 4 Polos Monofásica com Kit de Segurança - MENEGOTTI-PRIME400</p></td>
+                    <td>
+                        <h2>+</h2>
+                        <p>1</p>
+                        <h2>-</h2>
+                    </td>
+                    <td>1x de R$4.310,60</td>
+                    <td><i class="fa-solid fa-trash-can" style="color: var(--other-black)"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/produtos/canoPVC.png" alt=""></td>
+                    <td>Joelho de PVC - 100mm. TIGRE</td>
+                    <td>                        
+                        <h2>+</h2>
+                        <p>5</p>
+                        <h2>-</h2>
+                    </td>
+                    <td>1x de R$49,95</td>
+                    <td><i class="fa-solid fa-trash-can" style="color: var(--other-black)"></i></td>
+                </tr>
+            </table>
+            <div class="limparrow">
+                <button class="limpar">
+                    <i class="fa-solid fa-trash-can" style="color: var(--font-white)"></i>
+                    <h4>LIMPAR CARRINHO</h4>
+                </button>
+            </div>
+            <div class="acoes">
+                <div class="acao">
+                    <div class="acaoheader">Cupom de desconto: </div>
+                    <div class="acaoconteudo">
+                        <input type="text" name="" id="" placeholder="Código:">
+                        <button type="submit" value="">
+                            <i class="fa-solid fa-tag" style="color: var(--font-white)"></i>
+                            APLICAR
+                        </button>
+                    </div>
+                </div>
+                <div class="acao">
+                    <div class="acaoheader">Frete e prazos: </div>
+                    <div class="acaoconteudo">
+                        <input type="text" name="" id="" placeholder="CEP">
+                        <button type="submit" value="">
+                            <i class="fa-solid fa-truck-fast" style="color: var(--font-white)"></i>
+                            CALCULAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="voltar">
+                <i class="fa-solid fa-circle-left fa-xl" style="color: var(--main);"></i>
+                <a href="">Voltar para as compras</a>
+            </div>
+        </main>
+        <aside>
+            <div class="asideheader">RESUMO</div>
+            <div class="subtotal">
+                <p>Subtotal</p>
+                <p>R$ 4.360,55</p>
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <p>R$ 4.360,55</p>
+            </div>
+            <div class="info">
+                <p>em até 12x de 363,35
+                    <br>
+                   sem juros no cartão
+                </p>
+                <div class="minibreaker"></div>
+                <h2>R$ 3.925,55</h2>
+                <p>No pix com 10% de desconto</p>
+            </div>
+            <button>
+                <i class="fa-solid fa-cart-shopping fa-2xl" style="color: white"></i>
+                <h1>FINALIZAR PEDIDO</h1>
+            </button>
+        </aside>
+
+    </div>
+    <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
+</body>
+</html>

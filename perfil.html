@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Ready</title>
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGO AINDA NÃO FEITA</div>
+        <div class="space"></div>
+        <!--Usada para dar um espaçamento maior aos itens da navbar-->
+        <div class="navbar">
+            <div class="navbar-conteudo">
+                <input type="text">
+                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                <button onclick="location.href='perfil.html';">&nbsp;<i class="fa-solid fa-user" style="color: #000000;"></i></button>
+                <button onclick="location.href='favoritos.html';">&nbsp;<i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+                <button onclick="location.href='carrinho.html';">&nbsp;<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+                <!--O &nbsp; significa "non-breaking space", e foi usado para deixar os icons mais à direita-->
+            </div>
+        </div>
+    </nav>
+    <div class="blacknav">
+        <div>Departamentos</div>
+        <div>Novidades</div>
+        <div>Ofertas</div>
+        <div>Projetos</div>
+        <div>Dicas</div>
+        <div>Serviços</div>
+    </div>
+    <div class="container">
+        <div class="perfil"><img src="assets/orochi.jpg" alt="">
+            <div class="perfiltext">
+                <h2>Olá, Orochinho!</h2>
+                <p>nome.user@gmail.com</p>
+            </div>
+        </div>
+        <div class="cupom">
+            <h2>Cupons de desconto</h2>
+            <div class="insertcupom">
+                <input type="text" name="" id="" placeholder="Cupom">
+                <input type="submit" value="RESGATAR CUPOM">
+            </div>
+        </div>
+        <main>
+            <div class="conta">
+                <header>
+                    <i class="fa-solid fa-user fa-2xl" style="color: var(--main);"></i>
+                    <h2>Meus dados</h2>
+                </header>
+                <form action="">
+                    <div class="formrow">
+                        <fieldset><legend>Nome exibido</legend>
+                            <input type="text" placeholder="Orochinho" disabled>
+                        </fieldset>
+                        <fieldset><legend>Email</legend>
+                            <input type="email" placeholder="nome.user@gmail.com" disabled>
+                        </fieldset>
+                    </div>
+                    <div class="formrow">
+                        <fieldset><legend>CPF/CNPJ</legend>
+                            <input type="text" placeholder="975.176.086-19" disabled>
+                        </fieldset>
+                        <fieldset><legend>Telefone celular</legend>
+                            <input type="text" placeholder="(47)96193-0876" disabled>
+                        </fieldset>
+                    </div>
+                    <button class="big">ALTERAR EMAIL</button>
+                    <button class="big">ALTERAR SENHA</button>
+                    <button class="big" style="float: right;">SALVAR ALTERAÇÕES</button>
+                </form>
+            </div>
+
+            <div class="enderecos">
+                <header>
+                    <i class="fa-solid fa-location-dot fa-2xl" style="color: var(--main);"></i>
+                    <h2>Meus endereços</h2>
+                </header>
+                <div class="endereco escolhido">
+                    <h4>Endereço prinicpal</h4>
+                    <p>RUA ARNALDO PINTO DA ROÇA<br>
+                    número: 6889<br>
+                    CEP 89234-881, CARPAZINHA-RS
+                    </p>
+                    <div class="acoes">
+                        <span>Editar</span>
+                        <span>Excluir</span>
+                    </div>
+                </div>
+                <div class="endereco">
+                    <h4>Endereço secundário</h4>
+                    <p>RUA ARNALDO PINTO DA ROÇA<br>
+                    número: 6889<br>
+                    CEP 89234-881, CARPAZINHA-RS
+                    </p>
+                    <div class="acoes">
+                        <span>Editar</span>
+                        <span>Excluir</span>
+                        <span style="color: var(--main)">Tornar padrão</span>
+                    </div>
+                </div>
+            </div>
+            <div class="acoes-endereco">
+                <button class="big" style="float: left;">ADICIONAR ENDEREÇO</button>
+                <button class="big" style="float: right;">SALVAR ALTERAÇÕES</button>
+            </div>
+        </main>
+        <div class="pedidos">
+            <header>
+                <i class="fa-light fa-receipt fa-xl" style="color: var(--main);"></i>                
+                <h2>Seus pedidos</h2>
+            </header>
+            <div class="pedidosmain">
+                <div class="options">
+                    <span class="selecionado">Pedidos</span>
+                    <span>Ainda não entregue</span>
+                    <span>Pendente</span>
+                </div>
+                <div class="pedidoconteudo">
+                    <img src="assets/produtos/multimetro.svg" alt="">
+                    <div class="pedidoinfo">
+                        <h4>Multímetro Digital 600v + Amperímetro - OEM</h4>
+                        <p>Quantidade: 1</p>
+                        <h3>R$38,00</h3>
+                    </div>
+                </div>
+                <div class="pedidoespecificacoes">
+                    <div class="especificacoes">
+                        <h4>N° pedido</h4>
+                        <p>#12345678</p>
+                    </div>
+                    <div class="especificacoes">
+                        <h4>Data do pedido</h4>
+                        <p>12/12/22</p>
+                    </div>
+                    <div class="especificacoes status_conc">
+                        <h4>Status</h4>
+                        <p>Concluído</p>
+                    </div>
+                    <div class="especificacoes">
+                        <h4>Pagamento</h4>
+                        <p>Crédito</p>
+                    </div>
+                    <div class="especificacoes">
+                        <h4>Endereço</h4>
+                        <p>Endereço principal</p>
+                    </div>
+                    <div class="especificacoes">
+                        <h4>Estim. entrega</h4>
+                        <p>Entregue</p>
+                    </div>
+                </div>
+                <hr>
+                <h4>Status do pedido: </h4>
+                <div class="pedidoprogresso">
+                    <div class="progresso">
+                        <i class="fa-solid fa-cart-shopping fa-2xl" style="color: var(--main);"></i>
+                        <ul>
+                            <li>Pedido Recebido</li>
+                            <li>Pedido em separação</li>
+                            <li>Nota fiscal emitida</li>
+                            <li>Produto expedido</li>
+                        </ul>
+                    </div>
+                    <div class="progresso">
+                        <i class="fa-solid fa-arrow-right-to-city fa-2xl" style="color: var(--main);"></i>
+                        <p>Enviado para a transportadora</p>
+                    </div>
+                    <div class="progresso">
+                        <i class="fa-solid fa-boxes-stacked fa-2xl" style="color: var(--main);"></i>
+                        <p>Recebido pela transportadora</p>
+                    </div>
+                    <div class="progresso">
+                        <i class="fa-solid fa-van-shuttle fa-2xl" style="color: var(--main);"></i>
+                        <p>Mercadoria em trânsito</p>
+                    </div>
+                    <div class="progresso andamento"> <!--Em andamento deixa a div cinza-->
+                        <i class="fa-solid fa-box fa-2xl" style="color: var(--main);"></i>
+                        <p>Mercadoria em rota de entrega</p>
+                    </div>
+                    <div class="progresso andamento"> <!--Em andamento deixa a div cinza-->
+                        <i class="fa-solid fa-check fa-2xl" style="color: var(--main);"></i>
+                        <p>Pedido entregue</p>
+                    </div>
+                </div>
+            </div>
+            <button class="pedidoacoes">
+                <i class="fa-solid fa-truck fa-xl" style="color: var(--main);"></i>
+                RASTREIO
+            </button>
+            <button class="pedidoacoes">
+                <i class="fa-solid fa-file-pdf fa-xl" style="color: var(--main);"></i>         
+                NOTA FISCAL   
+            </button>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
+</body>
+</html>

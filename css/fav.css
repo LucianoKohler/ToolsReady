@@ -1,0 +1,138 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+h4{
+    font-size: 30px;
+    margin-left: 15px;
+    margin: 20px;
+}
+
+main{
+    width: 80%;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+    height: fit-content;
+}
+
+.main-head{
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    text-indent: 40px;
+    color: white;
+    height: 7vh;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.produto{
+    height: 175px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding: 10px 0 0 0;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img{
+    width: 40%;
+    box-shadow: 5px 6px 23px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+h3{
+    margin: 0;
+    color: var(--main);
+}
+
+.conteudo p{
+    width: 60%;
+    font-weight: 600;
+}
+
+.acoes{
+    display: grid;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--main);
+    border-bottom: 2px solid var(--main);
+}
+
+.carrinho{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--main);
+    padding: 10px;
+    border-radius: 15px 0 0 0;
+    justify-self: flex-end;
+    align-self: flex-end;
+    width: 80%;
+    border: none;
+}
+
+.carrinho:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+    transition: filter .2s ease;
+}
+
+.acoes .fa-heart{
+    align-self: flex-start;
+    justify-self: flex-end;
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+
+.acoes .fa-heart:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+    transition: filter .2s ease;
+}
+
+h5{
+    margin: 0;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.desconto{
+    background-color: #9B2324;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px 0;
+    border-radius: 0 10px 0 10px;
+}

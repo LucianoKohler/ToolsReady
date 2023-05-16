@@ -1,0 +1,259 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.perfil, .cupom{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    margin: 20px 30px;
+}
+
+.perfil img{
+    border: 4px solid var(--main);
+    border-radius: 100px;
+}
+
+.perfiltext{
+    width: fit-content;
+}
+
+.perfiltext p, .perfiltext h2{
+    width: 100%;
+    margin: 0 0 0 10%;
+}
+
+.insertcupom{
+width: 100%;
+}
+
+.insertcupom *{
+    margin: 0;
+}
+
+.insertcupom input{
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.insertcupom input[type=submit]{
+    background-color: var(--main);
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    right: 8px;
+    cursor: pointer;
+}
+
+.insertcupom input[type=text]{
+    width: 30%;
+}
+
+main, .pedidos{
+    width: 80%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    margin: 20px;
+    height: fit-content;
+}
+
+fieldset input, fieldset input:focus{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+fieldset{
+    border-radius: 10px;
+    width: 45%;
+    margin: 0;
+    padding: 0 0 5px 10px;
+}
+
+.formrow{
+    margin: 10px 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.big{
+    background: var(--main)
+    radial-gradient(rgba(255,255,255,0.25), var(--main));
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.enderecos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.endereco{
+    border-left: 8px solid gray;
+    background-color: #66666645; 
+    width: 45%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.endereco p, span{
+    color: gray;
+}
+
+.endereco h4, .endereco p{
+    line-height: 32px;
+    margin: 0;
+}
+
+.escolhido{
+    background-color: #FFA14A45;
+    border-left: 8px solid var(--main);
+}
+
+.acoes{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.acoes span{
+    margin-right: 10px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.acoes span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#salvar{
+    margin-left: auto;
+}
+
+.options{
+    margin-bottom: 20px;
+}
+
+.options span{
+    padding: 0 10px;
+    border-bottom: 3px solid gray;
+}
+
+.selecionado{
+    border-bottom: 3px solid var(--main) !important;
+}
+
+.pedidoconteudo{
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pedidoinfo{
+    padding: 0 15px;
+    width: 80%;
+}
+
+.pedidoinfo h4,.pedidoinfo p,.pedidoinfo h3{
+    margin: 5px !important;
+    height: fit-content;
+    width: 80%;
+}
+
+.pedidoconteudo img{
+    height: 100%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pedidoespecificacoes, .pedidoprogresso{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    line-height: 20px;
+    gap: 10px;
+}
+
+.especificacoes, .progresso{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.progresso{
+    border-top: 3px solid var(--main);
+}
+
+.progresso p{
+    width: 100%;
+}
+
+.pedidoespecificacoes h4, .pedidoespecificacoes p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+ul{
+    width: 100%;
+    list-style-type: circle;
+    text-align-last: left;
+    text-align: left;
+    padding: 0;
+}
+
+.progresso i{
+    background-color: white;
+    border: 10px solid white;
+    transform: translateY(-20%);
+    height: 10px;
+}
+
+.andamento{
+    filter: grayscale(100%);
+}
+
+.status_conc > p{
+    color: #30A700;
+}
+
+.pedidoacoes{
+    border-radius: 10px;
+    border: 3px solid var(--main);
+    padding: 15px 75px;
+    font-weight: 600;
+    font-family: Inter;
+    box-shadow: 3px 4px 21px rgba(0, 0, 0, 0.25);
+    margin: 0 10px;
+    float: right;
+}

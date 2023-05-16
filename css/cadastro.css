@@ -1,0 +1,116 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+h3{
+    color: var(--main);
+}
+
+h1{
+    color: var(--main);
+}
+
+
+.criarconta{
+    margin: 50px 50px 30px 50px;
+    width: 80%;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.escolha-cadastro{
+    margin-left: 50px;
+    width: 35%;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.escolha-cadastro-botao{
+    width: 100%;
+    height: 60px;
+    margin: 20px 0px;
+    border-radius: 15px;
+    border: 2px solid var(--main);
+    font-size: 1.5em;
+    font-weight: 600;
+    box-shadow: 8px 8px 5px rgb(184, 184, 184);
+    padding-left: 40px;
+    text-align: start;
+    color: gray;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.escolha-cadastro-botao:nth-child(2){ /*Temporário, para indicar que o selecionado fica laranja*/
+    background-color: var(--main);
+    color: var(--font-white);
+}
+
+.vector{
+    width: 40%;
+}
+
+.vector img{
+    width: 87%;
+}
+
+.continuar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.continuar button{
+    color: var(--font-white);
+    background-color: var(--main);
+    border: none;
+    height: 60px;
+    width: 25%;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.continuar a{
+    font-weight: 900;
+    color: var(--main);
+}
+
+.ghost{ /*para separar os dois na div continuar*/
+    width: 100%;
+}
+
+.voceestapronto{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.voceestapronto img{
+    width: 200px;
+}
+
+.voceestapronto p{
+    font-weight: 600;
+}
+
+.voceestapronto-conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

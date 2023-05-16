@@ -1,0 +1,51 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+main{
+    width: 80%;
+}
+
+aside{
+    width: 15%;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.25);
+}
+
+select{
+    font-family: Inter;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    outline: 0;
+}
+
+select:focus{
+    border: 1px solid var(--main);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ordenar p{
+display: inline-block;
+padding: 0px 5px;
+}

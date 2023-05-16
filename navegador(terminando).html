@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Ready</title>
+    <link rel="stylesheet" href="css/navegador.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">LOGO AINDA NÃO FEITA</a></div>
+        <div class="space"></div>
+        <!--Usada para dar um espaçamento maior aos itens da navbar-->
+        <div class="navbar">
+            <div class="navbar-conteudo">
+                <input type="text">
+                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                <button onclick="location.href='perfil.html';">&nbsp;<i class="fa-solid fa-user" style="color: #000000;"></i></button>
+                <button onclick="location.href='favoritos.html';">&nbsp;<i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+                <button onclick="location.href='carrinho.html';">&nbsp;<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+                <!--O &nbsp; significa "non-breaking space", e foi usado para deixar os icons mais à direita-->
+            </div>
+        </div>
+    </nav>
+    <div class="blacknav">
+        <div>Departamentos</div>
+        <div>Novidades</div>
+        <div>Ofertas</div>
+        <div>Projetos</div>
+        <div>Dicas</div>
+        <div>Serviços</div>
+    </div>
+    <div class="container">
+        <aside>
+            <i class="fa-solid fa-filter" style="color: var(--main)"></i>
+        </aside>
+        <main>
+            <header>
+                <h2>Pesquisas relacionadas a: Produto</h2>
+                <div class="ordenar">
+                    <i class="fa-solid fa-right-left fa-lg" style="color:var(--main)"></i>
+                    <p>Ordenar por:</p>
+                    <select name="" id="">
+                        <option value="">Relevância</option>
+                        <option value="">Mais vendidos</option>
+                        <option value="">Descontos</option>
+                        <option value="">Maior preço</option>
+                        <option value="">Menor preço</option>
+                        <option value="">De A a Z</option>
+                        <option value="">De Z a A</option>
+                    </select>
+                </div>
+            </header>
+            <div class="card sale">
+                <div class="promocontainer">
+                    <div class="promo desconto">
+                        <div class="promotext">
+                            <p>90% OFF</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtoimagem"><img src="assets/produtos/serrote.png" alt="canoPVC"></div>
+                <div class="info">
+                    <h5>R$39,99</h5>
+                    <h3>R$3,99</h3>
+                    <p>Serrote 26 pol. TRAMONTINA</p>
+                    <div class="nota">
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                        <p class="nota-geral">(4,8)</p>
+                    </div>
+                </div>
+                <div class="acoes">
+                    <div class="add-fav"><i class="fa-regular fa-heart fa-md" style="color: #ffffff;"></i></div>
+                    <div class="add-carrinho"><i class="fa-solid fa-cart-shopping fa-md" style="color: #ffffff;"></i></div>
+                </div>  
+            </div>
+        </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
+</body>
+</html>
