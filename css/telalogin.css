@@ -12,17 +12,18 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 
 h3{
     color: var(--main);
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 fieldset{
     border-radius: 15px;
     width: 55%;
-    height: 34px;
-    margin: 10px 0 10px;
+    height: 30px;
+    margin: 5px 0 5px;
     font-family: Inter;
     font-weight: 350;
     color: black;
+    border: 1px solid rgb(75, 75, 75);
 }
 
 input{
@@ -32,7 +33,7 @@ input{
     width: 100%;
     height: 100%;
     position: relative;
-    bottom: 2px;
+    bottom: 5px;
     font-family: Inter;
 }
 
@@ -43,7 +44,7 @@ input{
     color: #777777;
     display: flex;
     justify-content: center;
-    margin: 15px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 .cadastrar a{
@@ -55,7 +56,7 @@ input{
 }
 
 hr{
-    width: 59%;
+    width: 57%;
 }
 
 .linha_1{
@@ -112,6 +113,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .img_gov{
@@ -122,8 +124,8 @@ button{
     color: var(--font-white);
     background-color: var(--main);
     border: none;
-    height: 40.5px;
-    width: 60%;
+    height: 38px;
+    width: 59%;
     border-radius: 15px;
     font-size: 1.5em;
     font-weight: 600;
@@ -137,7 +139,7 @@ button{
 
 .fa-eye{
     position: relative;
-    bottom: 22px;
+    bottom: 25px;
     left: 95%;
 }
 
@@ -159,7 +161,7 @@ button{
 .esqueceu{
     display: flex;
     justify-content: right;
-    padding-right: 20.5%;
+    padding-right: 21.5%;
     margin: 0px 0px 20px 0px;
 }
 
@@ -186,10 +188,12 @@ form{
 
 .img{
     width: 46.5%;
+    display: flex;
+    justify-content: center;
 }
 
 .img img{
-    width: 100%;
+    width: 90%;
 }
 
 .title{
