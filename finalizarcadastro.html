@@ -22,7 +22,8 @@
             </div>
         </div>
     </nav>
-    <section>
+    <div class="conteudo">
+    <section class="formulario">
         <div class="finalizar">
             <h3>FINALIZAR CADASTRO</h3>
         <label for="campo">
@@ -33,24 +34,34 @@
                 <option value="porpropagandas">Por propagandas</option>
             </select>
         </label>
-        <label for="checklist">
+        <label for="checklist" class="container">
             <ul class="bolinha">
                 <li class="caixa">
-                    <input type="checkbox" name="notificacao" id="noti">
-                    Desejo receber novidades e ofertas da ToolsReady via e-mail
-                    <label for="noti" class="notifi"><img src="confere.svg" class="confere"></label>
+                    <label class="container">Desejo receber novidades e ofertas da ToolsReady via e-mail
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
                 </li>
                 <li class="caixa">
-                    <input type="checkbox" name="termosde" id="termos">
-                    Li e estou de acordo com as <a href="#" style="color:#FF7A00;">políticas da empresa e políticas de privacidade.*</a>
-                    <label for="ter" class="aceitatermos"><img src="confere.svg" class="confere"></label>
+                    <label class="container">Li e estou de acordo com as <a href="#" style="color:#FF7A00;">políticas da empresa e políticas de privacidade.*</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
                 </li>
             </ul>
         </label>
+        </div>
+    </section>
+    <section class="direita">
+        <div class="imagem">
+            <img src="assets/image35.svg" alt="tools">
+        </div>
     </section>
     </div>
-    <div class="imagem">
-
-    </div>
+    <section class ="baixo">
+        <div class="botao">
+            <input type="submit" class="botao" value="CONTINUAR">
+        </div>
+    </section>
 </body>
 </html>

@@ -11,16 +11,28 @@ body{
     overflow: hidden;
 }
 
-section{
-    height: 700px;
+.conteudo{
+  display: flex;
+  justify-content: center;
+}
+
+.formulario{
+    height: 460px;
+    width: 90%;
     display: flex;
     align-items: center;
+}
 
+.direita{
+  height: 460px;
+  display: flex;
+  width: 65%;
+  align-items: center;
 }
 
 .finalizar{
     margin-left: 50px;
-    width: 50%;
+    width: 80%;
     text-align: justify;
     font-weight: 600;
     height: 50%;
@@ -29,11 +41,13 @@ section{
     vertical-align: middle;
     color: var(--main);
 }
+
 #selecione{
     border-radius: 5px;
-    width: 85%;
-    height: 30px;
+    width: 100%;
+    height: 35px;
     color: gray;
+    outline: none;
 }
 .caixa{
     font-weight: 500;
@@ -43,26 +57,96 @@ section{
 .bolinha{
     list-style: none;
 }
-input{
-    all: unset;
-    border: 1px solid var(--main);
-    width: 18px;
-    height: 18px;
-    color: #FF7A00;
-    display: inline-block;
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-input:checked+.notifi>.confere{
-    width: 20px;
-    height: 20px;
-    border-color: 1px solid var(--main);
-    display: block;
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-input:checked+.aceitatermos>.confere{
-    width: 20px;
-    height: 20px;
-    border-color: 1px solid var(--main);
-    display: block;
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid var(--main);
 }
-.confere{
-    display: none;
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid 1px var(--main);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.imagem img{
+  width: 75%;
+}
+.baixo{
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.botao{
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+  font-size: large;
+  font-family: Inter;
+  font-weight: 500;
+  color: white;
+  border-radius: 13px;
+  background-color: var(--main);
+  border-color: var(--main);
+
 }
