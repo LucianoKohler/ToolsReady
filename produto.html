@@ -38,10 +38,10 @@
         <main>
             <div class="produtoimagens">
                 <div class="secundarias">
-                    <img src="assets/produtos/betoneira.png" alt="">
-                    <img src="assets/produtos/betoneira.png" alt="">
-                    <img src="assets/produtos/betoneira.png" alt="">
-                    <img src="assets/produtos/betoneira.png" alt="">
+                    <div class="secundaria"><img src="assets/produtos/betoneira.png" alt=""></div>
+                    <div class="secundaria"><img src="assets/produtos/betoneira.png" alt=""></div>
+                    <div class="secundaria"><img src="assets/produtos/betoneira.png" alt=""></div>
+                    <div class="secundaria"><img src="assets/produtos/betoneira.png" alt=""></div>
                 </div>
                 <div class="principal">
                     <img src="assets/produtos/betoneira.png" alt="">
@@ -56,12 +56,46 @@
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
-                    <p class="nota-geral">(5,0 1337 avaliações)</p>
+                    <p class="nota-geral">(5,0) 1337 avaliações</p>
                 </div>
+                <h5>R$ 4.590,09</h5>
+                <h1>R$ 3.909,22</h1>
+                <p>À vista no <span class="pix">PIX</span> com 10% de desconto</p>
+                <p>Em até 10x de <span style="color: var(--main);">R$383,50</span> sem juros no cartão</p>
+                <a style="font-weight: 700; text-decoration: underline; cursor: pointer;">Ver parcelas</a>
+                <br><br>
+                <div class="quantidade">
+                    Qtd.
+                    <span class="contador">
+                        <button id="decremento"> - </button>
+                        <input id="qtd" type="number" min="1" max="100" value="1" readonly>
+                        <button id="incremento"> + </button>
+                    </span>
+                </div>
+
             </div>
         </main>
         <aside><p>Local para anuncios</p></aside>
     </div>
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
+    <script>
+
+        const contador = document.getElementById('qtd')
+        let qtd = 1;
+
+        document.getElementById('incremento').addEventListener('click', function(){
+            if(qtd < contador.getAttribute('max')){
+                qtd++;
+                contador.setAttribute('value', qtd)
+            }
+        })
+
+        document.getElementById('decremento').addEventListener('click', function(){
+            if(qtd > contador.getAttribute('min')){
+                qtd--;
+                contador.setAttribute('value', qtd)
+            }
+        })
+    </script>
     </body>
 </html>

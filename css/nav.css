@@ -43,9 +43,24 @@ header h2{
     padding: 0 20px;
 }
 
-h3{
+h3, h1{
     color: var(--main);
     margin: 0;
+}
+
+h1{
+    font-weight: 800;
+}
+
+h5{
+    color: gray;
+    text-decoration: line-through;
+    padding: 0;
+    margin: 0;
+}
+
+.pix{
+    color: #37b4aa;
 }
 
 nav{ 

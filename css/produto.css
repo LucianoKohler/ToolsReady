@@ -18,65 +18,86 @@
 }
 
 main{
-    padding: 30px 0 0 3%;
+    width: 80%;
+    padding: 30px 30px 0 3%;
     display: flex;
 }
 
 .produtoimagens{
-    height: 10%;
+    height: 7%;
     display: flex;
 }
 
 .secundarias{
-    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 5%;
+    padding: 10px;
 }
 
-.secundarias img{
-    padding: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 20%;
-    border-radius: 15px;
+.secundaria{
+    height: 19%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.secundaria img{
+    height: 100%;
 }
 
 .principal{
-    display: flex;
-    align-items: center;
-    align-self: center;
-    padding-left: 10px;
     height: 100%;
+    position: relative; /*para o icon não bugar*/
 }
 
 .principal img{
-    height: 310px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 .principal i{
-    position: relative;
-    right: 8%;
-    top: 100px;
+    position: absolute;
+    left: 255px;
+    top: 265px;
 }
 
 .produtoinfo{
     width: 50%;
-    border: 1px solid black;
-    padding-left: 50px;
+    padding-left: 20px;
+}
+
+.produtoinfo h2{
+    margin: 0;
+}
+
+.produtoinfo p{
+    margin: 0;
+}
+
+.contador{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    appearance: none;
+    text-align: center;
+}
+
+.contador *{
+    border: none;
+    outline: none;
+    background-color: white;
 }
 
 aside{
-    position: absolute;
-    height: 100%;
-    right: 0;
-    width: 15%;
+    width: 20%;
     background-color: gray;
 }
 
-aside p{
-    margin-top: 200px;
-    margin-left: 40px;
-    transform: rotate(45deg);
+#decremento, #incremento, #qtd{
+    font-size: 18px;
 }

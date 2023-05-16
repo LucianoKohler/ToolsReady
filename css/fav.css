@@ -121,12 +121,6 @@ h3{
     transition: filter .2s ease;
 }
 
-h5{
-    margin: 0;
-    text-decoration: line-through;
-    color: gray;
-}
-
 .desconto{
     background-color: #9B2324;
     color: white;

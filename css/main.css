@@ -149,13 +149,6 @@
     height: 150%;
 }
 
-.card h5{
-    color: gray;
-    text-decoration: line-through;
-}
-
-
-
 .card h5, .card h3, .card p{
     width: 100%;
     margin: 0;
@@ -186,13 +179,15 @@
     height: 100px;
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .title h1{
     display: flex;
     justify-content: center;
+    padding: 20px;
     width: 80%;
+    color: black;
     border-bottom: 1px solid gray;
 
 }
