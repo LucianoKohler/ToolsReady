@@ -1,3 +1,7 @@
+html, body{
+    height: auto;
+}
+
 :root{
     --main: #FF7A00;
     --secon: #A45214;
@@ -21,51 +25,53 @@ main{
     width: 80%;
     padding: 30px 30px 0 3%;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.linha{
+    display: flex;
+    width: 100%;
 }
 
 .produtoimagens{
-    height: 7%;
     display: flex;
+    align-items: center;
+    height: 100%;
+    width: 35%;
 }
 
 .secundarias{
     display: flex;
-    flex-direction: column;
-    gap: 5%;
+    width: 25%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.secundarias img{
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.primaria{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    height: 100%;
     padding: 10px;
 }
 
-.secundaria{
-    height: 19%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+.primaria img{
+    width: 100%;
+    padding-left: 10px;
     border-radius: 10px;
-    padding: 5px;
-}
-
-.secundaria img{
-    height: 100%;
-}
-
-.principal{
-    height: 100%;
-    position: relative; /*para o icon não bugar*/
-}
-
-.principal img{
-    height: 100%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
-.principal i{
-    position: absolute;
-    left: 255px;
-    top: 265px;
 }
 
 .produtoinfo{
-    width: 50%;
+    width: 65%;
     padding-left: 20px;
+    height: fit-content;
 }
 
 .produtoinfo h2{
@@ -93,8 +99,82 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
     background-color: white;
 }
 
+.cep{
+    height: fit-content;
+    width: 35%;
+}
+
+.cep p{
+    margin: 15px 0 0 0;
+}
+
+.cep input{
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.cep button{
+    border: 1px solid var(--main);
+    height: 30px;
+    color: var(--main);
+}
+
+.comprar{
+    width: 65%;
+}
+
+.comprar button{
+    color: white;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 50px;
+    margin: 10px 0 0 10px;
+}
+
+.comprar h2{
+    padding-left: 10px;
+}
+
+.similares{
+    margin: 30px 0 0 0;
+    width: 100%;
+}
+
+.descricao{
+    width: 100%;
+}
+
+details summary{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+details summary header .marker{
+    color: var(--main);
+    position: relative;
+    left: 60%;
+}
+
+details summary header .marker::after{
+    content: "▲";
+}
+
+details[open] summary header .marker::after{
+    content: "▼";
+}
+
 aside{
-    width: 20%;
+    width: 15%;
     background-color: gray;
 }
 
