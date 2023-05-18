@@ -1,0 +1,15 @@
+html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box; overflow-x: hidden;}
+
+
+:root{
+    --main: #FF7A00;
+    --green: #30A700;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+#rodape{
+    width: 100%;
+    border: solid 1px;
+    height: 40%;
+}

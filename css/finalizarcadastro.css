@@ -1,11 +1,9 @@
-
 :root{
     --main: #FF7A00;
     --green: #30A700;
     font-family: Inter;
     font-weight: 500;
 }
-
 
 body{
     overflow: hidden;
