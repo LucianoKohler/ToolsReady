@@ -145,24 +145,42 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
 }
 
 .similares{
-    margin: 30px 0 0 0;
+    margin: 30px 0 0 0 ;
     width: 100%;
 }
 
-.descricao{
+.headerconteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100% !important;
+}
+
+details{
     width: 100%;
+    margin: 10px 0;
 }
 
 details summary{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+}
+
+details summary header{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 details summary header .marker{
     color: var(--main);
-    position: relative;
-    left: 60%;
+    margin-right: 15px;
 }
 
 details summary header .marker::after{
@@ -171,6 +189,47 @@ details summary header .marker::after{
 
 details[open] summary header .marker::after{
     content: "▼";
+}
+
+.pergunta{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pergunta p:nth-child(2){
+    width: 80%;
+    font-weight: 600;
+}
+
+.pergunta p:nth-child(3){
+    width: 80%;
+    margin: 5px 0;
+}
+
+.pergunta img{
+    margin: 0 20px 0 0;
+    border: 2px solid var(--main);
+    border-radius: 9999px;
+    height: 40px;
+    width: 40px;
+}
+
+.dataresposta{
+    font-size: 12px;
+    filter: opacity(0.8);
+}
+
+.perguntar{
+    border-radius: 10px;
+    border: 3px solid var(--main);
+    padding: 15px 75px;
+    font-weight: 600;
+    font-family: Inter;
+    box-shadow: 3px 4px 21px rgba(0, 0, 0, 0.25);
+    margin: 0 10px;
+    float: right;
 }
 
 aside{
