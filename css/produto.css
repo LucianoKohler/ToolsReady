@@ -162,6 +162,7 @@ header{
 details{
     width: 100%;
     margin: 10px 0;
+    font-size: 14px;
 }
 
 details summary{
@@ -187,8 +188,8 @@ details summary header .marker::after{
     content: "▲";
 }
 
-details[open] summary header .marker::after{
-    content: "▼";
+details table tr td:nth-child(1){
+    background-color: #DDDDDD;
 }
 
 .filtro{

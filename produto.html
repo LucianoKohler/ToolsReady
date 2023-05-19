@@ -126,41 +126,29 @@
                         </header>
                     </summary>
                     <table>
-                        <th>
-                            <td></td>
-                            <td></td>
-                        </th>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>Marca</td>
+                            <td>MENEGOTTI</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>Modelo</td>
+                            <td>PRIME400</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>Capacidade</td>
+                            <td>400L</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>Cor</td>
+                            <td>Amarela</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>Voltagem</td>
+                            <td>220V</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
+                            <td>Consumo de energia</td>
+                            <td>Mediano</td>
                         </tr>
                     </table>
                 </details>
@@ -234,12 +222,33 @@
             }
         })
 
-        docment.getElementById('decremento').addEventListener('click', function(){u
+        document.getElementById('decremento').addEventListener('click', function(){u
             if(qtd > contador.getAttribute('min')){
                 qtd--;
                 contador.setAttribute('value', qtd)
             }
         })
+
+        var details = document.getElementsByTagName('header');
+        var arrows = document.getElementsByClassName('marker');
+        let rotated = [false,false,false,false]
+
+        for(let i=0; i <= (details.length-1); i++){
+            details[i].addEventListener('click', function(){
+                if(rotated[i-1] == false){
+                    arrows[i-1].style.transform = 'rotate(180deg)';
+                    arrows[i-1].style.transition = 'transform ease .2s';
+                }else{
+                    arrows[i-1].style.transform = 'rotate(0deg)';
+                }
+                rotated[i-1] = !rotated[i-1]
+
+                
+            })
+
+        }
+
+
     </script>
     </body>
 </html>
