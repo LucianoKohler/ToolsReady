@@ -111,7 +111,16 @@
                             <div class="marker"></div>
                         </header>
                     </summary>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div class="conteudo">
+                        <div class="conteudotexto">
+                            <h2>A betoneira que você precisa</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumhas been the industry's standard dummy text ever since the 1500s, when an unknownprinter took a galley of type and scrambled it to make a type specimen book. <br><br>Ithas survived not only five centuries, but also the leap into electronic typesetting,remaining essentially unchanged. It was popularised in the 1960s with the release ofLetraset sheets containing Lorem Ipsum passages.<br><br>And more recently with desktoppublishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>    
+                        </div>
+                        <div class="conteudoimagem">
+                            <img src="assets/produtos/betoneira.png" alt="">
+                        </div>
+                    </div>
+
                 </details>
             </div>
             <div class="linha">
@@ -166,14 +175,23 @@
                     </summary>
                     <div class="filtro">
                         <i class="fa-solid fa-star mainstar"></i>
+                        <div class="ghost"></div>
+                        <h4>Avalie o produto para ajudar os outros usuários!</h4>
+
                         <div class="estrelas">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
-                            <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
-                            <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
-                            <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
-                            <i class="fa-solid fa-star fa-xs" style="color: #ffcd6b;"></i>
+                            <i class="fa-solid fa-star fa-md notas" data-value="1" style="color: gray;"></i>
+                            <i class="fa-solid fa-star fa-md notas" data-value="2" style="color: gray;"></i>
+                            <i class="fa-solid fa-star fa-md notas" data-value="3" style="color: gray;"></i>
+                            <i class="fa-solid fa-star fa-md notas" data-value="4" style="color: gray;"></i>
+                            <i class="fa-solid fa-star fa-md notas" data-value="5" style="color: gray;"></i>
+                            <span id="notatexto"></span>
                         </div>
                     </div>
+                    <div class="notaheader">
+                        <h3>Avaliações dos usuários: </h3>
+                        
+                    </div>
+
                 </details>
             </div>
 
@@ -242,11 +260,60 @@
                     arrows[i-1].style.transform = 'rotate(0deg)';
                 }
                 rotated[i-1] = !rotated[i-1]
-
-                
             })
-
         }
+
+        var notatexto = document.getElementById('notatexto')
+        var estrelas = document.getElementsByClassName('notas')
+        for(let i=0; i <= (details.length-1); i++){
+            estrelas[i].addEventListener('mouseover', function(){
+                switch(estrelas[i].getAttribute('data-value')){
+                    case '5':
+                        estrelas[0].style.color = '#ffcd6b';
+                        estrelas[1].style.color = '#ffcd6b';
+                        estrelas[2].style.color = '#ffcd6b';
+                        estrelas[3].style.color = '#ffcd6b';
+                        estrelas[4].style.color = '#ffcd6b';   
+                        notatexto.innerHTML = 'Extraordinário!'                     
+                        break;
+                    case '4':
+                        estrelas[0].style.color = '#ffcd6b';
+                        estrelas[1].style.color = '#ffcd6b';
+                        estrelas[2].style.color = '#ffcd6b';
+                        estrelas[3].style.color = '#ffcd6b';
+                        estrelas[4].style.color = 'gray';
+                        notatexto.innerHTML = 'Bom';                
+                        break;
+                    case '3':
+                        estrelas[0].style.color = '#ffcd6b';
+                        estrelas[1].style.color = '#ffcd6b';
+                        estrelas[2].style.color = '#ffcd6b';
+                        estrelas[3].style.color = 'gray';
+                        estrelas[4].style.color = 'gray';   
+                        notatexto.innerHTML = 'Medíocre';                                       
+                        break;
+                    case '2':
+                        estrelas[0].style.color = '#ffcd6b';
+                        estrelas[1].style.color = '#ffcd6b';
+                        estrelas[2].style.color = 'gray';
+                        estrelas[3].style.color = 'gray';
+                        estrelas[4].style.color = 'gray';
+                        notatexto.innerHTML = 'Ruim';
+                        break;
+                    case '1':
+                        estrelas[0].style.color = '#ffcd6b';
+                        estrelas[1].style.color = 'gray';
+                        estrelas[2].style.color = 'gray';
+                        estrelas[3].style.color = 'gray';
+                        estrelas[4].style.color = 'gray';
+                        notatexto.innerHTML = 'Péssimo';
+                        break;
+
+
+                }
+            })
+        }
+
 
 
     </script>
