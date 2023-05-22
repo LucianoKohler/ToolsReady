@@ -150,8 +150,11 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
 }
 
 .similares{
-    margin: 30px 0 0 0 ;
     width: 100%;
+}
+
+.similares header{
+    margin: 0 0 15px 0 !important;
 }
 
 .headerconteudo{
@@ -160,8 +163,31 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
     align-items: center;
 }
 
+.carrossel{
+    overflow-x: hidden;
+    display: flex;
+    
+}
+
+.carrossel img{
+    padding: 0 10px;
+    width: 12.4%;
+}
+
+#left, #right{
+    position: relative;
+    border: none;
+    outline: none;
+    width: 50px;
+}
+
+#right{
+    left: 96.3%;
+}
+
 header{
     width: 100% !important;
+    padding: 0;
 }
 
 details{
@@ -202,7 +228,56 @@ summary header{
     content: "▲";
 }
 
-#infotecnica tr td:nth-child(1){
+.conteudo{
+    display: flex;
+    text-align: justify;
+    width: 100%;
+    height: 80%;
+}
+
+.conteudo h2{
+    width: 100%;
+    height: fit-content;
+}
+
+.conteudotexto{
+    flex-grow: 2;
+    width: 65%;
+    padding: 0 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.conteudoimagem{
+    height: 100%;
+    flex-grow: 1;
+    padding: 15px;
+    height: 100%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudoimagem img{
+    width: 80%;
+}
+
+table{
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 6px;
+    border-top: 1px solid grey;
+}
+
+tr:last-child td{
+    border-bottom: 1px solid grey;
+}
+
+table tr td:nth-child(1){
     background-color: #DDDDDD;
     border-collapse: collapse;
 }
@@ -211,6 +286,36 @@ summary header{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filtro h4{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.estrelas{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.estrelas i{
+    padding: 0 2px;
+}
+
+#notatexto{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+    color: grey;
+}
+
+.ghost{
+    width: 100%;
 }
 
 .mainstar{

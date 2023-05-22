@@ -14,17 +14,17 @@
 .container{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 10px;
     margin-top: 30px;
 }
 
 main{
     width: 80%;
-}
-
-aside{
-    width: 15%;
-    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-evenly;
+    gap: 50px 10px;
 }
 
 select{
@@ -42,10 +42,60 @@ select:focus{
 
 header{
     display: flex;
+    margin: 0 !important;
     justify-content: space-between;
 }
 
 .ordenar p{
 display: inline-block;
 padding: 0px 5px;
+}
+
+.card{
+    width: 25%;
+}
+
+aside{
+    width: 15%;
+    padding: 20px;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.25);
+}
+
+.filtroheader h4{
+    font-size: 20px;
+    margin: 0 10px;
+    display: inline;
+}
+
+.extensao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extensao h4{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.minimo, .maximo{
+    display: flex;
+    padding: 5px;
+    border: 1px solid gray;
+    width: 37%;
+    border-radius: 10px;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

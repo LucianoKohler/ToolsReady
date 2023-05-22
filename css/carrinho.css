@@ -89,7 +89,7 @@ td i{
     cursor: pointer;
 }
 
-.acoes{
+.misc{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -213,7 +213,9 @@ aside button{
     justify-content: center;
 }
 
-aside button h1{
+aside button #finalizar{
+    color: white;
     font-size: 30px;
+    margin: 20px;
     padding-left: 20px;
 }
