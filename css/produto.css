@@ -15,6 +15,11 @@ html, body{
     color: var(--font-black);
 }
 
+@keyframes abrir {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .container{
     width: 100%;
     display: flex;
@@ -165,31 +170,41 @@ details{
     font-size: 14px;
 }
 
-details summary{
+
+details[open]:not(header){
+    animation: abrir .3s ease;
+}
+
+details:not([open]){
+    animation: abrir .3s ease reverse;
+}
+
+summary{
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin: 0;
 }
 
-details summary header{
+summary header{
     margin: 0;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
 
-details summary header .marker{
+.marker{
     color: var(--main);
     margin-right: 15px;
 }
 
-details summary header .marker::after{
+.marker::after{
     content: "▲";
 }
 
-details table tr td:nth-child(1){
+#infotecnica tr td:nth-child(1){
     background-color: #DDDDDD;
+    border-collapse: collapse;
 }
 
 .filtro{
@@ -202,7 +217,6 @@ details table tr td:nth-child(1){
     font-size: 75px;
     color: #ffcd6b;
 }
-
 
 .pergunta{
     margin: 10px;
