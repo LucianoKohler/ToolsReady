@@ -17,8 +17,13 @@
     justify-content: center;
 }
 
+.minicontainer{
+    width: 87.5%;
+    display: flex;
+    justify-content: space-between;
+}
 .perfil, .cupom{
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
