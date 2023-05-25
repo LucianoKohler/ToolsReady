@@ -295,32 +295,101 @@ table tr td:nth-child(1){
     margin: 20px;
 }
 
-.estrelas{
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.estrelas i{
-    padding: 0 2px;
-}
-
-#notatexto{
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    margin: 10px;
-    color: grey;
-}
-
 .ghost{
     width: 100%;
 }
 
-.mainstar{
-    font-size: 75px;
-    color: #ffcd6b;
+.avalitems{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avalitems h1, .avalitems h3{
+    width: 100%;
+    color: black;
+}
+
+.avalitems h1{
+    font-size: 50px;
+    padding: 0;
+    font-weight: 400;
+}
+
+.avalitems h3{
+    width: 45%;
+}
+
+.infoheader{
+    margin: 20px;   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main{
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.bars{
+    width: 25%;
+}
+
+.estrelas-nota{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    color: #D9D9D9;
+}
+
+.nota-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.nota-container div{
+    background-color: #D9D9D9;
+    width: 80%;
+    height: 14px;
+    border-radius: 1000px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.avaliar{
+    width: 50%;
+    float: right;
+    margin-left: auto;
+}
+
+textarea{
+    width: 95%;
+    border-radius: 2px;
+    font-family: Inter;
+    resize: none;
+    padding: 5px;
+}
+
+.estrelas{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.estrelas i{
+    padding: 0 10px;
+}
+
+#notatexto{
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+    color: grey;
 }
 
 .pergunta{

@@ -184,23 +184,41 @@
                             <div class="marker"></div>
                         </header>
                     </summary>
-                    <div class="filtro">
-                        <i class="fa-solid fa-star mainstar"></i>
-                        <div class="ghost"></div>
-                        <h4>Avalie o produto para ajudar os outros usuários!</h4>
+                    <div class="avalitems">
+                            <div class="infoheader">
+                                <h3>Avaliações</h3>
+                                <h3 style="margin-right: 20px;">Avaliar este produto</h3>
+                            </div>
+                            <div class="main">
+                                <h1>4,5</h1>
+                                <div class="estrelas-nota">
+                                    <i class="fa-solid fa-star fa-sm" data-value="1"></i>
+                                    <i class="fa-solid fa-star fa-sm" data-value="2"></i>
+                                    <i class="fa-solid fa-star fa-sm" data-value="3"></i>
+                                    <i class="fa-solid fa-star fa-sm" data-value="4"></i>
+                                    <i class="fa-solid fa-star fa-sm" data-value="5"></i>
+                                </div>
+                                2234 aval.
+                            </div>
+                            <div class="bars">
+                                <div class="nota-container">1<div class="nota1">&nbsp;</div><br></div>
+                                <div class="nota-container">2<div class="nota2">&nbsp;</div><br></div>
+                                <div class="nota-container">3<div class="nota3">&nbsp;</div><br></div>
+                                <div class="nota-container">4<div class="nota4">&nbsp;</div><br></div>
+                                <div class="nota-container">5<div class="nota5">&nbsp;</div><br></div>
+                            </div>
+                            <div class="avaliar">
+                                <textarea placeholder="Descreva sobre sua experiência com o produto..."></textarea>
 
-                        <div class="estrelas">
-                            <i class="fa-solid fa-star fa-md notas" data-value="1" style="color: gray;"></i>
-                            <i class="fa-solid fa-star fa-md notas" data-value="2" style="color: gray;"></i>
-                            <i class="fa-solid fa-star fa-md notas" data-value="3" style="color: gray;"></i>
-                            <i class="fa-solid fa-star fa-md notas" data-value="4" style="color: gray;"></i>
-                            <i class="fa-solid fa-star fa-md notas" data-value="5" style="color: gray;"></i>
-                            <span id="notatexto"></span>
-                        </div>
-                    </div>
-                    <div class="notaheader">
-                        <h3>Avaliações dos usuários: </h3>
-                        
+                                <div class="estrelas">
+                                    <i class="fa-solid fa-star fa-lg notas" data-value="1"></i>
+                                    <i class="fa-solid fa-star fa-lg notas" data-value="2"></i>
+                                    <i class="fa-solid fa-star fa-lg notas" data-value="3"></i>
+                                    <i class="fa-solid fa-star fa-lg notas" data-value="4"></i>
+                                    <i class="fa-solid fa-star fa-lg notas" data-value="5"></i>
+                                    <span id="notatexto"></span>
+                                </div>
+                            </div>
                     </div>
 
                 </details>
@@ -301,7 +319,7 @@
                         estrelas[2].style.color = '#ffcd6b';
                         estrelas[3].style.color = 'gray';
                         estrelas[4].style.color = 'gray';   
-                        notatexto.innerHTML = 'Medíocre';                                       
+                        notatexto.innerHTML = 'Mediano';                                       
                         break;
                     case '2':
                         estrelas[0].style.color = '#ffcd6b';
