@@ -327,15 +327,18 @@ table tr td:nth-child(1){
 }
 
 .main{
-    width: 15%;
+    width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
 }
 
+.nota{
+    margin: 0 25px 0 50px;
+    width: fit-content;
+}
+
 .bars{
-    width: 25%;
+    width: 65%;
 }
 
 .estrelas-nota{
@@ -354,8 +357,8 @@ table tr td:nth-child(1){
 
 .nota-container div{
     background-color: #D9D9D9;
-    width: 80%;
-    height: 14px;
+    width: 90%;
+    height: 12px;
     border-radius: 1000px;
     display: inline-block;
     margin-left: 5px;
@@ -376,20 +379,67 @@ textarea{
 }
 
 .estrelas{
+    margin: 10px 0;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
 .estrelas i{
-    padding: 0 10px;
+    padding: 10px 4px;
 }
 
 #notatexto{
     text-align: center;
-    font-size: 14px;
-    margin: 10px;
+    font-size: 10px;
+    margin-left: 10px;
     color: grey;
+}
+
+.confirmar-avaliar{
+    border-radius: 8px;
+    border: 3px solid var(--main);
+    width: fit-content;
+    padding: 5px 30px;
+    font-weight: 600;
+    font-family: Inter;
+    box-shadow: 3px 4px 21px rgba(0, 0, 0, 0.25);
+    margin: 12px;
+    float: right;
+}
+
+.avaliacao{
+    width: 95%;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.avaliacao-header{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.data{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.avaliacao-acoes button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.avaliacao-acoes a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    font-weight: 400;
 }
 
 .pergunta{
@@ -410,7 +460,7 @@ textarea{
     text-indent: 20px;
 }
 
-.pergunta img{
+.icone{
     margin: 0 20px 0 0;
     border: 2px solid var(--main);
     border-radius: 9999px;

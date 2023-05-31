@@ -18,10 +18,14 @@
         <div class="navbar">
             <div class="navbar-conteudo">
                 <input type="text">
-                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
-                <button onclick="location.href='perfil.html';">&nbsp;<i class="fa-solid fa-user" style="color: #000000;"></i></button>
-                <button onclick="location.href='favoritos.html';">&nbsp;<i class="fa-regular fa-heart" style="color: #000000;"></i></button>
-                <button onclick="location.href='carrinho.html';">&nbsp;<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
+                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass"
+                        style="color: #000000;"></i></button>
+                <button onclick="location.href='perfil.html';">&nbsp;<i class="fa-solid fa-user"
+                        style="color: #000000;"></i></button>
+                <button onclick="location.href='favoritos.html';">&nbsp;<i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></button>
+                <button onclick="location.href='carrinho.html';">&nbsp;<i class="fa-solid fa-cart-shopping"
+                        style="color: #000000;"></i></button>
                 <!--O &nbsp; significa "non-breaking space", e foi usado para deixar os icons mais à direita-->
             </div>
         </div>
@@ -126,7 +130,13 @@
                     <div class="conteudo">
                         <div class="conteudotexto">
                             <h2>A betoneira que você precisa</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumhas been the industry's standard dummy text ever since the 1500s, when an unknownprinter took a galley of type and scrambled it to make a type specimen book. <br><br>Ithas survived not only five centuries, but also the leap into electronic typesetting,remaining essentially unchanged. It was popularised in the 1960s with the release ofLetraset sheets containing Lorem Ipsum passages.<br><br>And more recently with desktoppublishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>    
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumhas
+                                been the industry's standard dummy text ever since the 1500s, when an unknownprinter
+                                took a galley of type and scrambled it to make a type specimen book. <br><br>Ithas
+                                survived not only five centuries, but also the leap into electronic
+                                typesetting,remaining essentially unchanged. It was popularised in the 1960s with the
+                                release ofLetraset sheets containing Lorem Ipsum passages.<br><br>And more recently with
+                                desktoppublishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
                         <div class="conteudoimagem">
                             <img src="assets/produtos/betoneira.png" alt="">
@@ -137,7 +147,7 @@
             <div class="linha">
                 <details class="aba">
                     <summary>
-                        <header> 
+                        <header>
                             <div class="headerconteudo">
                                 <i class="fa-solid fa-circle-info fa-2xl"></i>
                                 <h2>INFORMAÇÕES TÉCNICAS</h2>
@@ -185,11 +195,12 @@
                         </header>
                     </summary>
                     <div class="avalitems">
-                            <div class="infoheader">
-                                <h3>Avaliações</h3>
-                                <h3 style="margin-right: 20px;">Avaliar este produto</h3>
-                            </div>
-                            <div class="main">
+                        <div class="infoheader">
+                            <h3>Avaliações</h3>
+                            <h3 style="margin-right: 20px;">Avaliar este produto</h3>
+                        </div>
+                        <div class="main">
+                            <div class="nota">
                                 <h1>4,5</h1>
                                 <div class="estrelas-nota">
                                     <i class="fa-solid fa-star fa-sm" data-value="1"></i>
@@ -207,20 +218,66 @@
                                 <div class="nota-container">4<div class="nota4">&nbsp;</div><br></div>
                                 <div class="nota-container">5<div class="nota5">&nbsp;</div><br></div>
                             </div>
-                            <div class="avaliar">
-                                <textarea placeholder="Descreva sobre sua experiência com o produto..."></textarea>
-
-                                <div class="estrelas">
-                                    <i class="fa-solid fa-star fa-lg notas" data-value="1"></i>
-                                    <i class="fa-solid fa-star fa-lg notas" data-value="2"></i>
-                                    <i class="fa-solid fa-star fa-lg notas" data-value="3"></i>
-                                    <i class="fa-solid fa-star fa-lg notas" data-value="4"></i>
-                                    <i class="fa-solid fa-star fa-lg notas" data-value="5"></i>
-                                    <span id="notatexto"></span>
-                                </div>
+                        </div>
+                        <div class="avaliar">
+                            <textarea placeholder="Descreva sobre sua experiência com o produto..."></textarea>
+                            <div class="estrelas">
+                                <i class="fa-solid fa-star fa-lg notas" style="color:#D9D9D9" data-value="1"></i>
+                                <i class="fa-solid fa-star fa-lg notas" style="color:#D9D9D9" data-value="2"></i>
+                                <i class="fa-solid fa-star fa-lg notas" style="color:#D9D9D9" data-value="3"></i>
+                                <i class="fa-solid fa-star fa-lg notas" style="color:#D9D9D9" data-value="4"></i>
+                                <i class="fa-solid fa-star fa-lg notas" style="color:#D9D9D9" data-value="5"></i>
+                                <span id="notatexto"></span>
                             </div>
+                            <button class="confirmar-avaliar">Avaliar</button>
+                        </div>
                     </div>
-
+                    <section>
+                        <div class="avaliacao">
+                            <div class="avaliacao-header">
+                                <img class="icone" src="assets/orochi.jpg" alt="">
+                                <p>Pedro Orochinho</p>
+                                <div class="ghost" style="width: 100%;"></div>
+                                <div class="">
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="1"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="2"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="3"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="4"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="5"></i>
+                                </div>
+                                <div class="data">24/04/2023</div>
+                                <div class="ghost" style="width: 100%;"></div>
+                            </div>
+                            <p>É um excelente produto custo-benefício, recomendo para qualquer um que quiser “não por a mão na massa”, kkkkk sou muito engraçado!</p>
+                            <div class="avaliacao-acoes">
+                                <button>Útil</button>
+                                |
+                                <a href="">Denunciar</a>
+                            </div>
+                        </div>
+                        <div class="avaliacao">
+                            <div class="avaliacao-header">
+                                <img class="icone" src="assets/rafael.jpg" alt="">
+                                <p>Rafael louco do pix</p>
+                                <div class="ghost" style="width: 100%;"></div>
+                                <div class="">
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="1"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="2"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="3"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="4"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: var(--main);" data-value="5"></i>
+                                </div>
+                                <div class="data">24/04/2023</div>
+                                <div class="ghost" style="width: 100%;"></div>
+                            </div>
+                            <p>É um excelente produto custo-benefício, recomendo para qualquer um que quiser “não por a mão na massa”, kkkkk sou muito engraçado!</p>
+                            <div class="avaliacao-acoes">
+                                <button>Útil</button>
+                                |
+                                <a href="">Denunciar</a>
+                            </div>
+                        </div>
+                    </section>
                 </details>
             </div>
 
@@ -236,15 +293,20 @@
                         </header>
                     </summary>
                     <div class="pergunta">
-                        <img src="assets/orochi.jpg" alt="">
-                        <p>Orochinho perguntou: Qual a capacidade da betoneira? Me perdi quando vi as informações técnicas <span class="dataresposta">(24/09/2023, 18:22)</span></p>
-                        <p>R: Sentimos muito pela confusão, a betoneira aguenta 400L, uma dica é que aqui no site, normalmente, a capacidade da betoneira está no próprio nome, boas obras! <span class="dataresposta">(25/09/2023, 19:16)</span></p>
+                        <img class="icone" src="assets/orochi.jpg" alt="">
+                        <p>Orochinho perguntou: Qual a capacidade da betoneira? Me perdi quando vi as informações
+                            técnicas <span class="dataresposta">(24/09/2023, 18:22)</span></p>
+                        <p>R: Sentimos muito pela confusão, a betoneira aguenta 400L, uma dica é que aqui no site,
+                            normalmente, a capacidade da betoneira está no próprio nome, boas obras! <span
+                                class="dataresposta">(25/09/2023, 19:16)</span></p>
                     </div>
                     <hr>
                     <div class="pergunta">
-                        <img src="assets/rafael.jpg" alt="">
-                        <p>Rafael perguntou: Sabem me dizer se tem a cor rosa? <span class="dataresposta">(30/09/2023, 12:42)</span></p>
-                        <p>R: A betoneira vem apenas na cor amarela, mesmo que uma betoneira rosa estaria muito na moda, boas obras! <span class="dataresposta">(30/09/2023, 20:20)</span></p>
+                        <img class="icone" src="assets/rafael.jpg" alt="">
+                        <p>Rafael perguntou: Sabem me dizer se tem a cor rosa? <span class="dataresposta">(30/09/2023,
+                                12:42)</span></p>
+                        <p>R: A betoneira vem apenas na cor amarela, mesmo que uma betoneira rosa estaria muito na moda,
+                            boas obras! <span class="dataresposta">(30/09/2023, 20:20)</span></p>
                     </div>
                     <hr>
                     <button class="perguntar">
@@ -254,7 +316,9 @@
                 </details>
             </div>
         </main>
-        <aside><p>Local para anuncios</p></aside>
+        <aside>
+            <p>Local para anuncios</p>
+        </aside>
     </div>
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
     <script>
@@ -262,15 +326,16 @@
         const contador = document.getElementById('qtd')
         let qtd = 1;
 
-        document.getElementById('incremento').addEventListener('click', function(){
-            if(qtd < contador.getAttribute('max')){
+        document.getElementById('incremento').addEventListener('click', function () {
+            if (qtd < contador.getAttribute('max')) {
                 qtd++;
                 contador.setAttribute('value', qtd)
             }
         })
 
-        document.getElementById('decremento').addEventListener('click', function(){u
-            if(qtd > contador.getAttribute('min')){
+        document.getElementById('decremento').addEventListener('click', function () {
+            u
+            if (qtd > contador.getAttribute('min')) {
                 qtd--;
                 contador.setAttribute('value', qtd)
             }
@@ -278,32 +343,32 @@
 
         var details = document.getElementsByTagName('header');
         var arrows = document.getElementsByClassName('marker');
-        let rotated = [false,false,false,false]
+        let rotated = [false, false, false, false]
 
-        for(let i=0; i <= (details.length-1); i++){
-            details[i].addEventListener('click', function(){
-                if(rotated[i-1] == false){
-                    arrows[i-1].style.transform = 'rotate(180deg)';
-                    arrows[i-1].style.transition = 'transform ease .2s';
-                }else{
-                    arrows[i-1].style.transform = 'rotate(0deg)';
+        for (let i = 0; i <= (details.length - 1); i++) {
+            details[i].addEventListener('click', function () {
+                if (rotated[i - 1] == false) {
+                    arrows[i - 1].style.transform = 'rotate(180deg)';
+                    arrows[i - 1].style.transition = 'transform ease .2s';
+                } else {
+                    arrows[i - 1].style.transform = 'rotate(0deg)';
                 }
-                rotated[i-1] = !rotated[i-1]
+                rotated[i - 1] = !rotated[i - 1]
             })
         }
 
         var notatexto = document.getElementById('notatexto')
         var estrelas = document.getElementsByClassName('notas')
-        for(let i=0; i <= (details.length-1); i++){
-            estrelas[i].addEventListener('mouseover', function(){
-                switch(estrelas[i].getAttribute('data-value')){
+        for (let i = 0; i <= (details.length - 1); i++) {
+            estrelas[i].addEventListener('mouseover', function () {
+                switch (estrelas[i].getAttribute('data-value')) {
                     case '5':
                         estrelas[0].style.color = '#ffcd6b';
                         estrelas[1].style.color = '#ffcd6b';
                         estrelas[2].style.color = '#ffcd6b';
                         estrelas[3].style.color = '#ffcd6b';
-                        estrelas[4].style.color = '#ffcd6b';   
-                        notatexto.innerHTML = 'Extraordinário!'                     
+                        estrelas[4].style.color = '#ffcd6b';
+                        notatexto.innerHTML = 'Extraordinário!'
                         break;
                     case '4':
                         estrelas[0].style.color = '#ffcd6b';
@@ -311,15 +376,15 @@
                         estrelas[2].style.color = '#ffcd6b';
                         estrelas[3].style.color = '#ffcd6b';
                         estrelas[4].style.color = 'gray';
-                        notatexto.innerHTML = 'Bom';                
+                        notatexto.innerHTML = 'Bom';
                         break;
                     case '3':
                         estrelas[0].style.color = '#ffcd6b';
                         estrelas[1].style.color = '#ffcd6b';
                         estrelas[2].style.color = '#ffcd6b';
                         estrelas[3].style.color = 'gray';
-                        estrelas[4].style.color = 'gray';   
-                        notatexto.innerHTML = 'Mediano';                                       
+                        estrelas[4].style.color = 'gray';
+                        notatexto.innerHTML = 'Mediano';
                         break;
                     case '2':
                         estrelas[0].style.color = '#ffcd6b';
@@ -346,5 +411,6 @@
 
 
     </script>
-    </body>
+</body>
+
 </html>
