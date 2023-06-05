@@ -102,7 +102,7 @@
                         <i class="fa-solid fa-ticket fa-2xl"></i>
                         <h2>PRODUTOS SIMILARES</h2>
                     </header>
-                    <div class="carrossel">
+                    <div id="carrossel">
                         <img src="assets/produtos/canoPVC.png" alt="">
                         <img src="assets/produtos/canoPVC.png" alt="">
                         <img src="assets/produtos/canoPVC.png" alt="">
@@ -114,6 +114,8 @@
                         <img src="assets/produtos/canoPVC.png" alt="">
                         <img src="assets/produtos/canoPVC.png" alt="">
                     </div>
+                    <button onclick="scroller.scrollBy(-150,0)"><</button>
+                    <button onclick="scroller.scrollBy(150,0)">></button>
                 </div>
             </div>
             <div class="linha">
@@ -408,6 +410,7 @@
             })
         }
 
+        const scroller = document.getElementById('carrossel');
 
 
     </script>
