@@ -1,0 +1,11 @@
+{
+    "betoneira": {
+        "id": 123,
+        "Marca":"Menegotti",
+        "Modelo":"Prime-400",
+        "Capacidade":"400L",
+        "Cor":"Amarelo",
+        "Voltagem":"220V",
+        "Consumo":"Mediano"
+    }
+}
