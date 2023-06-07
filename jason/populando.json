@@ -1,11 +1,86 @@
 {
     "betoneira": {
         "id": 123,
+        "name":"Betoneira",
         "Marca":"Menegotti",
         "Modelo":"Prime-400",
         "Capacidade":"400L",
         "Cor":"Amarelo",
         "Voltagem":"220V",
         "Consumo":"Mediano"
+    },
+    "Chave-de-fenda": {
+        "id":234,
+        "name":"Chave-de-fenda",
+        "Marca":"Samisungui",
+        "Modelo":"Lifiter Schifon",
+        "Cor":"Preto e vermelho",
+        "Tamanho":"14cm",
+        "Material":"Silicone e aço"
+    },
+    "Serrote": {
+        "id":345,
+        "name":"Serrote",
+        "Marca":"Semor",
+        "Modelo":"Fion",
+        "Tamanho":"600mm",
+        "Material":"Madeira e aço-temperado"
+    },
+    "Madeira": {
+        "id":456,
+        "name":"Madeira",
+        "Tipo":"Pinus",
+        "Tamanho":"6x13x30",
+        "Quantidade":"10uni"
+    },
+    "Furadeira": {
+        "id":567,
+        "name":"Furadeira",
+        "Marca":"Bosch",
+        "Modelo":"Lisbou",
+        "Cor":"Rosa",
+        "Voltagem":"32V",
+        "Tamanho":"38pol",
+        "Movido":"Bateria biovolt"
+    },
+    "Macaco-Hidráulico": {
+        "id":789,
+        "name":"Macaco",
+        "Marca":"Nicher",
+        "Modelo":"Chinfer",
+        "Tipo":"Sanfona",
+        "Cor":"Vermelho",
+        "Capacidade":"600kg",
+        "Mobilidade":"Passeio-de-carro"
+    },
+    "Martelo": {
+        "id":890,
+        "name":"Martelo",
+        "Marca":"Maxzir",
+        "Modelo":"Iron-tacker",
+        "Material":"Fibra de vidro e aço inoxidável",
+        "Tamanho-cabeça":"20mm",
+        "Tamanho-cabo":"30cm",
+        "Peso":"500G"
+    },
+    "Estante-de-ferramenta": {
+        "id":901,
+        "name":"Estante",
+        "Marca":"Smiger",
+        "Modelo":"Presto",
+        "Material":"Liga de aço inoxidável",
+        "Capacidade":"500kg",
+        "Tamanho":"100cm x 50cm x 40cm",
+        "Peso":"10kg"
+    },
+    "Chave-Inglesa":{
+        "id":102,
+        "name":"Chave-inglesa",
+        "Marca":"Sparta",
+        "Modelo":"Kince-L",
+        "Material":"Aço carbono",
+        "Tamanho":"18pol",
+        "Cor":"Preto",
+        "Tipo":"Ajustável"
     }
 }
