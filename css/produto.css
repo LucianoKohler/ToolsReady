@@ -36,11 +36,11 @@ main{
 .linha{
     display: flex;
     width: 100%;
+    margin: 10px 0;
 }
 
 .produtoimagens{
     display: flex;
-    align-items: center;
     height: 100%;
     width: 35%;
 }
@@ -48,7 +48,7 @@ main{
 .secundarias{
     display: flex;
     width: 25%;
-    height: 100%;
+    height: 70%;
     flex-wrap: wrap;
     gap: 5px;
 }
@@ -61,10 +61,9 @@ main{
 
 .primaria{
     display: flex;
-    width: 85%;
+    width: 100%;
     align-items: center;
     height: 100%;
-    padding: 10px;
 }
 
 .primaria img{
@@ -150,10 +149,6 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
     padding-left: 10px;
 }
 
-.similares{
-    width: 100%;
-}
-
 .similares header{
     margin: 0 0 15px 0 !important;
 }
@@ -165,10 +160,7 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
 }
 
 #carrossel{
-    overflow-x: hidden;
     display: flex;
-    scroll-behavior: smooth;
-    
 }
 
 #carrossel img{
@@ -176,15 +168,8 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
     width: 12.4%;
 }
 
-#left, #right{
-    position: relative;
-    border: none;
-    outline: none;
-    width: 50px;
-}
-
-#right{
-    left: 96.3%;
+.similares{
+    width: 100%;
 }
 
 header{
@@ -335,7 +320,7 @@ table tr td:nth-child(1){
 }
 
 .nota{
-    margin: 0 25px 0 50px;
+    margin: 0 25px 0 0;
     width: fit-content;
 }
 
@@ -493,4 +478,8 @@ aside{
 
 #decremento, #incremento, #qtd{
     font-size: 18px;
+}
+
+.quantidade{
+    margin-top: 20px;
 }
