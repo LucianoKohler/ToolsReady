@@ -120,6 +120,7 @@ input[type="number"], input::-webkit-inner-spin-button, input::-webkit-outer-spi
     border-radius: 5px;
     height: 30px;
     margin: 10px 0;
+    padding: 0 0 0 10px;
 }
 
 .cep button{
