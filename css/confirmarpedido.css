@@ -1,0 +1,61 @@
+:root{
+    --main: #FF7A00;
+    --secon: #A45214;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    --other-black: #11101D;
+    --font-red: #DB4437;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+aside{
+    margin: 20px;
+    padding: 20px;
+    width: 20%;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+aside h4{
+    margin: 0;
+}
+
+hr{
+    height: 1px;
+    background-color: var(--main);
+    border: none;
+    margin: 15px 0;
+}
+
+table{width: 100%;}
+table tr td{padding: 10px 0;}
+table tr td:last-child{text-align: end;}
+table tr td:last-child::before{content: "R$";}
+
+#total{
+    font-size: 20px;
+    text-align: center;
+}
+
+#total span::before{
+    content: "R$";
+}
+
+#total span{
+    font-weight: 600;
+}
+
+.big{
+    margin: 15px auto 0 auto !important;
+    display: block;
+}

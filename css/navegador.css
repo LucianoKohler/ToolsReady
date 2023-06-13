@@ -41,7 +41,6 @@ select:focus{
 }
 
 header{
-    display: flex;
     margin: 0 !important;
     justify-content: space-between;
 }
