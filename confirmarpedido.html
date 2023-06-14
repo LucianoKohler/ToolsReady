@@ -35,33 +35,63 @@
         <div>Serviços</div>
     </div>
     <div class="container">
-        <header>
-            <i class="fa-solid fa-user fa-2xl" style="color: var(--main);"></i>
-            <h2>Meus dados</h2>
-        </header>
-        <aside>
-            <div style="text-align: center;">
-                Escolha o método de pagamento para continuar
+        <main>
+            <header>
+                <i class="fa-solid fa-location-dot fa-2xl"></i>
+                <h2>Selecione o endereço de destino</h2>
+            </header>
+            <div class="enderecos">
+                <div class="endereco escolhido">
+                    <h4>Endereço prinicpal</h4>
+                    <p>RUA ARNALDO PINTO DA ROÇA<br>
+                    número: 6889<br>
+                    CEP 89234-881, CARPAZINHA-RS
+                    </p>
+                </div>
+                <div class="endereco">
+                    <h4>Endereço secundário</h4>
+                    <p>RUA ARNALDO PINTO DA ROÇA<br>
+                    número: 6889<br>
+                    CEP 89234-881, CARPAZINHA-RS
+                    </p>
+                </div>    
             </div>
-            <hr>
-            <h4>Resumo do pedido:</h4>
-            <table>
-                <tr>
-                    <td>Itens:</td>
-                    <td>200,00</td>
-                </tr>
-                <tr>
-                    <td>Frete e manuseio:</td>
-                    <td>10,00</td>
-                </tr>
-                <tr>
-                    <td>Desconto Aplicado:</td>
-                    <td>10,00</td>
-                </tr>
-            </table>
-            <hr>
-            <div id="total">Total do Pedido: <span id="valor_final">200,00</span></div>
-                <button class="big">FINALIZAR PEDIDO</button>
+            <header>
+                <i class="fa-solid fa-money-bill fa-2xl"></i>
+                <h2>Selecione a forma de pagamento</h2>
+            </header>
+        </main>
+        <aside>
+            <div id="aside-main">
+                <div style="text-align: center;">
+                    Escolha o método de pagamento para continuar
+                </div>
+                <hr>
+                <h4>Resumo do pedido:</h4>
+                <table>
+                    <tr>
+                        <td>Itens:</td>
+                        <td>200,00</td>
+                    </tr>
+                    <tr>
+                        <td>Frete e manuseio:</td>
+                        <td>10,00</td>
+                    </tr>
+                    <tr>
+                        <td>Desconto Aplicado:</td>
+                        <td>10,00</td>
+                    </tr>
+                </table>
+                <hr>
+                <div id="total">Total do Pedido: <span id="valor_final">200,00</span></div>
+                    <button class="big">FINALIZAR PEDIDO</button>
+            </div>
+            <div class="cupom">
+                Inserir cupom de desconto
+                <input type="text" placeholder="Digitar código promocional" name="cupom">
+                <button class="big small">Aplicar</button>
+    
+            </div>
         </aside>
     </div>
 

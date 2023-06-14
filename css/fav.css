@@ -85,11 +85,13 @@ h3{
     font-size: 20px;
     font-weight: 600;
     background-color: var(--main);
-    padding: 10px;
     border-radius: 15px 0 0 0;
+    padding: 10px;
     justify-self: flex-end;
     align-self: flex-end;
-    width: 80%;
+    position: relative;
+    bottom: 16px;
+    width: 90%;
     border: none;
 }
 
@@ -99,15 +101,13 @@ h3{
     transition: filter .2s ease;
 }
 
-.acoes .fa-heart{
-    align-self: flex-start;
-    justify-self: flex-end;
+.coracao{
     position: relative;
-    top: 15px;
-    right: 10px;
+    bottom: 140px;
+    left: 180px; /*Arrumar!*/
 }
 
-.acoes .fa-heart:hover{
+.coracao:hover{
     cursor: pointer;
     filter: brightness(110%);
     transition: filter .2s ease;
