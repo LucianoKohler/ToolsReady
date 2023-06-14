@@ -13,9 +13,9 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 .titulo{
     width: 45%;
     display: flex;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 3.4%;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 0 60px;
 }
 
 .conteudo{
@@ -51,6 +51,27 @@ fieldset{
     font-size: 15px;
     color: black;
     border: 1px solid rgb(75, 75, 75);
+}
+
+#CC{
+    font-family: Inter;
+    color: var(--main);
+}
+
+#PF{
+    font-family: 'Inter';
+    font-weight: 275;
+    color: #B1B1B1;
+}
+
+form p{
+    font-family: Inter;
+    color: #494949;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 0 15px 0;
 }
 
 input{
@@ -181,7 +202,7 @@ button{
     color: var(--font-white);
     background-color: var(--main);
     border: none;
-    height: 60px;
+    height: 55px;
     width: 20%;
     border-radius: 15px;
     font-size: 1.5em;
