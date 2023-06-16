@@ -60,6 +60,43 @@
                 <i class="fa-solid fa-money-bill fa-2xl"></i>
                 <h2>Selecione a forma de pagamento</h2>
             </header>
+            <div id="metodos">
+                <details>
+                    <summary>
+                        <i class="fa-solid fa-plus fa-2xl" style="color: var(--main);"></i>
+                        <h4>Adicionar um cartão de Crédito</h4>
+                    </summary>
+                    <input type="number" placeholder="Número do cartão">
+                    <select>
+                        <option value="" disabled selected>Marca do cartão</option>
+                        <option value="">Visa</option>
+                        <option value="">Mastercard</option>
+                        <option value="">Nubank</option>
+                        <option value="">Ourocard</option>
+                        <option value="">Banco do Brasil</option>
+                    </select>
+                    <input type="date" placeholder="Data de validade">
+                    <input type="number" placeholder="Código de Segurança">
+                </details>
+                <form action="">
+                    <div class="opcao">
+                        <div class="opcao">
+                            <label for="usercard1"><h2>Cartão Paulo</h2></label>
+                            <input type="radio" name="metodo" id="usercard1">
+                        </div>    
+                        <label for="boleto"><h2>Boleto</h2></label>
+                        <input type="radio" name="metodo" id="boleto">
+                        <i class="fa-solid fa-barcode fa-lg"></i>
+                        Vencimento em 1 dia útil. A data de entrega será alterada devido o tempo de processamento do boleto. 
+
+                    </div>
+                    <div class="opcao">
+                        <label for="pix"><h2>Pix</h2></label>
+                        <input type="radio" name="metodo" id="pix">
+                        <i class="fa-brands fa-pix fa-lg"></i>
+                    </div>
+                </form>
+            </div>
         </main>
         <aside>
             <div id="aside-main">
@@ -87,8 +124,8 @@
                     <button class="big">FINALIZAR PEDIDO</button>
             </div>
             <div class="cupom">
-                Inserir cupom de desconto
-                <input type="text" placeholder="Digitar código promocional" name="cupom">
+                <div style="width: 100%;">Inserir cupom de desconto</div>
+                <input type="text" placeholder="Digitar código" name="cupom">
                 <button class="big small">Aplicar</button>
     
             </div>

@@ -19,7 +19,7 @@
 }
 
 main{
-    width: 60%;
+    width: 65%;
 }
 
 main header{
@@ -35,10 +35,10 @@ main header{
 .endereco{
     border-left: 8px solid gray;
     background-color: #e4e4e4; 
-    width: 40%;
     border-radius: 10px;
     padding: 10px;
     margin-right: 15px;
+    flex-grow: 1;
 }
 
 .escolhido{
@@ -55,6 +55,48 @@ main header{
     margin: 0;
 }
 
+#metodos{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#metodos input, #metodos select{
+    font-family: Inter;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+#metodos input::-webkit-outer-spin-button,
+#metodos input::-webkit-inner-spin-button 
+{-webkit-appearance: none;}
+#metodos input[type=number]
+{appearance: textfield; -moz-appearance: textfield;}
+
+#metodos input[type="radio"]{
+    accent-color: var(--main);
+}
+
+details > summary {list-style: none; padding-bottom: 15px;}
+details h4{display: inline;}
+form label h2{border-top: 1px solid grey; padding-top: 10px;}
+
+details i{
+    rotate: 0deg;
+    transition: rotate .2s;
+    padding-right: 10px;
+}
+
+details[open] i{
+    rotate: 45deg;
+    transition: rotate .2s;
+}
+
+.opcao i{
+    margin: 0 10px;
+}
+  
 aside{
     width: 25%;
     border-radius: 20px;
@@ -72,6 +114,8 @@ aside h4{
 
 .cupom{
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 hr{
@@ -105,15 +149,18 @@ table tr td:last-child::before{content: "R$";}
 }
 
 .small{
+    flex-grow: 1;
     font-size: 12px !important;
     padding: 10px 7px !important;
-    margin: 0 !important;
+    margin: 10px 0 0 0 !important;
 }
 
 input[type="text"]{
+    flex-grow: 2;
     font-family: Inter;
-    font-size: 10px;
+    font-size: 14px;
     padding: 5px;
-    border-radius: 5px;
-    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 10px 0 0;
+    border: 1px solid gray;
 }
