@@ -74,10 +74,7 @@ main header{
 #metodos input[type=number]
 {appearance: textfield; -moz-appearance: textfield;}
 
-#metodos input[type="radio"]{
-    accent-color: var(--main);
-}
-
+details{margin-bottom: 15px;}
 details > summary {list-style: none; padding-bottom: 15px;}
 details h4{display: inline;}
 form label h2{border-top: 1px solid grey; padding-top: 10px;}
@@ -93,8 +90,21 @@ details[open] i{
     transition: rotate .2s;
 }
 
+.card-nome{
+    display: inline;
+    border: none;
+    padding: 0px 10px;
+}
+
 .opcao i{
     margin: 0 10px;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+    transform: scale(2);
+    accent-color: #de6b00;
 }
   
 aside{

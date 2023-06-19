@@ -79,21 +79,21 @@
                     <input type="number" placeholder="Código de Segurança">
                 </details>
                 <form action="">
-                    <div class="opcao">
                         <div class="opcao">
-                            <label for="usercard1"><h2>Cartão Paulo</h2></label>
                             <input type="radio" name="metodo" id="usercard1">
-                        </div>    
-                        <label for="boleto"><h2>Boleto</h2></label>
-                        <input type="radio" name="metodo" id="boleto">
-                        <i class="fa-solid fa-barcode fa-lg"></i>
-                        Vencimento em 1 dia útil. A data de entrega será alterada devido o tempo de processamento do boleto. 
-
-                    </div>
+                            <label for="usercard1"><h2 class="card-nome">Cartão Paulo</h2></label>
+                        </div>   
+                        <div class="opcao">
+                            <label for="boleto"><h2>Boleto</h2></label>
+                            <input type="radio" name="metodo" id="boleto">
+                            <i class="fa-solid fa-barcode fa-lg"></i>
+                            Vencimento em 1 dia útil. A data de entrega será alterada devido o tempo de processamento do boleto. 
+                        </div> 
                     <div class="opcao">
                         <label for="pix"><h2>Pix</h2></label>
                         <input type="radio" name="metodo" id="pix">
                         <i class="fa-brands fa-pix fa-lg"></i>
+                        O código Pix gerado para o pagamento é válido por 30 minutos após a finalização do pedido
                     </div>
                 </form>
             </div>
