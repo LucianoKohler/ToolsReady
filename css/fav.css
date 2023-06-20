@@ -73,11 +73,23 @@ h3{
     font-weight: 600;
 }
 
-.acoes{
+.metodos{
     display: grid;
     flex-wrap: wrap;
     border-bottom: 2px solid var(--main);
     border-bottom: 2px solid var(--main);
+    height: 100%;
+}
+
+.coracao{
+    justify-self: flex-end;
+    margin: 10px;
+}
+
+.coracao:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+    transition: filter .2s ease;
 }
 
 .carrinho{
@@ -89,25 +101,11 @@ h3{
     padding: 10px;
     justify-self: flex-end;
     align-self: flex-end;
-    position: relative;
-    bottom: 16px;
     width: 90%;
     border: none;
 }
 
 .carrinho:hover{
-    cursor: pointer;
-    filter: brightness(110%);
-    transition: filter .2s ease;
-}
-
-.coracao{
-    position: relative;
-    bottom: 140px;
-    left: 180px; /*Arrumar!*/
-}
-
-.coracao:hover{
     cursor: pointer;
     filter: brightness(110%);
     transition: filter .2s ease;
