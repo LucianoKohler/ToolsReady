@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToolsReady!</title>
-    <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <title>ToolsReady</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body id="simplenav"> <!--Usado para deixar a linha preta pequena-->
     <nav>
         <div class="logo">LOGO AINDA NÃO FEITA</div>
         <div class="acc">
             <div class="userimg">
-                <img src="assets/user.png" alt="perfil">
+                <img src="../assets/user.png" alt="perfil">
             </div>
             <div class="texto">
-                <a href="#">Entre</a> com a sua conta
+                <a href="#">Entre</a> com a sua conta <!--Adicionar link correto-->
                 <br>
-                Novo na ToolsReady? <a href="#">Cadastre-se</a>
+                Novo na ToolsReady? <a href="cadastro.html">Cadastre-se</a>
             </div>
         </div>
     </nav>
@@ -30,22 +30,33 @@
                 <p>Bem-vindo a Tools Ready sua loja de venda e aluguel de materiais de contrução especializada em 
                     ajudar você a conseguir a ferramenta ideal, como você gostaria de se cadastrar?
                 </p>
-                <button class="escolha-cadastro-botao">Pessoa Física</button>
-                <button class="escolha-cadastro-botao">Pessoa Jurídica</button>
+                <button onclick="mudaEstado(0)" class="escolha-cadastro-botao">Pessoa Física</button>
+                <button onclick="mudaEstado(1)" class="escolha-cadastro-botao ">Pessoa Jurídica</button>
             </div>
             
             <div class="vector">
-                <img src="assets/construcoes1.avif" alt="construções">
+                <img src="../assets/construcoes1.avif" alt="construções">
             </div>
         </div>
         <div class="continuar" style="margin-top:30px">
             <button>CONTINUAR</button>
             <div class="ghost"></div><!--Para separar as linhas do botão de continuar e o link para log-in-->
-            <p>Já possui cadastro? <a href="#">Entrar</a></p>
+            <p>Já possui cadastro? <a href="#">Entrar</a></p> <!--Adicionar link correto-->
         </div>
 
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
+    <script>
+        let PF = document.getElementsByClassName('escolha-cadastro-botao')[0]
+        let PJ = document.getElementsByClassName('escolha-cadastro-botao')[1]
+
+        mudaEstado = (botao) => {
+            PF.classList.remove("selecionado")
+            PJ.classList.remove("selecionado") //Código abaixo é um if else compacto
+            botao == 0 ? PF.classList.add("selecionado") : PJ.classList.add("selecionado")
+        }
+
+    </script>
 </body>
 </html>
 

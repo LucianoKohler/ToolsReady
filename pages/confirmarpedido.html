@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools Ready</title>
-    <link rel="stylesheet" href="css/confirmarpedido.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <title>ToolsReady</title>
+    <link rel="stylesheet" href="../css/confirmarpedido.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 
 <body>
@@ -40,15 +40,15 @@
                 <i class="fa-solid fa-location-dot fa-2xl"></i>
                 <h2>Selecione o endereço de destino</h2>
             </header>
-            <div class="enderecos">
-                <div class="endereco escolhido">
+            <div id="enderecos">
+                <div onclick="mudaEndereco(0)" class="endereco escolhido">
                     <h4>Endereço prinicpal</h4>
                     <p>RUA ARNALDO PINTO DA ROÇA<br>
                     número: 6889<br>
                     CEP 89234-881, CARPAZINHA-RS
                     </p>
                 </div>
-                <div class="endereco">
+                <div onclick="mudaEndereco(1)" class="endereco">
                     <h4>Endereço secundário</h4>
                     <p>RUA ARNALDO PINTO DA ROÇA<br>
                     número: 6889<br>
@@ -145,5 +145,30 @@
 
 
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
+    <script>
+
+        let Numendereco = document.getElementById("enderecos").childElementCount;
+        let End1 = document.getElementsByClassName("endereco")[0]
+        let End2 = document.getElementsByClassName("endereco")[1]
+        let End3 = document.getElementsByClassName("endereco")[2]
+
+        mudaEndereco = (valor) => {
+
+            document.querySelector('.escolhido').classList.remove('escolhido')
+            switch(valor){
+                case 0:
+                    End1.classList.add('escolhido');
+                    break;
+                case 1:
+                    End2.classList.add('escolhido');
+                    break;
+                case 2:
+                    End3.classList.add('escolhido');
+                    break;
+            }
+
+        }
+
+    </script>
 </body>
 </html>

@@ -52,7 +52,7 @@ h1{
     justify-content: space-evenly;
 }
 
-.escolha-cadastro-botao:nth-child(2){ /*Temporário, para indicar que o selecionado fica laranja*/
+.selecionado{
     background-color: var(--main);
     color: var(--font-white);
 }

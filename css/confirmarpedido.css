@@ -27,7 +27,7 @@ main header{
     margin-top: 26px;
 }
 
-.enderecos{
+#enderecos{
     display: flex;
     flex-wrap: wrap;
 }
@@ -41,6 +41,7 @@ main header{
     flex-grow: 1;
     font-size: 14px;
     line-height: 14px !important;
+    cursor: pointer;
 }
 
 .endereco h4{
