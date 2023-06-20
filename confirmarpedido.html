@@ -61,29 +61,40 @@
                 <h2>Selecione a forma de pagamento</h2>
             </header>
             <div id="metodos">
-                <details>
+                <details id="add-cartao">
                     <summary>
                         <i class="fa-solid fa-plus fa-2xl" style="color: var(--main);"></i>
                         <h4>Adicionar um cartão de Crédito</h4>
                     </summary>
-                    <input type="number" placeholder="Número do cartão">
-                    <select>
-                        <option value="" disabled selected>Marca do cartão</option>
-                        <option value="">Visa</option>
-                        <option value="">Mastercard</option>
-                        <option value="">Nubank</option>
-                        <option value="">Ourocard</option>
-                        <option value="">Banco do Brasil</option>
-                    </select>
-                    <input type="date" placeholder="Data de validade">
-                    <input type="number" placeholder="Código de Segurança">
+                    <form action="">
+                        <div class="row">
+                            <input type="number" placeholder="Número do cartão">
+                            <input type="number" placeholder="Código de Segurança">
+                            <select>
+                                <option value="" disabled selected>Marca do cartão</option>
+                                <option value="Visa">Visa</option>
+                                <option value="Mcard">Mastercard</option>
+                                <option value="Nubank">Nubank</option>
+                                <option value="Ocard">Ourocard</option>
+                                <option value="Brasil">Banco do Brasil</option>
+                            </select>
+                            <input type="date" placeholder="Data de validade">    
+                        </div>
+                        <div class="row">
+                            <input type="text" placeholder="Nome do cartão" id="nome">
+                            <input type="submit" value="SALVAR CARTÃO" class="big salvar-cartao"></button>    
+                        </div>
+                    </form>
                 </details>
                 <form action="">
-                        <div class="opcao">
+                        <div class="opcao cartao">
                             <input type="radio" name="metodo" id="usercard1">
-                            <label for="usercard1"><h2 class="card-nome">Cartão Paulo</h2></label>
-                        </div>   
-                        <div class="opcao">
+                            <label for="usercard1"><h2 class="card-nome">Cartão - Paulo</h2></label>
+                        </div>
+                        <div class="opcao cartao">
+                            <input type="radio" name="metodo" id="usercard2">
+                            <label for="usercard2"><h2 class="card-nome">Cartão - Junior</h2></label>
+                        </div>                        <div class="opcao">
                             <label for="boleto"><h2>Boleto</h2></label>
                             <input type="radio" name="metodo" id="boleto">
                             <i class="fa-solid fa-barcode fa-lg"></i>

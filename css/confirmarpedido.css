@@ -65,13 +65,7 @@ main header{
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
     padding: 25px;
     border-radius: 20px;
-}
-
-#metodos input, #metodos select{
-    font-family: Inter;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid gray;
+    margin-bottom: 40px;
 }
 
 #metodos input::-webkit-outer-spin-button,
@@ -80,20 +74,46 @@ main header{
 #metodos input[type=number]
 {appearance: textfield; -moz-appearance: textfield;}
 
-details{margin-bottom: 15px;}
-details > summary {list-style: none; padding-bottom: 15px;}
-details h4{display: inline;}
+#add-cartao{margin-bottom: 15px;}
+#add-cartao > summary {list-style: none; padding-bottom: 15px;}
+#add-cartao h4{display: inline;}
 form label h2{border-top: 1px solid grey; padding-top: 10px;}
 
-details i{
+#add-cartao i{
     rotate: 0deg;
     transition: rotate .2s;
     padding-right: 10px;
 }
 
-details[open] i{
+#add-cartao[open] i{
     rotate: 45deg;
     transition: rotate .2s;
+}
+
+#add-cartao input, #add-cartao select{
+    margin: 5px 0!important;
+    width: 24%;
+    font-family: Inter;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#nome{flex: 1;}
+
+.salvar-cartao{
+    margin-left: 10px;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex: 1;
 }
 
 .card-nome{
@@ -102,14 +122,22 @@ details[open] i{
     padding: 0px 10px;
 }
 
+.cartao{
+    display: inline;
+}
+
+.opcao{
+    font-size: 14px;
+}
+
 .opcao i{
     margin: 0 10px;
 }
 
-input[type="radio"] {
-    -ms-transform: scale(2); /* IE 9 */
-    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
-    transform: scale(2);
+input[type="radio"]{
+    -ms-transform: scale(1.75); /* IE 9 */
+    -webkit-transform: scale(1.75); /* Chrome, Safari, Opera */
+    transform: scale(1.75);
     accent-color: #de6b00;
 }
   
@@ -160,7 +188,7 @@ table tr td:last-child::before{content: "R$";}
 }
 
 .big{
-    margin: 15px auto 0 auto !important;
+    margin: 15px auto 0 auto;
     display: block;
 }
 
@@ -172,10 +200,9 @@ table tr td:last-child::before{content: "R$";}
 }
 
 input[type="text"]:not(#navinput){
-    flex-grow: 2;
     font-family: Inter;
     font-size: 14px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     margin: 10px 10px 0 0;
     border: 1px solid gray;
