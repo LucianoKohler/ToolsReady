@@ -1,0 +1,217 @@
+html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;}
+
+:root{
+    --main: #FF7A00;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+nav{
+    border-bottom: 8px solid black;
+}
+
+.titulo{
+    width: 45%;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 3.4%;
+    padding: 20px 0;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cadastro{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cadastro form{
+    height: 80%;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    gap: .5em;
+}
+
+fieldset{
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+#CC{
+    font-family: Inter;
+    color: var(--main);
+}
+
+#PF{
+    font-family: 'Inter';
+    font-weight: 275;
+    color: #B1B1B1;
+}
+
+form p{
+    font-family: Inter;
+    color: #494949;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 0 15px 0;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 2px;
+    font-family: Inter;
+    background-color: transparent;
+}
+
+.nome{
+    grid-row: 1/1;
+    grid-column: 1/5;
+}
+
+.CPF{
+    grid-row: 1/1;
+    grid-column: 6/10;
+}
+
+.nascimento{
+    grid-row: 2/2;
+    grid-column: 1/4;
+}
+
+.telefone{
+    grid-row: 2/2;
+    grid-column: 5/10;
+}
+
+.email{
+    grid-row: 3/3;
+    grid-column: 1/10;
+}
+
+.senha{
+    grid-row: 4/4;
+    grid-column: 1/6;
+}
+
+.confirmacao{
+    grid-row: 4/4;
+    grid-column: 7/10;
+}
+
+.imagem{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    height: 100%;  
+}
+
+.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 26%;
+    height: 45px;
+    border-radius: 9px;
+    border: none;
+    margin: 0px 1% 0 1%;
+    padding: 0;
+}
+
+.botao:active{
+    transition: transform .07s ease;
+    transform: scale(1.05);
+}
+
+.botao{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.facebook{
+    background: #3B5998;
+    color: #3B5998;;
+}
+
+.google{
+    background: #DB4437;
+    color: #DB4437;
+}
+
+.gov_br{
+    background: #48AD45;
+    color: #48AD45;
+}
+
+.interno{
+    background-color: white;
+    height: 35px;
+    border-radius: 6px;
+    margin: 0 2px 7px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.img_gov{
+    width: 55px;
+}
+
+.baixo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ghost{
+    width: 100%;
+}
+
+.continuar{
+    color: var(--font-white);
+    background-color: var(--main);
+    border: none;
+    height: 60px;
+    width: 20%;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  
