@@ -1,0 +1,148 @@
+html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;}
+
+:root{
+    --main: #FF7A00;
+    --green: #30A700;
+    --font-white: #EEEEEE;
+    --font-black: #323232;
+    font-family: Inter;
+}
+
+nav{border-bottom: 8px solid black;}
+
+h3{
+    color: var(--main);
+    font-size: 1.3em;
+}
+
+fieldset{
+    border-radius: 10px;
+    width: 55%;
+    height: 30px;
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 5px;
+    font-family: Inter;
+}
+
+.cadastrar{ 
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrar a{color: var(--main) !important;}
+hr{width: 57%;}
+
+.linha_1, .linha_2{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 25%;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    margin: 0px 3% 20px 3%;
+    padding: 0;
+}
+
+.botao:active{
+    transition: transform .1s ease;
+    transform: scale(1.05);
+}
+
+.botao{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.facebook{background: #3B5998; color: #3B5998;}
+.google  {background: #DB4437; color: #DB4437;}
+.gov_br  {background: #48AD45;}
+
+.interno{
+    background-color: white;
+    height: 30px;
+    border-radius: 6px;
+    margin: 0 2px 7px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img_gov{width: 55px}
+
+.submit{
+    color: var(--font-white);
+    background-color: var(--main);
+    height: 40px;
+    width: 59%;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.fa-eye{
+    position: relative;
+    bottom: 23px;
+    left: 95%;
+}
+
+.fazer_login{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fazer_login a{
+    font-weight: 400;
+    color: #8d8b8b;
+}
+
+.esqueceu{
+    display: flex;
+    justify-content: right;
+    padding-right: 21.5%;
+    margin: 0px 0px 20px 0px;
+}
+
+.fazer_login p{
+    color: #777777;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo{width: 45%;} 
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img{
+    width: 46.5%;
+    text-align: center;
+}
+
+.img img{width: 90%}
+
+.title{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 5px 0;
+}
