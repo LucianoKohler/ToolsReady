@@ -16,7 +16,7 @@
                 <img src="../assets/user.png" alt="perfil">
             </div>
             <div class="texto">
-                <a href="#">Entre</a> com a sua conta <!--Adicionar link correto-->
+                <a href="login.html">Entre</a> com a sua conta <!--Adicionar link correto-->
                 <br>
                 Novo na ToolsReady? <a href="cadastro.html">Cadastre-se</a>
             </div>
@@ -30,8 +30,8 @@
                 <p>Bem-vindo a Tools Ready sua loja de venda e aluguel de materiais de contrução especializada em 
                     ajudar você a conseguir a ferramenta ideal, como você gostaria de se cadastrar?
                 </p>
-                <button onclick="mudaEstado(0)" class="escolha-cadastro-botao">Pessoa Física</button>
-                <button onclick="mudaEstado(1)" class="escolha-cadastro-botao ">Pessoa Jurídica</button>
+                <button onclick="mudaEstado(0, 'PF')" class="escolha-cadastro-botao">Pessoa Física</button>
+                <button onclick="mudaEstado(1, 'PJ')" class="escolha-cadastro-botao ">Pessoa Jurídica</button>
             </div>
             
             <div class="vector">
@@ -39,9 +39,9 @@
             </div>
         </div>
         <div class="continuar" style="margin-top:30px">
-            <button>CONTINUAR</button>
+            <button onclick="redirect()">CONTINUAR</button>
             <div class="ghost"></div><!--Para separar as linhas do botão de continuar e o link para log-in-->
-            <p>Já possui cadastro? <a href="#">Entrar</a></p> <!--Adicionar link correto-->
+            <p>Já possui cadastro? <a href="login.html">Entrar</a></p>
         </div>
 
     <script src="js/script.js"></script>
@@ -49,13 +49,23 @@
     <script>
         let PF = document.getElementsByClassName('escolha-cadastro-botao')[0]
         let PJ = document.getElementsByClassName('escolha-cadastro-botao')[1]
-
-        mudaEstado = (botao) => {
+        let link = '';
+        mudaEstado = (botao, escolha) => {
+            link = escolha;
             PF.classList.remove("selecionado")
             PJ.classList.remove("selecionado") //Código abaixo é um if else compacto
             botao == 0 ? PF.classList.add("selecionado") : PJ.classList.add("selecionado")
         }
 
+        redirect = () => {
+            if(link == 'PF'){
+                window.location = "/pages/cadastro-PF.html"
+            }else if(link == 'PJ'){
+                window.location = "/pages/cadastro-PJ.html"
+            }else{
+                window.alert("Escolha um tipo de conta!")
+            }
+        }
     </script>
 </body>
 </html>

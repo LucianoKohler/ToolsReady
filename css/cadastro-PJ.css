@@ -3,7 +3,6 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 :root{
     --main: #FF7A00;
     --green: #30A700;
-    --font-white: #EEEEEE;
     --font-black: #323232;
     font-family: Inter;
     font-weight: 500;
@@ -12,7 +11,17 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 
 .tudo{
     display: flex;
-    height: 480px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulo{
+    width: 100%;
+    margin-left: 15%;
+}
+
+.titulo span{
+    font-weight: 275;
 }
 
 .cadastro form{
@@ -20,16 +29,22 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(10, 1fr);
     gap: .5em;
-    margin-top: 80px;
+    height: fit-content;
 }
 
 .imagem{
-    width: 45%;
+    width: 40%;
     justify-content: center;
-    height: 70%;
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.imagem img{
+    margin-top: 5%;
+    height: 300px;
+    width: 300px;
+    width: auto;
+    z-index: -1;
 }
 
 .casa{
@@ -43,8 +58,11 @@ fieldset{
     border-radius: 10px;
     width: 100%;
     height: 30px;
+    font-family: Inter;
     font-weight: 400;
     font-size: 15px;
+    color: black;
+    border: 1px solid rgb(75, 75, 75);
 }
 
 .nome-fantasia{grid-area: 1 / 1 / 1 / 6;}
@@ -78,7 +96,7 @@ input{
 }
 
 .continuar button{
-    color: var(--font-white);
+    color: white;
     background-color: var(--main);
     border: none;
     height: 60px;
