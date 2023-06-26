@@ -2,7 +2,6 @@
     --main: #FF7A00;
     --secon: #A45214;
     --green: #30A700;
-    --font-white: #EEEEEE;
     --font-black: #323232;
     --other-black: #11101D;
     --font-red: #DB4437;
@@ -13,14 +12,15 @@
 
 .container{
     width: 95%;
+    margin: 0 auto;
     padding: 10px 25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 main{
-    width: 65%;
+    width: 60%;
 }
 
 
@@ -38,7 +38,7 @@ table *{
 th, .acaoheader, .asideheader{
     background-color: var(--other-black);
     color: white;
-    padding: 10px;
+    padding: 5px;
     outline: 2px solid var(--other-black);
 }
 
@@ -53,12 +53,12 @@ th:nth-child(1), tr:nth-child(1){
 }
 
 th:nth-child(2), td:nth-child(2){
-    width: 55%;
+    width: 50%;
     padding-left: 15px;
 }
 
 th:nth-child(3), td:nth-child(3){
-    width: 10%;
+    width: 3%;
     text-align: center;
 }
 
@@ -145,7 +145,7 @@ td i{
 }
 
 .voltar{
-    margin-top: 75px;
+    margin-top: 20px;
 }
 
 .voltar a{
@@ -157,8 +157,6 @@ td i{
 
 aside{
     width: 30%;
-    position: relative;
-    left: 2.5%;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
     height: fit-content;
 }
