@@ -3,7 +3,6 @@ html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-
 :root{
     --main: #FF7A00;
     --green: #30A700;
-    --font-white: #EEEEEE;
     --font-black: #323232;
     font-family: Inter;
 }
@@ -85,7 +84,7 @@ button{
 .img_gov{width: 55px}
 
 .submit{
-    color: var(--font-white);
+    color: white;
     background-color: var(--main);
     height: 40px;
     width: 59%;
