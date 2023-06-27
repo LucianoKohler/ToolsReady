@@ -1,4 +1,4 @@
-html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box; overflow-x: hidden;}
+html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box; overflow-x: hidden;scroll-behavior: smooth;}
 
 @font-face {
     font-family: Inter;
@@ -245,7 +245,6 @@ button:active, input[type=submit]:active{
     transition: filter .1s ease, box-shadow .1s ease;
 }
 
-
 .blacknav{
     color: white;
     width: 100%;
@@ -272,3 +271,94 @@ button:active, input[type=submit]:active{
 }
 
 
+
+/*FORMATAÇÃO DO FOOTER*/
+
+footer {
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+footer p{
+    margin-top: -10px;
+    text-align: justify;
+}
+
+.footer-link, a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer_contato{
+    padding-right: 20px;
+}
+
+#footer_content {
+    background-color: #1D1D1D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(gray);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {font-size: 1.25rem;}
+#footer_social_media .footer-link:hover {opacity: 0.5;}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link:hover {
+    color: #dbdbdb;
+}
+
+#footer_subscribe{
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    padding: 15px;
+    width: 100%;
+}
+
+footer h3{
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+footer .area{
+    width: 20%;
+}
