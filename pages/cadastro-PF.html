@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><a href="../index.html"><img src="../assets/Logo_Tr.png"></a></div>
+        <div class="logo"><img src="../assets/Logo_Tr.png"></div>
         <div class="acc">
             <div class="userimg">
                 <img src="../assets/user.png" alt="perfil">
@@ -30,35 +30,35 @@
             <img src="../assets/image 34.svg" alt="worker">
         </div>
         <div class="cadastro">
-            <form action="">
+            <form id="cadastro-pf" action="/pages/finalizarcadastro" method="post">
                 <div class="grid">
                     <fieldset class="nome">
                         <legend>Nome completo</legend>
-                        <input type="text">
+                        <input type="text" name="nome">
                     </fieldset>
                     <fieldset class="CPF">
                         <legend>CPF</legend>
-                        <input type="text">
+                        <input type="text" name="cpf">
                     </fieldset>
                     <fieldset class="nascimento">
                         <legend>Data de nascimento</legend>
-                        <input type="text">
+                        <input type="date" name="nascimento">
                     </fieldset>
                     <fieldset class="telefone">
                         <legend>Telefone</legend>
-                        <input type="text">
+                        <input type="text" name="telefone">
                     </fieldset>
                     <fieldset class="email">
                         <legend>Email</legend>
-                        <input type="email">
+                        <input type="email" name="email">
                     </fieldset>
                     <fieldset class="senha">
                         <legend>Crie sua Senha</legend>
-                        <input type="password">
+                        <input type="password" name="senha">
                     </fieldset>
                     <fieldset class="confirmacao">
                         <legend>Confirme sua senha</legend>
-                        <input type="password">
+                        <input type="password" name="confirmasenha">
                     </fieldset>
                 </div>
                 <p>(Todos os campos são obrigatórios)</p>
@@ -81,10 +81,11 @@
             </form>
         </div>
         <div class="baixo" style="margin-top:30px">
-            <button class="continuar">CONTINUAR</button>
+            <button class="continuar" type="submit" form="cadastro-pf">CONTINUAR</button>
             <div class="ghost"></div><!--Para separar as linhas do botão de continuar e o link para log-in-->
             <p>Já possui cadastro? <a href="login.html"">Entrar</a></p>
         </div>    
     </div>
+    <script src="../server.js"></script>
 </body>
 </html>
