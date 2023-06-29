@@ -31,58 +31,71 @@
             <img class="casa" src="../assets/casa-pj.jpg" alt="casa bonita">
         </div> 
         <div class="cadastro">
-            <form action="">
+            <form id="cadastro-pj" method="post" action="/pages/finalizarcadastroPJ" onsubmit="return ValidaSenha(this)">
                 <fieldset class="nome-fantasia">
                         <legend>Nome Fantasia</legend>
-                        <input type="text">
+                        <input type="text" name="nome" required>
                     </fieldset>
                     <fieldset class="CNPJ">
                         <legend>CNPJ</legend>
-                        <input type="text">
+                        <input type="text" name="cnpj" placeholder="XX.XXX.XXX/000X-XX" required>
                     </fieldset>
                     <fieldset class="data-abertura">
                         <legend>Abertura da empresa</legend>
-                        <input type="text">
+                        <input type="date" name="abertura" required>
                     </fieldset>
                     <fieldset class="razao">
                         <legend>Razao social</legend>
-                        <input type="text"> 
+                        <input type="text" name="razao" required> 
                     </fieldset>
                    <fieldset class="info">
                     <legend>Info. Tributarias</legend>
-                    <input type="text">
+                    <input type="text" name="info" required>
                 </fieldset>
                 <fieldset class="inscricao">
-                     <legend>Inscrição estadual  </legend>
-                     <input type="text">
+                     <legend>Inscrição estadual</legend>
+                     <input type="text" name="inscricao" placeholder="XXX.XXX.XXX" required>
                     </fieldset>
                 <fieldset class="nome-compra">
                     <legend>Nome responsável pela compra</legend>
-                    <input type="text">
+                    <input type="text" name="nome_compra" required>
                 </fieldset>
                 <fieldset class="telefone">
                     <legend>Telefone para contato</legend>
-                    <input type="text">
+                    <input type="text" name="telefone" required>
                 </fieldset>
                 <fieldset class="email">
                     <legend>E-mail</legend>
-                    <input type="text">
+                    <input type="text" name="email" required>
                 </fieldset>
                 <fieldset class="senha">
                     <legend>senha</legend>
-                    <input type="password">
+                    <input type="password" name="senha" required>
                 </fieldset>
                  <fieldset class="confirmar">
                     <legend>Confirmar senha</legend>
-                    <input type="text">    
+                    <input type="password" name="confirmasenha" required>    
                 </fieldset>
             </form>
+            <span class="obrigatorio">(Todos os campos são obrigatórios)</span>
         </div>
         <div class="continuar" style="margin-top:30px">
-            <button>CONTINUAR</button>
+            <button type="submit" form="cadastro-pj" id="submit">CONTINUAR</button>
             <div class="ghost"></div><!--Para separar as linhas do botão de continuar e o link para log-in-->
             <p>Já possui cadastro? <a href="login.html">Entrar</a></p>
         </div>
     </div>
+    <script>        
+    ValidaSenha = (form) =>{
+
+        let senha = form.senha.value;
+        let confirmacao = form.confirmasenha.value;
+
+        if(senha === confirmacao){return true;}
+        else{
+            window.alert('As senhas são diferentes, revise-as!');
+            return false;
+        }
+    }</script>
 </body>
 </html>

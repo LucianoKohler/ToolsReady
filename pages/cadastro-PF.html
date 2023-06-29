@@ -30,35 +30,35 @@
             <img src="../assets/image 34.svg" alt="worker">
         </div>
         <div class="cadastro">
-            <form id="cadastro-pf" action="/pages/finalizarcadastro" method="post">
+            <form id="cadastro-pf" onsubmit="return ValidaSenha(this)" action="/pages/finalizarcadastroPF" method="post">
                 <div class="grid">
                     <fieldset class="nome">
                         <legend>Nome completo</legend>
-                        <input type="text" name="nome">
+                        <input type="text" name="nome" required>
                     </fieldset>
                     <fieldset class="CPF">
                         <legend>CPF</legend>
-                        <input type="text" name="cpf">
+                        <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
                     </fieldset>
                     <fieldset class="nascimento">
                         <legend>Data de nascimento</legend>
-                        <input type="date" name="nascimento">
+                        <input type="date" name="nascimento" required>
                     </fieldset>
                     <fieldset class="telefone">
                         <legend>Telefone</legend>
-                        <input type="text" name="telefone">
+                        <input type="text" name="telefone" required>
                     </fieldset>
                     <fieldset class="email">
                         <legend>Email</legend>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                     </fieldset>
                     <fieldset class="senha">
                         <legend>Crie sua Senha</legend>
-                        <input type="password" name="senha">
+                        <input type="password" name="senha" required>
                     </fieldset>
                     <fieldset class="confirmacao">
                         <legend>Confirme sua senha</legend>
-                        <input type="password" name="confirmasenha">
+                        <input type="password" name="confirmasenha" required>
                     </fieldset>
                 </div>
                 <p>(Todos os campos são obrigatórios)</p>
@@ -81,11 +81,24 @@
             </form>
         </div>
         <div class="baixo" style="margin-top:30px">
-            <button class="continuar" type="submit" form="cadastro-pf">CONTINUAR</button>
+            <button class="continuar" form="cadastro-pf">CONTINUAR</button>
             <div class="ghost"></div><!--Para separar as linhas do botão de continuar e o link para log-in-->
             <p>Já possui cadastro? <a href="login.html"">Entrar</a></p>
         </div>    
     </div>
     <script src="../server.js"></script>
+    <script>
+        ValidaSenha = (form) =>{
+
+            let senha = form.senha.value;
+            let confirmacao = form.confirmasenha.value;
+
+            if(senha === confirmacao){return true;}
+            else{
+                window.alert('As senhas são diferentes, revise-as!');
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
