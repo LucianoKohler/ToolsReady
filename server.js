@@ -54,7 +54,7 @@ app.post('/login', (req, res) => {
       
       if (senha === rows[0].senha ){
         console.log('Senha OK');
-        res.redirect('../#client=' + rows[0].nome);
+        res.redirect('../#user=' + rows[0].nome);
       }else{
         console.log('Senha errada');
         res.redirect('/pages/login.html#P_Err')
