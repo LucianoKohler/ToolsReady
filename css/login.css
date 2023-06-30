@@ -83,7 +83,7 @@ button{
 
 .img_gov{width: 55px}
 
-.submit{
+#submit{
     color: white;
     background-color: var(--main);
     height: 40px;
@@ -144,4 +144,11 @@ form{
     display: flex;
     justify-content: center;
     margin: 20px 0 5px 0;
+}
+
+#erro{
+    width: 50%;
+    text-align: center;
+    color: red;
+    font-size: 18px;
 }

@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const mysql = require('mysql2');
 const req = require('express/lib/request');
 const app = express()
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use('/assets', express.static('assets'))
@@ -41,14 +42,29 @@ connection.connect(function (err) {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 })
+
+//PARA LOGIN
+app.post('/login', (req, res) => {
+  let email = req.body.email;
+  let senha = req.body.senha;
+
+  connection.query("SELECT * FROM cliente where email = '" + email +"'", function (err, rows) {
+    if (!err && rows.length >=1){
+      console.log("Resultado:",rows);
+      
+      if (senha === rows[0].senha ){
+        console.log('Senha OK');
+        res.redirect('../#client=' + rows[0].nome);
+      }else{
+        console.log('Senha errada');
+        res.redirect('/pages/login.html#P_Err')
+      }
+    } else{
+      console.log("Erro: Consulta não realizada", err); res.redirect('/pages/login.html#E_Err')}
+    });
+})
  
 app.post('/pages/finalizarcadastroPF', (req, res) => {
-  // let nome = req.body.nome;
-  // let cpf = req.body.cpf;
-  // let nascimento = req.body.nascimento;
-  // let email = req.body.email;
-  // let senha = req.body.senha;
-  // let confirmasenha = req.body.confirmasenha;
   let nome = req.body.nome;
   let CPF = req.body.cpf;
   let nascimento = req.body.nascimento;
