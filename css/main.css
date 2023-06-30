@@ -328,6 +328,7 @@
     background-color: white;
     font-size: 14px;
     width: 30%;
+    height: 300px !important;
 }
 
 .desconto{
@@ -342,8 +343,6 @@
     background-color: #000000;
     font-size: 10px;
 }
-
-
 
 .destaques{
     height: fit-content;
@@ -406,10 +405,6 @@
     height: 1%;
 }
 
-.acoes-horizontal{
-    display: flex;
-}
-
 .horizontal-conteudo h3, .horizontal-conteudo p{
     margin: 0;
 }
@@ -427,6 +422,40 @@
 .add-carrinho-horizontal{border-radius:3px 0 0 3px;}
 .add-fav-horizontal     {border-radius:0 3px 3px 0;}
 
-/* ---------------------
-INÍCIO DA ABA FAVORITOS
-----------------------*/
+#logado{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aviso{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#logar{
+    padding: 10px;
+    background-color: var(--main);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#fechar{
+    float: right;
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+}

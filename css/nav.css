@@ -106,26 +106,6 @@ h5{
     padding: 10px;
 }
 
-.acoes{
-    height: 15%;
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-self: flex-end;
-    float: right;
-    z-index: 5;
-}
-
-.acoes div{
-    float: right;
-    background-color: var(--main);
-    width: 15%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .big{
     background: var(--main)
     radial-gradient(rgba(255,255,255,0.25), var(--main));
