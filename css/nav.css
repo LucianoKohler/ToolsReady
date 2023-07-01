@@ -140,8 +140,15 @@ nav a{
     color: white;
 }
 
+.logo{
+    height: 90%;
+    width: fit-content;
+    display: flex;
+    padding-top: 5px;
+}
+
 nav img{
-    height: 60px;
+    height: 100%;
 }
 
 nav img[alt="perfil"]{

@@ -484,3 +484,28 @@ aside{
 .quantidade{
     margin-top: 20px;
 }
+
+#erro{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#erro_conteudo{
+    text-align: center;
+}
+
+#erro_conteudo button{
+    background-color: var(--main);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}

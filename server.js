@@ -108,6 +108,15 @@ app.post('/pages/finalizarcadastroPJ', (req, res) => {
   })
 })
 
+//Para colocar a imagem dos produtos nos cards
+
+var teste = connection.query('SELECT nome FROM produto', (err, rows) =>{
+  console.log(rows)
+})
+
+
+
+
 app.listen(3000, () => {
   console.log('Servidor rodando na porta 3000!')
 })

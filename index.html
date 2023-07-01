@@ -506,7 +506,7 @@
         const cards = document.querySelectorAll('.card, .horizontal');
         for(let i = 0; i<=cards.length-1; i++){
             cards[i].addEventListener('click', () =>{
-                window.location = '/pages/produto.html';
+                window.location = '/pages/produto.html#PID=' + i;
             })
         }
 
@@ -521,7 +521,7 @@
 
         navBtn = document.getElementById('nav_submit')
         QueryCont = document.getElementById('query')
-        navBtn.addEventListener('click', () => {window.location = 'navegador.html#' + QueryCont.value;})
+        navBtn.addEventListener('click', () => {window.location = '/pages/navegador.html#' + QueryCont.value;})
     </script>
 </body>
 </html>
