@@ -17,8 +17,9 @@
         <!--Usada para dar um espaçamento maior aos itens da navbar-->
         <div class="navbar">
             <div class="navbar-conteudo">
-                <input type="text">
-                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                <input type="text" id="query">
+                <!--Código desse primeiro botão meio complicado, feito com JS-->
+                <button id="nav_submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>                
                 <button onclick="location.href='perfil.html';">&nbsp;<i class="fa-solid fa-user" style="color: #000000;"></i></button>
                 <button onclick="location.href='favoritos.html';">&nbsp;<i class="fa-regular fa-heart" style="color: #000000;"></i></button>
                 <button onclick="location.href='carrinho.html';">&nbsp;<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></button>
@@ -264,6 +265,7 @@
             Copyright© 2023 ToolsReady.com, Inc. 
         </div>
     </footer>
+    <script src="../js/search.js"></script> <!--Para fazer a pesquisa de itens no navegador-->
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
 </body>
 </html>

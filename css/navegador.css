@@ -46,15 +46,19 @@ header{
 }
 
 .ordenar p{
-display: inline-block;
-padding: 0px 5px;
+    display: inline-block;
+    padding: 0px 5px;
 }
 
 .card{
     padding-top: 20px;
     width: 300px;
     height: 300px !important;
+    cursor: pointer;
+    transition: scale .2s ease;
 }
+
+.card:hover{transform: scale(1.1);}
 
 aside{
     width: 15%;
@@ -89,6 +93,7 @@ aside{
 }
 
 input[type=number]{
+    appearance: textfield;
     -moz-appearance: textfield;
     width: 80%;
     border: none;
@@ -109,7 +114,7 @@ label{
 
 input[type=checkbox]{
     accent-color: var(--main);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 form{

@@ -64,6 +64,8 @@ app.post('/login', (req, res) => {
     });
 })
  
+
+//PARA CADASTRO PF
 app.post('/pages/finalizarcadastroPF', (req, res) => {
   let nome = req.body.nome;
   let CPF = req.body.cpf;

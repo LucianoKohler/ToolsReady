@@ -17,8 +17,9 @@
         <!--Usada para dar um espaçamento maior aos itens da navbar-->
         <div class="navbar">
             <div class="navbar-conteudo">
-                <input type="text">
-                <button onclick="location.href='';"><i class="fa-solid fa-magnifying-glass"
+                <input type="text" id="query">
+                <!--Código desse primeiro botão meio complicado, feito com JS-->
+                <button id="nav_submit"><i class="fa-solid fa-magnifying-glass"
                         style="color: #000000;"></i></button>
                 <button onclick="location.href='pages/perfil.html';">&nbsp;<i class="fa-solid fa-user"
                         style="color: #000000;"></i></button>
@@ -480,6 +481,9 @@
 
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
     <script>
+
+        //Código para fazer com que, ao passar o mouse em cima do icone
+        //de arvore de natalele irá expandir e mostrar o desconto
         const promos = document.getElementsByClassName('promoimg');
 
         for (let i = 0; i < promos.length; i++) {
@@ -497,6 +501,8 @@
             })
         }
 
+        //Código que faz os cards serem clicáveis(já que eles são divs, não links)
+
         const cards = document.querySelectorAll('.card, .horizontal');
         for(let i = 0; i<=cards.length-1; i++){
             cards[i].addEventListener('click', () =>{
@@ -504,12 +510,18 @@
             })
         }
 
+        //Cógido se verifica se o usuário está logado ou não
+
         if(window.location.hash.substring(1)!=''){
             document.getElementById('logado').style.display = 'none';
         }
 
-        
+        //Código de pesquisa para o navegador feito aqui, pois é
+        //diferente dos outros por estar na root, e não na pages
+
+        navBtn = document.getElementById('nav_submit')
+        QueryCont = document.getElementById('query')
+        navBtn.addEventListener('click', () => {window.location = 'navegador.html#' + QueryCont.value;})
     </script>
 </body>
-
 </html>
