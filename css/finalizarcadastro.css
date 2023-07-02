@@ -1,10 +1,10 @@
-:root{
+:root{ /*Essa root foi feita para agilizar o processo de colorir o site*/
     --main: #FF7A00;
     --green: #30A700;
     font-family: Inter;
 }
 
-html, body{margin: 0; padding: 0; box-sizing: border-box; overflow: hidden;}
+html, body{margin: 0; padding: 0; box-sizing: border-box; overflow: hidden;}/*Utilizado para melhorar a formatação do HTML e posicionar melhor os elementos, como o uso dos display,width,height e outros para localizar os objetos*/
 nav{border-bottom: 8px solid black;}
 
 .conteudo{
@@ -38,7 +38,7 @@ nav{border-bottom: 8px solid black;}
     outline: none;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"]{/*customizar o checkbox*/
   transform: scale(1.5);
   accent-color: #dd6b00;
 }
@@ -53,7 +53,7 @@ input[type="checkbox"]{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;/*utilizado para deixar o botão continuar e o texto em baixo juntos, se não, não iria quebrar a linha*/
 }
 
 .continuar{
