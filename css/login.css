@@ -1,6 +1,6 @@
 html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;}
 
-:root{
+:root{ /* Declara cores e fontes para agilizar o processo*/
     --main: #FF7A00;
     --green: #30A700;
     --font-black: #323232;
@@ -14,7 +14,7 @@ h3{
     font-size: 1.3em;
 }
 
-fieldset{
+fieldset{ /* Borda do input*/
     border-radius: 10px;
     width: 55%;
     height: 30px;
@@ -24,7 +24,7 @@ fieldset{
     border: 1px solid rgb(75, 75, 75);
 }
 
-input{
+input{ /* Formatação para o input ( onde é iserido as informações de login */
     border: none;
     outline: none;
     width: 100%;
@@ -39,10 +39,10 @@ input{
     justify-content: center;
 }
 
-.cadastrar a{color: var(--main) !important;}
+.cadastrar a{color: var(--main) !important;} /* !important serve para dar prioridade*/
 hr{width: 57%;}
 
-.linha_1, .linha_2{
+.linha_1, .linha_2{  /* Linha 1 = Bottão facebook e google --- Linha 2 = gov.br */
     display: flex;
     justify-content: center;
 }
@@ -56,7 +56,7 @@ button{
     padding: 0;
 }
 
-.botao:active{
+.botao:active{ /* Irá aumentar o tamanho do botão quando acionado*/
     transition: transform .1s ease;
     transform: scale(1.05);
 }
@@ -70,7 +70,7 @@ button{
 .google  {background: #DB4437; color: #DB4437;}
 .gov_br  {background: #48AD45;}
 
-.interno{
+.interno{ /* Região interna do botão, onde ficará o texto*/
     background-color: white;
     height: 30px;
     border-radius: 6px;
@@ -81,9 +81,9 @@ button{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.img_gov{width: 55px}
+.img_gov{width: 55px} 
 
-#submit{
+#submit{ /* Botão de para entrar, ou seja, fanalizar login*/
     color: white;
     background-color: var(--main);
     height: 40px;
@@ -93,7 +93,7 @@ button{
     margin: 10px 0;
 }
 
-.fa-eye{
+.fa-eye{ /* Olho para deixar visivel a senha*/
     position: relative;
     bottom: 23px;
     left: 95%;
@@ -110,7 +110,7 @@ button{
     color: #8d8b8b;
 }
 
-.esqueceu{
+.esqueceu{ 
     display: flex;
     justify-content: right;
     padding-right: 21.5%;
@@ -146,7 +146,7 @@ form{
     margin: 20px 0 5px 0;
 }
 
-#erro{
+#erro{ /* Formatação da mensagem de erro (email ou senha inválido*/
     width: 50%;
     text-align: center;
     color: red;

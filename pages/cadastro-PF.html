@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body>
-    <nav>
-        <div class="logo"><img src="../assets/Logo_Tr.png"></div>
+    <nav> <!-- Nav -->
+        <div class="logo"><img src="../assets/Logo_Tr.png"></div> 
         <div class="acc">
             <div class="userimg">
                 <img src="../assets/user.png" alt="perfil">
@@ -22,16 +22,16 @@
             </div>
         </div>
     </nav>
-    <div class="titulo">
+    <div class="titulo"> <!--Título -->
         <h2 id="CC">CRIAR CONTA &nbsp;</h2><h2 id="PF"><i>PESSOA FÍSICA</i></h2>
     </div>
-    <div class="conteudo">
-        <div class="imagem">
+    <div class="conteudo"> <!-- Div que engloba o form e a imagem -->
+        <div class="imagem"> <!-- Imagem -->
             <img src="../assets/image 34.svg" alt="worker">
         </div>
-        <div class="cadastro">
+        <div class="cadastro"> <!-- Div que engloba os botões e o form-->
             <form id="cadastro-pf" onsubmit="return ValidaSenha(this)" action="/pages/finalizarcadastroPF" method="post">
-                <div class="grid">
+                <div class="grid"> <!-- Div para utilizar grid no form-->
                     <fieldset class="nome">
                         <legend>Nome completo</legend>
                         <input type="text" name="nome" required>
@@ -62,7 +62,7 @@
                     </fieldset>
                 </div>
                 <p>(Todos os campos são obrigatórios)</p>
-                <div class="botoes">
+                <div class="botoes"> <!-- Div para os botões -->
                     <button class="botao facebook">
                         <div class="interno">
                             Facebook
@@ -80,21 +80,21 @@
                 </div>
             </form>
         </div>
-        <div class="baixo" style="margin-top:30px">
+        <div class="baixo" style="margin-top:30px"> <!-- Div para facilitar a margem de 30px para baixo-->
             <button class="continuar" form="cadastro-pf">CONTINUAR</button>
             <div class="ghost"></div><!--Para separar as linhas do botão de continuar e o link para log-in-->
-            <p>Já possui cadastro? <a href="login.html"">Entrar</a></p>
+            <p>Já possui cadastro? <a href="login.html">Entrar</a></p> <!-- link para o login -->
         </div>    
     </div>
-    <script src="../server.js"></script>
+    <script src="../server.js"></script> 
     <script>
-        ValidaSenha = (form) =>{
+        ValidaSenha = (form) =>{ /* Verificar se a confirmação da senha está condizente*/
 
-            let senha = form.senha.value;
-            let confirmacao = form.confirmasenha.value;
+            let senha = form.senha.value; // pega a senha do form 
+            let confirmacao = form.confirmasenha.value;  // pega a confirmação de senha
 
-            if(senha === confirmacao){return true;}
-            else{
+            if(senha === confirmacao){return true;} // Se as duas estiverem iguais, tudo ok e retorna verdadeiro
+            else{ // Se não, ele alerta e retorna falso
                 window.alert('As senhas são diferentes, revise-as!');
                 return false;
             }

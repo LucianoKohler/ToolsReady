@@ -1,6 +1,6 @@
-html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;}
+html, body{height: 100%; width: 100%; padding: 0; margin: 0; box-sizing: border-box;} 
 
-:root{
+:root{ /* Declara cores e fontes para agilizar o processo*/
     --main: #FF7A00;
     --green: #30A700;
     --font-black: #323232;
@@ -13,7 +13,7 @@ nav{
     border-bottom: 8px solid black;
 }
 
-.titulo{
+.titulo{ 
     width: 100%;
     display: flex;
     margin-left: 15%;
@@ -35,16 +35,16 @@ nav{
     width: fit-content;
 }
 
-.grid{
+.grid{ /* Formata a div grid, implementando display grid de 4 linhas e 10 colunas*/
     display: grid;
     justify-content: stretch;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(10, 1fr);
-    gap: .5em;
+    gap: .5em; 
     width: fit-content;
 }
 
-fieldset{
+fieldset{ /* Borda do input*/
     border-radius: 10px;
     width: 100%;
     height: 30px;
@@ -75,7 +75,7 @@ form p{
     line-height: 24px;
 }
 
-input{
+input{ /* Formatação para o input ( onde é iserido as informações de login */
     border: none;
     outline: none;
     width: 100%;
@@ -86,7 +86,7 @@ input{
     background-color: transparent;
 }
 
-.nome{
+.nome{ /* Diz onde a classe nome (fieldset e input) vai ficar no grid*/
     grid-row: 1/1;
     grid-column: 1/5;
 }
@@ -147,7 +147,7 @@ button{
     padding: 0;
 }
 
-.botao:active{
+.botao:active{ /* Irá aumentar o tamanho do botão quando acionado*/
     transition: transform .07s ease;
     transform: scale(1.05);
 }
@@ -174,7 +174,7 @@ button{
     color: #48AD45;
 }
 
-.interno{
+.interno{ /* Região interna do botão, onde ficará o texto*/
     background-color: white;
     height: 35px;
     border-radius: 6px;
@@ -189,7 +189,7 @@ button{
     width: 55px;
 }
 
-.baixo{
+.baixo{ /* margem de 30px de altura */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -200,7 +200,7 @@ button{
     width: 100%;
 }
 
-.continuar{
+.continuar{ /* Botão de para entrar, ou seja, fanalizar login*/
     color: white;
     background-color: var(--main);
     border: none;
