@@ -303,7 +303,10 @@
                             boas obras! <span class="dataresposta">(30/09/2023, 20:20)</span></p>
                     </div>
                     <hr>
-                    <button class="perguntar">
+                    <!--Normalmente, esse botão faria uma requisição ao usuário para perguntar coisas e enviar a pergunta
+                    ao banco, porém usei ele como funcionalidade para mostrar como a tela ficaria se o ID do produto não
+                    fosse encontrado-->
+                    <button class="perguntar" onclick="document.getElementById('erro').style.display = 'flex'">
                         <i class="fa-solid fa-comments fa-lg" style="color: var(--main);"></i>
                         &nbsp; PERGUNTAR
                     </button>
@@ -314,7 +317,7 @@
             <p>Local para anuncios</p>
         </aside>
     </div>
-    <div id="erro">
+    <div id="erro" style="display: none;">
         <div id="erro_conteudo">
             <h3>Erro!</h3>
             <p>Ocorreu um erro ao pesquisar o produto, volte e tente novamente</p>
@@ -465,8 +468,6 @@
                         estrelas[4].style.color = '#D9D9D9';
                         notatexto.innerHTML = 'Péssimo';
                         break;
-
-
                 }
             })
         }

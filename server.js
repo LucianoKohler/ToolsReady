@@ -13,9 +13,9 @@ app.use('/pages', express.static('pages'))
 app.use('/', express.static('/'))
 
 const connection = mysql.createConnection({
-  host: '127.0.0.1',
+  host: 'localhost',
   user: 'root',
-  password: 'root',
+  password: '',
   database: 'toolsready',
 });
 
