@@ -155,25 +155,25 @@
             <h1>PARA MELHORAR SUA VIDA!</h1>
         </div>
         <div class="container">
-            <div class="category img1">
+            <div class="category img1" onclick="Search('Autocenter e Motocenter')">
                 <p>AUTOCENTER E MOTOCENTER</p>
             </div>
-            <div class="category img2">
+            <div class="category img2" onclick="Search('Construção Civil')">
                 <p>CONSTRUÇÃO CIVIL</p>
             </div>
-            <div class="category img3">
+            <div class="category img3" onclick="Search('Marcenaria')">
                 <p>MARCENARIA</p>
             </div>
-            <div class="category img4">
+            <div class="category img4" onclick="Search('Movimentação e Elevação')">
                 <p>MOVIMENTAÇÃO E ELEVAÇÃO</p>
             </div>
-            <div class="category img5">
+            <div class="category img5" onclick="Search('Bancadas e Estantes')">
                 <p>BANCADAS E ESTANTES</p>
             </div>
-            <div class="category img6 ">
+            <div class="category img6" onclick="Search('Pedestais e Guinchos')">
                 <p>PEDESTAIS E GUINCHOS</p>
             </div>
-            <div class="category img7">
+            <div class="category img7" onclick="Search('Motores e Geradores')">
                 <p>MOTORES E GERADORES</p>
             </div>
         </div>
@@ -520,9 +520,11 @@
         //Código de pesquisa para o navegador feito aqui, pois é
         //diferente dos outros por estar na root, e não na pages
 
-        navBtn = document.getElementById('nav_submit')
-        QueryCont = document.getElementById('query')
-        navBtn.addEventListener('click', () => {window.location = '/pages/navegador.html#' + QueryCont.value;})
+        const navBtn = document.getElementById('nav_submit')
+        const QueryCont = document.getElementById('query')
+        const Search = (query) => window.location = '/pages/navegador.html#' + query
+
+        navBtn.addEventListener('click', () => Search(QueryCont.value))
     </script>
 </body>
 </html>

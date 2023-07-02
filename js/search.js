@@ -1,9 +1,8 @@
-//Código para pesquisar na nav e redirecionar ao navegador
+//Código para pesquisar na nav ou clicar em uma categoria, redirecionar ao navegador
 navBtn = document.getElementById('nav_submit')
 QueryCont = document.getElementById('query')
-console.log(navBtn ,QueryCont)
 
-navBtn.addEventListener('click', () => {
-    window.location = 'navegador.html#' + QueryCont.value;
-})
+const Search = (query) => window.location = 'navegador.html#' + query
+
+navBtn.addEventListener('click', () => Search(QueryCont.value))
 

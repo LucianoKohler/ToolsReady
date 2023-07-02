@@ -287,10 +287,10 @@ footer p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
 }
 
 #footer_social_media {
+    justify-content: center;
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
@@ -322,6 +322,7 @@ footer p{
 }
 
 #footer_subscribe{
+    flex-direction: column;
     align-self: center;
     text-align: center;
     display: flex;

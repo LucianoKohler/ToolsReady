@@ -2,7 +2,7 @@ const dias = document.getElementById("dias");
 const horas = document.getElementById("horas");
 const minutos = document.getElementById("minutos");
 const segundos = document.getElementById("segundos");
-const fimPromocao = '28 December 2023';
+const fimPromocao = '01 January 2024';
 
 function contagem() {
 
