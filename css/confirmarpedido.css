@@ -200,7 +200,7 @@ table tr td:last-child::before{content: "R$";}
     margin: 10px 0 0 0 !important;
 }
 
-input[type="text"]:not(#navinput){
+input[type="text"]:not(#query){
     font-family: Inter;
     font-size: 14px;
     padding: 10px;
