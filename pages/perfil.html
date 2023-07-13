@@ -266,22 +266,7 @@
             Copyright© 2023 ToolsReady.com, Inc. 
         </div>
     </footer>
-    <script>
-        //Código para validar o cupom
-        let status = window.location.hash.substring(8);
-        console.log(status)
-        let input = document.getElementById('cupominput')
-        
-        if (status == 'false'){
-            input.classList.remove('sucesso')
-            input.classList.add('falha')
-            input.placeholder = 'erro ao resgatar...';
-        }else if(status == 'true'){
-            input.classList.remove('falha')
-            input.classList.add('sucesso');
-            input.placeholder = 'cupom resgatado!';
-        }
-    </script>
+    <script src="../js/cupomvalidar.js"></script>
     <script src="../js/search.js"></script> <!--Para fazer a pesquisa de itens no navegador-->
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
 </body>

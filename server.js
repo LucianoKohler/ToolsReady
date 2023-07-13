@@ -119,16 +119,41 @@ app.post('/pages/perfil/', (req, res) => {
     if(rows.length>=1 && rows[0].resgatado == 0){
       connection.query("UPDATE cupom SET resgatado = '1' WHERE codigo_promocional = ?", [cupom])
       status = true;
-    }else{
-      console.log('O cupom já foi resgatado.');
-      req.body.placeholder = 'teste';
     }
     res.redirect('/pages/perfil.html#coupom=' + status);
   })
 })
 
+//Para validar cupom no carrinho
+app.post('/pages/carrinho/', (req, res) => {
+  let cupom = req.body.cupom;
+  let status = false;
 
+  connection.query("SELECT * FROM cupom WHERE codigo_promocional = ?;", [cupom], function (err, rows){
+    if(err) throw err;
 
+    if(rows.length>=1 && rows[0].resgatado == 0){
+      connection.query("UPDATE cupom SET resgatado = '1' WHERE codigo_promocional = ?", [cupom]);
+      status = true;
+    }
+    res.redirect('/pages/carrinho.html#coupom=' + status);
+  })
+})
+
+//Para validar cupom no confirmar pedido
+app.post('/pages/confirmarpedido/', (req, res) => {
+  let cupom = req.body.cupom;
+  let status = false;
+  connection.query("SELECT * FROM cupom WHERE codigo_promocional = ?;", [cupom], function (err, rows){
+    if(err) throw err;
+
+    if(rows.length>=1 && rows[0].resgatado == 0){
+      connection.query("UPDATE cupom SET resgatado = '1' WHERE codigo_promocional = ?", [cupom])
+      status = true;
+    }
+    res.redirect('/pages/confirmarpedido.html#coupom=' + status);
+  })
+})
 
 app.listen(3000, () => {
   console.log('Servidor rodando na porta 3000!')
