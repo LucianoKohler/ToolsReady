@@ -48,7 +48,23 @@
 }
 
 .insertcupom{
-width: 100%;
+    width: 100%;
+}
+
+#cupominput::placeholder{
+    font-weight: 700;
+}
+
+.insertcupom::placeholder{
+    font-weight: 700;
+}
+
+.sucesso::placeholder{
+    color: rgb(0, 255, 0);
+}
+
+.falha::placeholder{
+    color: red;
 }
 
 .insertcupom *{

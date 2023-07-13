@@ -110,19 +110,20 @@ app.post('/pages/finalizarcadastroPJ', (req, res) => {
 })
 
 //Código para validar um cupom na página de perfil
-app.post('/pages/perfil/cupom', (req, res) => {
+app.post('/pages/perfil/', (req, res) => {
   let cupom = req.body.cupom;
+  let status = false;
   connection.query("SELECT * FROM cupom WHERE codigo_promocional = ?;", [cupom], function (err, rows){
-
     if(err) throw err;
 
     if(rows.length>=1 && rows[0].resgatado == 0){
-      console.log(rows)
       connection.query("UPDATE cupom SET resgatado = '1' WHERE codigo_promocional = ?", [cupom])
-
+      status = true;
     }else{
-      console.log('O cupom já foi resgatado.')
+      console.log('O cupom já foi resgatado.');
+      req.body.placeholder = 'teste';
     }
+    res.redirect('/pages/perfil.html#coupom=' + status);
   })
 })
 
