@@ -15,8 +15,9 @@ app.use('/', express.static('/'))
 const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
-  password: 'root',
+  password: '', //Se der access denied, mudar para 'root'
   database: 'toolsready',
+  port: '3306', //Dependendo da porta do Xampp, mudar
 });
 
 var PFsql = `INSERT INTO cliente
@@ -54,7 +55,7 @@ app.post('/login', (req, res) => {
       
       if (senha === rows[0].senha ){
         console.log('Senha OK');
-        res.redirect('../#user=' + rows[0].nome);
+        res.redirect('../#auth=true');
       }else{
         console.log('Senha errada');
         res.redirect('/pages/login.html#P_Err')
@@ -108,10 +109,21 @@ app.post('/pages/finalizarcadastroPJ', (req, res) => {
   })
 })
 
-//Para colocar a imagem dos produtos nos cards
+//Código para validar um cupom na página de perfil
+app.post('/pages/perfil/cupom', (req, res) => {
+  let cupom = req.body.cupom;
+  connection.query("SELECT * FROM cupom WHERE codigo_promocional = ?;", [cupom], function (err, rows){
 
-var teste = connection.query('SELECT nome FROM produto', (err, rows) =>{
-  console.log(rows)
+    if(err) throw err;
+
+    if(rows.length>=1 && rows[0].resgatado == 0){
+      console.log(rows)
+      connection.query("UPDATE cupom SET resgatado = '1' WHERE codigo_promocional = ?", [cupom])
+
+    }else{
+      console.log('O cupom já foi resgatado.')
+    }
+  })
 })
 
 
