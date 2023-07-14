@@ -48,7 +48,11 @@
 }
 
 .insertcupom{
-width: 100%;
+    width: 100%;
+}
+
+.insertcupom::placeholder{
+    font-weight: 700;
 }
 
 .insertcupom *{

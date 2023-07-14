@@ -135,11 +135,11 @@
                 <div id="total">Total do Pedido: <span id="valor_final">200,00</span></div>
                     <button class="big">FINALIZAR PEDIDO</button>
             </div>
-            <div class="cupom">
+            <form class="cupom" action="/pages/confirmarpedido" method="post">
                 <div style="width: 100%;">Inserir cupom de desconto</div>
-                <input type="text" placeholder="Digitar código" name="cupom">
-                <button class="big small">Aplicar</button>
-            </div>
+                <input id="cupominput" type="text" placeholder="Digitar código" name="cupom">
+                <button type="submit" class="big small">Aplicar</button>
+            </form>
         </aside>
     </div>
     <footer>
@@ -205,6 +205,7 @@
         </div>
     </footer>
 
+    <script src="../js/cupomvalidar.js"></script>
     <script src="https://kit.fontawesome.com/c75ae1dde2.js" crossorigin="anonymous"></script>
     <script src="../js/search.js"></script> <!--Para fazer a pesquisa de itens no navegador-->
     <script>

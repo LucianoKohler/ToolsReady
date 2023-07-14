@@ -350,3 +350,16 @@ footer h3{
 footer .area{
     width: 20%;
 }
+
+/*Formatação para inputs de cupons*/
+.sucesso::placeholder{
+    color: rgb(0, 255, 0);
+}
+
+.falha::placeholder{
+    color: red;
+}
+
+#cupominput::placeholder{
+    font-weight: 700;
+}
