@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Jul-2023 às 15:49
+-- Tempo de geração: 14-Jul-2023 às 12:42
 -- Versão do servidor: 8.0.21
 -- versão do PHP: 8.1.2
 
@@ -138,24 +138,25 @@ INSERT INTO `cliente` (`id_cliente`, `tipo_pessoa`, `CPF_CNPJ`, `nascimento_fund
 CREATE TABLE `cupom` (
   `id_cupom` int NOT NULL,
   `codigo_promocional` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `desconto` decimal(10,2) NOT NULL
+  `desconto` decimal(10,2) NOT NULL,
+  `resgatado` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `cupom`
 --
 
-INSERT INTO `cupom` (`id_cupom`, `codigo_promocional`, `desconto`) VALUES
-(1, 'junhododinossauro', '0.15'),
-(2, 'ch0r4bl4z3', '0.05'),
-(3, 'bostil123', '0.10'),
-(4, 'tankavel', '0.50'),
-(5, '100k', '0.35'),
-(6, '50k', '0.30'),
-(7, 'meiadejunho6', '0.99'),
-(8, 's3rrotastico', '0.60'),
-(9, '1nvernoced0', '0.65'),
-(10, 'alanz0kalivre', '0.70');
+INSERT INTO `cupom` (`id_cupom`, `codigo_promocional`, `desconto`, `resgatado`) VALUES
+(1, 'junhododinossauro', '0.15', 0),
+(2, 'ch0r4bl4z3', '0.05', 0),
+(3, 'bostil123', '0.10', 0),
+(4, 'tankavel', '0.50', 0),
+(5, '100k', '0.35', 0),
+(6, '50k', '0.30', 0),
+(7, 'meiadejunho6', '0.99', 0),
+(8, 's3rrotastico', '0.60', 0),
+(9, '1nvernoced0', '0.65', 0),
+(10, 'alanz0kalivre', '0.70', 0);
 
 -- --------------------------------------------------------
 

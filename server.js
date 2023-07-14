@@ -17,7 +17,7 @@ const connection = mysql.createConnection({
   user: 'root',
   password: 'root', //Se der access denied, mudar para 'root'
   database: 'toolsready',
-  port: '3307', //Dependendo da porta do Xampp, mudar
+  // port: '3307', //Dependendo da porta do Xampp, mudar
 });
 
 var PFsql = `INSERT INTO cliente
